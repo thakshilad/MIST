@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <title>MS Generator</title>
+    <style>
+        .btn-group button {
+        background-color: #04AA6D; /* Green background */
+        border: 1px solid green; /* Green border */
+        color: white; /* White text */
+        padding: 10px 24px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */
+        float: left; /*Float the buttons side by side */
+        }
+    </style>
+</head>
+<html>
+<body style="background-color:rgb(210, 215, 215);">
+
+<div>
+<h1 style="text-align: center; color: cadetblue;">Microservices Generator Application</h1>
+</div>
+
+<div style="text-align: center; margin-top: 10px; padding-top: 20px;">
+    <p>Click on the "Choose File" button to upload kieker output file/s:</p>
+<form action="/uploadFile">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+</div>
+
+
+
+<!-- <div class="btn-group" style="width:100%; padding-top: 30px;">
+    <button style="width:25%" formaction="generateEvents">Generate Events</button>
+    <button style="width:25%">Generate Patterns</button>
+    <button style="width:25%">Calculate Cost</button>
+    <button style="width:25%">Generate Microservices</button>
+</div>  -->
+
+<div class="btn-group" style="width:100%; padding-top: 30px;">
+    <div style="padding-top: 30px;padding-left: 25px;">
+    <form action="generateEvents" method="get">
+        <input type="submit" value="Generate Events" style="width:20%"/> 
+    </form>
+    </div>
+    <div style="padding-top: 30px; padding-left: 25px;">
+    <form action="generatePatterns" method="get">
+        <input type="submit" value="Generate Patterns" style="width:20%"/>
+    </form>
+    </div>
+    <div style="padding-top: 30px; padding-left: 25px;">
+    <form action="calculateCost" method="get">
+        <input type="submit" value="Calculate Cost" style="width:20%"/>
+    </form>
+    </div>
+    <div style="padding-top: 30px; padding-left: 25px;">
+    <form action="generateMicroservices" method="get">
+        <input type="submit" value="Generate Microservices" style="width:20%"/>
+    </form>   
+    </div>
+
+</div>
+
+<div id="responseDiv">
+</div>
+
+
+
+
+
+<!-- <div style="height: 200px; padding: 10px; margin: auto; width: 50%; padding-top: 50px;">
+<div style="width: 50%;">div 1</div>
+<div style="width: 50%;">div 2</div>
+</div> -->
+
+<!-- <div style="height: 200px; padding: 10px; margin: auto; width: 50%; padding-top: 50px;">
+<div id="div1" style="width: 40%; height: 50%; float: left; background: #e1f3e4a9; border: 2px solid rgb(228, 241, 228);">
+    <div>
+        <button>Generate Events</button>
+    </div>
+</div>
+<div id="div2" style="width: 40%; height: 50%; float: left; background: #e1f3e4a9;  border: 2px solid rgb(228, 241, 228);">
+    <div>
+        <button>Generate Patterns</button>
+    </div>
+</div>
+<div id="div3" style="width: 40%; height: 50%; float: left; background: #e1f3e4a9;  border: 2px solid rgb(228, 241, 228);">
+    <div>
+        <button>Calculate Cost</button>
+    </div>
+</div>
+<div id="div4" style="width: 40%; height: 50%; float: left; background: #e1f3e4a9;  border: 2px solid rgb(228, 241, 228);">
+    <div>
+        <button>Generate MS</button>
+    </div>
+</div>
+</div> -->
+
+<div style="position: fixed; text-align: center; bottom: 20px; width: 100%;">Default system compatibility - Kieker version : 1.14, JPetStor : 6.1.0, and Java : 17 or higher</div>
+</body>
+</html>
+
