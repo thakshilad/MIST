@@ -1,0 +1,445 @@
+PatternMeta [pattern=12 13 32 310, support=679.0, confidence=0.9339752407152683, distance=5.767304860088365, patternLength=4, averageDepth=3.0, executionTime=628.1047128129603, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , cost=4779895.871801926] 
+ 
+PatternMeta [pattern=12 13 32, support=727.0, confidence=0.9986263736263736, distance=1.0, patternLength=3, averageDepth=3.0, executionTime=611.6279229711141, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , cost=3996384.4100274723] 
+ 
+PatternMeta [pattern=13 32 310, support=679.0, confidence=0.9339752407152683, distance=8.300441826215023, patternLength=3, averageDepth=3.0, executionTime=626.9646539027982, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , cost=3578414.991746905] 
+ 
+PatternMeta [pattern=12 32 310, support=679.0, confidence=0.9339752407152683, distance=8.547864506627393, patternLength=3, averageDepth=3.0, executionTime=625.0592047128129, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , cost=3567539.5972489677] 
+ 
+PatternMeta [pattern=401, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=2462.0029411764704, pattenwithMethodNames=public net.jforum.entities.User net.jforum.dao.generic.GenericUserDAO.selectById(int) , cost=3013491.5999999996] 
+ 
+PatternMeta [pattern=13 32, support=727.0, confidence=0.9986263736263736, distance=1.0027510316368637, patternLength=2, averageDepth=3.0, executionTime=610.4646492434663, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , cost=2659189.043406593] 
+ 
+PatternMeta [pattern=12 32, support=727.0, confidence=0.9986263736263736, distance=2.0027510316368637, patternLength=2, averageDepth=3.0, executionTime=608.4481430536451, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , cost=2650405.125824176] 
+ 
+PatternMeta [pattern=32 310, support=679.0, confidence=0.9339752407152683, distance=15.846833578792342, patternLength=2, averageDepth=3.0, executionTime=623.919145802651, pattenwithMethodNames= public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , cost=2374021.790096286] 
+ 
+PatternMeta [pattern=12 13 32 310 453, support=674.0, confidence=0.9926362297496318, distance=12.928783382789318, patternLength=5, averageDepth=1.0, executionTime=640.6891691394659, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=2143223.2179675996] 
+ 
+PatternMeta [pattern=12 13 32 310 455, support=407.0, confidence=0.5994108983799705, distance=20.208845208845208, patternLength=5, averageDepth=3.0, executionTime=559.8675675675676, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=2048781.3556701029] 
+ 
+PatternMeta [pattern=275, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=2097.3804560260587, pattenwithMethodNames=public static void net.jforum.JForumExecutionContext.finish()cost=1931687.4000000001] 
+ 
+PatternMeta [pattern=12 13 32 453, support=720.0, confidence=0.9903713892709766, distance=16.10972222222222, patternLength=4, averageDepth=1.0, executionTime=630.5426388888889, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=1798477.6011004127] 
+ 
+PatternMeta [pattern=13 32 310 453, support=674.0, confidence=0.9926362297496318, distance=17.01038575667656, patternLength=4, averageDepth=1.0, executionTime=639.5789317507417, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=1711607.4156111926] 
+ 
+PatternMeta [pattern=12 32 310 453, support=674.0, confidence=0.9926362297496318, distance=17.140949554896142, patternLength=4, averageDepth=1.0, executionTime=637.700296735905, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=1706579.911634757] 
+ 
+PatternMeta [pattern=13 32 310 455, support=407.0, confidence=0.5994108983799705, distance=26.67076167076167, patternLength=4, averageDepth=3.0, executionTime=558.8022113022113, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=1635906.2297496316] 
+ 
+PatternMeta [pattern=12 32 310 455, support=407.0, confidence=0.5994108983799705, distance=26.96805896805897, patternLength=4, averageDepth=3.0, executionTime=556.9265356265356, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=1630415.1463917524] 
+ 
+PatternMeta [pattern=12 13 32 455, support=407.0, confidence=0.5598349381017882, distance=26.96805896805897, patternLength=4, averageDepth=3.0, executionTime=533.3216216216216, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=1458226.0242090786] 
+ 
+PatternMeta [pattern=189, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=747.871009771987, pattenwithMethodNames=public static java.sql.Connection net.jforum.JForumExecutionContext.getConnection(boolean)cost=1377578.4000000001] 
+ 
+PatternMeta [pattern=13 32 453, support=720.0, confidence=0.9903713892709766, distance=23.825, patternLength=3, averageDepth=1.0, executionTime=629.4106944444445, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=1346436.7427785422] 
+ 
+PatternMeta [pattern=12 32 453, support=720.0, confidence=0.9903713892709766, distance=24.601388888888888, patternLength=3, averageDepth=1.0, executionTime=627.4604166666667, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=1342264.7042640992] 
+ 
+PatternMeta [pattern=32, support=727.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=607.2848693259972, pattenwithMethodNames=public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String)cost=1324488.2999999998] 
+ 
+PatternMeta [pattern=32 310 453, support=674.0, confidence=0.9926362297496318, distance=25.142433234421365, patternLength=3, averageDepth=1.0, executionTime=636.590059347181, pattenwithMethodNames= public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=1277706.5646539028] 
+ 
+PatternMeta [pattern=504, support=134.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1870.4992537313433, pattenwithMethodNames=public static java.lang.String net.jforum.view.forum.common.ViewCommon.formatDate(java.util.Date)cost=1253234.5] 
+ 
+PatternMeta [pattern=32 310 455, support=407.0, confidence=0.5994108983799705, distance=39.729729729729726, patternLength=3, averageDepth=3.0, executionTime=555.8611793611793, pattenwithMethodNames= public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=1220472.2187039764] 
+ 
+PatternMeta [pattern=190, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=750.8762214983714, pattenwithMethodNames=public static java.sql.Connection net.jforum.JForumExecutionContext.getConnection()cost=1152595.0] 
+ 
+PatternMeta [pattern=13 32 455, support=407.0, confidence=0.5598349381017882, distance=40.368550368550366, patternLength=3, averageDepth=3.0, executionTime=532.2562653562653, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=1091484.8182943603] 
+ 
+PatternMeta [pattern=12 32 455, support=407.0, confidence=0.5598349381017882, distance=40.729729729729726, patternLength=3, averageDepth=3.0, executionTime=530.3805896805898, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=1087638.4163686384] 
+ 
+PatternMeta [pattern=445, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=835.1006535947713, pattenwithMethodNames=public void net.jforum.util.stats.Stats.onEvent(net.jforum.util.stats.StatsEvent)cost=1022163.2000000001] 
+ 
+PatternMeta [pattern=32 453, support=720.0, confidence=0.9903713892709766, distance=47.425, patternLength=2, averageDepth=1.0, executionTime=626.3284722222222, pattenwithMethodNames= public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=893228.8308115543] 
+ 
+PatternMeta [pattern=12 13 32 310 453 455, support=403.0, confidence=0.5979228486646885, distance=16.00744416873449, patternLength=6, averageDepth=1.0, executionTime=572.2831265508685, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=827394.0382789318] 
+ 
+PatternMeta [pattern=446, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=872.2392156862744, pattenwithMethodNames=public void net.jforum.util.stats.StatsEvent.record()cost=800715.5999999999] 
+ 
+PatternMeta [pattern=32 455, support=407.0, confidence=0.5598349381017882, distance=80.09582309582309, patternLength=2, averageDepth=3.0, executionTime=529.3152334152335, pattenwithMethodNames= public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=723635.8110041268] 
+ 
+PatternMeta [pattern=50, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=381.157003257329, pattenwithMethodNames=public static int net.jforum.util.preferences.SystemGlobals.getIntValue(java.lang.String)cost=702091.2] 
+ 
+PatternMeta [pattern=13 32 310 453 455, support=403.0, confidence=0.5979228486646885, distance=19.853598014888338, patternLength=5, averageDepth=1.0, executionTime=571.2330024813896, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=688229.8271513353] 
+ 
+PatternMeta [pattern=12 32 310 453 455, support=403.0, confidence=0.5979228486646885, distance=20.101736972704714, patternLength=5, averageDepth=1.0, executionTime=569.3967741935484, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=686017.5126112759] 
+ 
+PatternMeta [pattern=441, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=425.65849673202615, pattenwithMethodNames=public static net.jforum.util.stats.Stats$Data net.jforum.util.stats.Stats.getStatsFor(java.lang.String)cost=651257.5] 
+ 
+PatternMeta [pattern=12 13 32 453 455, support=403.0, confidence=0.5597222222222222, distance=20.101736972704714, patternLength=5, averageDepth=1.0, executionTime=548.6992555831266, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=618845.1208333335] 
+ 
+PatternMeta [pattern=436, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=371.17679738562094, pattenwithMethodNames=public static boolean net.jforum.util.stats.Stats.active()cost=567900.5] 
+ 
+PatternMeta [pattern=32 310 453 455, support=403.0, confidence=0.5979228486646885, distance=26.315136476426797, patternLength=4, averageDepth=1.0, executionTime=568.3466501240696, pattenwithMethodNames= public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=547801.8462908013] 
+ 
+PatternMeta [pattern=73, support=295.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=347.9084745762712, pattenwithMethodNames=public static java.lang.String net.jforum.util.preferences.SystemGlobals.getApplicationPath()cost=513165.0] 
+ 
+PatternMeta [pattern=13 32 453 455, support=403.0, confidence=0.5597222222222222, distance=26.528535980148884, patternLength=4, averageDepth=1.0, executionTime=547.6491315136476, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=494128.59888888884] 
+ 
+PatternMeta [pattern=12 32 453 455, support=403.0, confidence=0.5597222222222222, distance=26.8287841191067, patternLength=4, averageDepth=1.0, executionTime=545.8129032258064, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=492471.8211111111] 
+ 
+PatternMeta [pattern=170, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=334.2986970684039, pattenwithMethodNames=public void net.jforum.DBConnection.releaseConnection(java.sql.Connection)cost=410518.8] 
+ 
+PatternMeta [pattern=491, support=113.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=577.0787610619468, pattenwithMethodNames=public static java.util.List net.jforum.view.forum.common.ForumCommon.getAllCategoriesAndForums(boolean)cost=391259.3999999999] 
+ 
+PatternMeta [pattern=518, support=103.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=718.8184466019417, pattenwithMethodNames=public java.util.List net.jforum.dao.generic.GenericBannerDAO.selectActiveBannerByPlacement(int)cost=370191.49999999994] 
+ 
+PatternMeta [pattern=32 453 455, support=403.0, confidence=0.5597222222222222, distance=39.51861042183623, patternLength=3, averageDepth=1.0, executionTime=544.7627791563276, pattenwithMethodNames= public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=368643.24250000005] 
+ 
+PatternMeta [pattern=33, support=354.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=2.0, executionTime=496.97909604519776, pattenwithMethodNames=public static boolean net.jforum.util.preferences.SystemGlobals.getBoolValue(java.lang.String)cost=351861.2] 
+ 
+PatternMeta [pattern=395, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=224.63006535947713, pattenwithMethodNames=protected void net.jforum.dao.generic.GenericUserDAO.fillUserFromResultSet(net.jforum.entities.User, java.sql.ResultSet)cost=343684.0] 
+ 
+PatternMeta [pattern=519, support=103.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=724.5194174757282, pattenwithMethodNames=public boolean net.jforum.view.forum.common.BannerCommon.activeBannerExists(int)cost=298502.00000000006] 
+ 
+PatternMeta [pattern=424, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=222.34281045751635, pattenwithMethodNames=public static net.jforum.security.PermissionControl net.jforum.repository.SecurityRepository.load(int, boolean)cost=272147.60000000003] 
+ 
+PatternMeta [pattern=12 13 310, support=679.0, confidence=0.9326923076923077, distance=8.547864506627393, patternLength=3, averageDepth=3.0, executionTime=44.61134020618557, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , cost=254270.48365384617] 
+ 
+PatternMeta [pattern=425, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=226.29313725490195, pattenwithMethodNames=public static net.jforum.security.PermissionControl net.jforum.repository.SecurityRepository.load(int)cost=207737.09999999998] 
+ 
+PatternMeta [pattern=13 310, support=679.0, confidence=0.9326923076923077, distance=16.848306332842416, patternLength=2, averageDepth=3.0, executionTime=43.47128129602356, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , cost=165181.67307692306] 
+ 
+PatternMeta [pattern=12 310, support=679.0, confidence=0.9326923076923077, distance=17.848306332842416, patternLength=2, averageDepth=3.0, executionTime=41.56583210603829, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , cost=157941.36923076923] 
+ 
+PatternMeta [pattern=12 13 310 453, support=674.0, confidence=0.9926362297496318, distance=17.140949554896142, patternLength=4, averageDepth=1.0, executionTime=56.61602373887241, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=151512.81767304862] 
+ 
+PatternMeta [pattern=13 310 453, support=674.0, confidence=0.9926362297496318, distance=25.382789317507417, patternLength=3, averageDepth=1.0, executionTime=55.50578635014837, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=111406.2441826215] 
+ 
+PatternMeta [pattern=12 310 453, support=674.0, confidence=0.9926362297496318, distance=26.143916913946587, patternLength=3, averageDepth=1.0, executionTime=53.627151335311574, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=107635.61620029455] 
+ 
+PatternMeta [pattern=490, support=113.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=128.93097345132742, pattenwithMethodNames=public static java.util.List net.jforum.view.forum.common.ForumCommon.getAllCategoriesAndForums(net.jforum.entities.UserSession, int, java.util.Map, boolean)cost=101984.4] 
+ 
+PatternMeta [pattern=338, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=103.91176470588235, pattenwithMethodNames=public static java.lang.String net.jforum.util.I18n.getUserLanguage()cost=95391.0] 
+ 
+PatternMeta [pattern=12 13 310 455, support=407.0, confidence=0.5994108983799705, distance=26.96805896805897, patternLength=4, averageDepth=3.0, executionTime=32.32825552825553, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=94641.70603829161] 
+ 
+PatternMeta [pattern=169, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=41.64364820846906, pattenwithMethodNames=public java.sql.Connection net.jforum.HikariPooledConnection.getConnection()cost=89492.20000000001] 
+ 
+PatternMeta [pattern=310, support=679.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=40.42577319587629, pattenwithMethodNames=public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String)cost=82347.3] 
+ 
+PatternMeta [pattern=310 453, support=674.0, confidence=0.9926362297496318, distance=34.804154302670625, patternLength=2, averageDepth=1.0, executionTime=52.516913946587536, pattenwithMethodNames= public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=70271.49808541973] 
+ 
+PatternMeta [pattern=13 310 455, support=407.0, confidence=0.5994108983799705, distance=40.368550368550366, patternLength=3, averageDepth=3.0, executionTime=31.262899262899264, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=68642.13843888072] 
+ 
+PatternMeta [pattern=489, support=136.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=8.0, executionTime=62.678676470588236, pattenwithMethodNames=public static java.util.List net.jforum.repository.ForumRepository.getAllCategories(int)cost=68194.4] 
+ 
+PatternMeta [pattern=12 310 455, support=407.0, confidence=0.5994108983799705, distance=40.729729729729726, patternLength=3, averageDepth=3.0, executionTime=29.387223587223588, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=64523.82592047129] 
+ 
+PatternMeta [pattern=12 13 310 453 455, support=403.0, confidence=0.5979228486646885, distance=20.101736972704714, patternLength=5, averageDepth=1.0, executionTime=44.39677419354839, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=53489.87908011869] 
+ 
+PatternMeta [pattern=526, support=147.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=56.80612244897959, pattenwithMethodNames=public static net.jforum.entities.Forum net.jforum.repository.ForumRepository.getForum(int)cost=50103.0] 
+ 
+PatternMeta [pattern=12 13 453, support=720.0, confidence=0.989010989010989, distance=24.601388888888888, patternLength=3, averageDepth=1.0, executionTime=22.308194444444446, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=47656.186813186825] 
+ 
+PatternMeta [pattern=332, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=35.8, pattenwithMethodNames=public static net.jforum.entities.UserSession net.jforum.SessionFacade.getUserSession()cost=43819.2] 
+ 
+PatternMeta [pattern=13 310 453 455, support=403.0, confidence=0.5979228486646885, distance=26.528535980148884, patternLength=4, averageDepth=1.0, executionTime=43.34665012406948, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=41779.73946587537] 
+ 
+PatternMeta [pattern=310 455, support=407.0, confidence=0.5994108983799705, distance=55.77149877149877, patternLength=2, averageDepth=3.0, executionTime=28.32186732186732, pattenwithMethodNames= public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=41456.45655375552] 
+ 
+PatternMeta [pattern=12 310 453 455, support=403.0, confidence=0.5979228486646885, distance=26.8287841191067, patternLength=4, averageDepth=1.0, executionTime=41.51042183622828, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=40009.88783382789] 
+ 
+PatternMeta [pattern=340, support=283.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=33.649116607773855, pattenwithMethodNames=public static java.lang.String net.jforum.util.I18n.getMessage(java.lang.String)cost=38090.8] 
+ 
+PatternMeta [pattern=469, support=305.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=30.622295081967213, pattenwithMethodNames=public static boolean net.jforum.repository.BanlistRepository.shouldBan(net.jforum.entities.Banlist)cost=37359.2] 
+ 
+PatternMeta [pattern=487, support=163.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=10.0, executionTime=22.499386503067488, pattenwithMethodNames=public static boolean net.jforum.repository.ForumRepository.isCategoryAccessible(net.jforum.security.PermissionControl, int)cost=36674.00000000001] 
+ 
+PatternMeta [pattern=486, support=164.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=11.0, executionTime=19.88109756097561, pattenwithMethodNames=public boolean net.jforum.security.PermissionControl.canAccess(java.lang.String, java.lang.String)cost=35865.5] 
+ 
+PatternMeta [pattern=444, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=22.528431372549022, pattenwithMethodNames=void net.jforum.util.stats.Stats$Data.record(java.lang.Object)cost=34468.50000000001] 
+ 
+PatternMeta [pattern=521, support=139.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=40.415827338129496, pattenwithMethodNames=public java.util.Collection net.jforum.entities.Category.getForums()cost=33706.8] 
+ 
+PatternMeta [pattern=488, support=136.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=9.0, executionTime=26.631617647058825, pattenwithMethodNames=public static net.jforum.entities.Category net.jforum.repository.ForumRepository.getCategory(net.jforum.security.PermissionControl, int)cost=32597.100000000002] 
+ 
+PatternMeta [pattern=523, support=150.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=29.076, pattenwithMethodNames=public static boolean net.jforum.repository.ForumRepository.isCategoryAccessible(int)cost=30529.8] 
+ 
+PatternMeta [pattern=13 453, support=720.0, confidence=0.989010989010989, distance=48.42638888888889, patternLength=2, averageDepth=1.0, executionTime=21.17625, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=30158.7032967033] 
+ 
+PatternMeta [pattern=310 453 455, support=403.0, confidence=0.5979228486646885, distance=27.674937965260547, patternLength=3, averageDepth=1.0, executionTime=40.46029776674938, pattenwithMethodNames= public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=29248.29302670623] 
+ 
+PatternMeta [pattern=516, support=262.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=21.58969465648855, pattenwithMethodNames=public java.lang.String net.jforum.context.JForumContext.encodeURL(java.lang.String, java.lang.String)cost=28282.5] 
+ 
+PatternMeta [pattern=468, support=305.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=18.31770491803279, pattenwithMethodNames=public boolean net.jforum.entities.Banlist.matches(net.jforum.entities.Banlist)cost=27934.500000000004] 
+ 
+PatternMeta [pattern=520, support=139.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=28.391366906474822, pattenwithMethodNames=public java.util.Collection net.jforum.entities.Category.getForums(int)cost=27624.800000000003] 
+ 
+PatternMeta [pattern=12 453, support=720.0, confidence=0.989010989010989, distance=49.42638888888889, patternLength=2, averageDepth=1.0, executionTime=19.22597222222222, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , cost=27381.164835164836] 
+ 
+PatternMeta [pattern=201, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=17.4814332247557, pattenwithMethodNames=public static void net.jforum.util.DbUtils.close(java.sql.ResultSet, java.sql.Statement)cost=26834.0] 
+ 
+PatternMeta [pattern=12 13, support=728.0, confidence=1.0, distance=1.0, patternLength=2, averageDepth=4.0, executionTime=4.557967032967032, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , cost=26545.599999999995] 
+ 
+PatternMeta [pattern=480, support=138.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=27.428985507246377, pattenwithMethodNames=public static java.util.Map net.jforum.SessionFacade.getTopicsReadTime()cost=26496.4] 
+ 
+PatternMeta [pattern=517, support=262.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=23.93206106870229, pattenwithMethodNames=public java.lang.String net.jforum.context.JForumContext.encodeURL(java.lang.String)cost=25080.8] 
+ 
+PatternMeta [pattern=305, support=350.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=1.0, executionTime=71.38314285714286, pattenwithMethodNames=public static java.lang.String net.jforum.util.legacy.clickstream.BotChecker.isBot(javax.servlet.http.HttpServletRequest)cost=24984.1] 
+ 
+PatternMeta [pattern=429, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=14.930392156862744, pattenwithMethodNames=public static boolean net.jforum.repository.SecurityRepository.canAccess(java.lang.String, java.lang.String)cost=22843.5] 
+ 
+PatternMeta [pattern=515, support=262.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=14.170992366412214, pattenwithMethodNames=public java.lang.String net.jforum.context.web.WebResponseContext.encodeURL(java.lang.String)cost=22276.8] 
+ 
+PatternMeta [pattern=430, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=17.298692810457517, pattenwithMethodNames=public static boolean net.jforum.repository.SecurityRepository.canAccess(java.lang.String)cost=21173.600000000002] 
+ 
+PatternMeta [pattern=522, support=150.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=8.0, executionTime=17.231333333333332, pattenwithMethodNames=public static boolean net.jforum.repository.ForumRepository.isCategoryAccessible(int, int)cost=20677.6] 
+ 
+PatternMeta [pattern=12 13 453 455, support=403.0, confidence=0.5597222222222222, distance=26.8287841191067, patternLength=4, averageDepth=1.0, executionTime=20.81290322580645, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=18778.904444444444] 
+ 
+PatternMeta [pattern=485, support=164.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=12.0, executionTime=8.53719512195122, pattenwithMethodNames=public boolean net.jforum.security.RoleValueCollection.contains(java.lang.Object)cost=16801.2] 
+ 
+PatternMeta [pattern=12 13 455, support=407.0, confidence=0.5590659340659341, distance=40.729729729729726, patternLength=3, averageDepth=4.0, executionTime=5.782309582309582, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=15788.469230769231] 
+ 
+PatternMeta [pattern=200, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=8.560260586319218, pattenwithMethodNames=public static void net.jforum.util.DbUtils.close(java.sql.Statement)cost=15768.0] 
+ 
+PatternMeta [pattern=525, support=147.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=14.815646258503401, pattenwithMethodNames=public net.jforum.entities.Forum net.jforum.entities.Category.getForum(int)cost=15245.3] 
+ 
+PatternMeta [pattern=303, support=350.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=2.0, executionTime=20.454285714285714, pattenwithMethodNames=public net.jforum.util.legacy.clickstream.config.ClickstreamConfig net.jforum.util.legacy.clickstream.config.ConfigLoader.getConfig()cost=14318.0] 
+ 
+PatternMeta [pattern=511, support=293.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=11.693856655290103, pattenwithMethodNames=public void net.jforum.context.web.WebResponseContext.setContentType(java.lang.String)cost=13705.2] 
+ 
+PatternMeta [pattern=453, support=740.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=1.0, executionTime=18.117702702702704, pattenwithMethodNames=public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String)cost=13407.100000000002] 
+ 
+PatternMeta [pattern=13 453 455, support=403.0, confidence=0.5597222222222222, distance=40.15384615384615, patternLength=3, averageDepth=1.0, executionTime=19.762779156327543, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=13373.555] 
+ 
+PatternMeta [pattern=590, support=198.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=16.66212121212121, pattenwithMethodNames=public boolean net.jforum.entities.UserSession.isAdmin()cost=13196.399999999998] 
+ 
+PatternMeta [pattern=327, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=8.42875816993464, pattenwithMethodNames=public static net.jforum.context.RequestContext net.jforum.JForumExecutionContext.getRequest()cost=12896.0] 
+ 
+PatternMeta [pattern=12 453 455, support=403.0, confidence=0.5597222222222222, distance=40.51861042183623, patternLength=3, averageDepth=1.0, executionTime=17.926550868486352, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=12130.971666666666] 
+ 
+PatternMeta [pattern=464, support=305.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=6.488524590163935, pattenwithMethodNames=private boolean net.jforum.entities.Banlist.matchesUserId(net.jforum.entities.Banlist)cost=11874.0] 
+ 
+PatternMeta [pattern=181, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=2.0, executionTime=19.320521172638436, pattenwithMethodNames=public static net.jforum.JForumExecutionContext net.jforum.JForumExecutionContext.get()cost=11862.8] 
+ 
+PatternMeta [pattern=589, support=198.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=11.867171717171717, pattenwithMethodNames=public static boolean net.jforum.repository.SecurityRepository.canAccess(int, java.lang.String)cost=11748.5] 
+ 
+PatternMeta [pattern=428, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=6.381372549019607, pattenwithMethodNames=public static boolean net.jforum.repository.SecurityRepository.canAccess(int, java.lang.String, java.lang.String)cost=11716.199999999999] 
+ 
+PatternMeta [pattern=361, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=12.377124183006536, pattenwithMethodNames=public static boolean net.jforum.SessionFacade.isLogged()cost=11362.2] 
+ 
+PatternMeta [pattern=360, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=8.301960784313726, pattenwithMethodNames=public static java.lang.Object net.jforum.SessionFacade.getAttribute(java.lang.String)cost=10161.6] 
+ 
+PatternMeta [pattern=524, support=156.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=8.0, executionTime=7.751923076923077, pattenwithMethodNames=public net.jforum.entities.Forum net.jforum.entities.Category.getForum(int, int)cost=9674.400000000001] 
+ 
+PatternMeta [pattern=13, support=728.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=3.3061813186813187, pattenwithMethodNames=public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String)cost=9627.6] 
+ 
+PatternMeta [pattern=199, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=5.005537459283388, pattenwithMethodNames=public static void net.jforum.util.DbUtils.close(java.sql.ResultSet)cost=9220.2] 
+ 
+PatternMeta [pattern=512, support=293.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=7.840273037542662, pattenwithMethodNames=public void net.jforum.context.web.WebResponseContext.setHeader(java.lang.String, java.lang.String)cost=9188.8] 
+ 
+PatternMeta [pattern=13 455, support=407.0, confidence=0.5590659340659341, distance=81.0982800982801, patternLength=2, averageDepth=4.0, executionTime=4.716953316953317, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=8586.358241758242] 
+ 
+PatternMeta [pattern=453 455, support=403.0, confidence=0.5445945945945946, distance=1.0, patternLength=2, averageDepth=1.0, executionTime=16.876426799007444, pattenwithMethodNames= public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=7407.793513513513] 
+ 
+PatternMeta [pattern=513, support=293.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=6.093856655290102, pattenwithMethodNames=public javax.servlet.ServletOutputStream net.jforum.context.web.WebResponseContext.getOutputStream()cost=7141.999999999999] 
+ 
+PatternMeta [pattern=476, support=289.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=3.1352941176470592, pattenwithMethodNames=public static java.lang.String net.jforum.repository.Tpl.name(java.lang.String)cost=6342.700000000001] 
+ 
+PatternMeta [pattern=484, support=164.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=13.0, executionTime=2.9115853658536586, pattenwithMethodNames=public boolean net.jforum.security.RoleValue.equals(java.lang.Object)cost=6207.5] 
+ 
+PatternMeta [pattern=331, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=3.727777777777778, pattenwithMethodNames=public static net.jforum.entities.UserSession net.jforum.SessionFacade.getUserSession(java.lang.String)cost=5703.5] 
+ 
+PatternMeta [pattern=466, support=305.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=3.097377049180328, pattenwithMethodNames=private boolean net.jforum.entities.Banlist.matchesEmail(net.jforum.entities.Banlist)cost=5668.200000000001] 
+ 
+PatternMeta [pattern=12 455, support=407.0, confidence=0.5590659340659341, distance=82.0982800982801, patternLength=2, averageDepth=4.0, executionTime=2.841277641277641, pattenwithMethodNames= public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String) , public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String) , cost=5172.030769230769] 
+ 
+PatternMeta [pattern=12, support=728.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.2517857142857143, pattenwithMethodNames=public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String)cost=4556.5] 
+ 
+PatternMeta [pattern=265, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=3.607843137254902, pattenwithMethodNames=private static java.util.Map net.jforum.repository.BanlistRepository.banlist()cost=4416.0] 
+ 
+PatternMeta [pattern=460, support=300.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=3.5806666666666667, pattenwithMethodNames=public void net.jforum.entities.UserSession.updateSessionTime()cost=4296.8] 
+ 
+PatternMeta [pattern=427, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=1.7915032679738563, pattenwithMethodNames=public boolean net.jforum.security.PermissionControl.canAccess(java.lang.String)cost=3837.4] 
+ 
+PatternMeta [pattern=274, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=2.8726384364820845, pattenwithMethodNames=public static boolean net.jforum.JForumExecutionContext.shouldRollback()cost=3527.6] 
+ 
+PatternMeta [pattern=461, support=305.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=3.494754098360656, pattenwithMethodNames=public static java.lang.String net.jforum.repository.ModulesRepository.getModuleClass(java.lang.String)cost=3197.7000000000003] 
+ 
+PatternMeta [pattern=455, support=407.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=1.775921375921376, pattenwithMethodNames=public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String)cost=2891.2000000000003] 
+ 
+PatternMeta [pattern=339, support=283.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.8664310954063603, pattenwithMethodNames=public static java.lang.String net.jforum.util.I18n.getMessage(java.lang.String, java.lang.String)cost=2641.0] 
+ 
+PatternMeta [pattern=482, support=165.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=12.0, executionTime=1.2406060606060605, pattenwithMethodNames=public net.jforum.security.Role net.jforum.security.RoleCollection.get(java.lang.String)cost=2456.3999999999996] 
+ 
+PatternMeta [pattern=359, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.5588235294117647, pattenwithMethodNames=public java.lang.Object net.jforum.context.web.WebSessionContext.getAttribute(java.lang.String)cost=2385.0] 
+ 
+PatternMeta [pattern=426, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.522549019607843, pattenwithMethodNames=public static net.jforum.security.PermissionControl net.jforum.repository.SecurityRepository.get(int)cost=2329.5] 
+ 
+PatternMeta [pattern=414, support=167.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=13.0, executionTime=1.0431137724550898, pattenwithMethodNames=public int net.jforum.security.RoleValue.hashCode()cost=2264.6] 
+ 
+PatternMeta [pattern=188, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.4661237785016288, pattenwithMethodNames=public java.lang.Object net.jforum.cache.DefaultCacheEngine.get(java.lang.String, java.lang.String)cost=2250.5] 
+ 
+PatternMeta [pattern=362, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=1.1915032679738562, pattenwithMethodNames=public void net.jforum.entities.User.setAvatar(java.lang.String)cost=2187.6] 
+ 
+PatternMeta [pattern=191, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.4013029315960912, pattenwithMethodNames=public static java.lang.String net.jforum.util.preferences.SystemGlobals.getSql(java.lang.String)cost=2151.0] 
+ 
+PatternMeta [pattern=448, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.3647058823529412, pattenwithMethodNames=public static java.lang.String net.jforum.JForumExecutionContext.getRedirectTo()cost=2088.0] 
+ 
+PatternMeta [pattern=443, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=1.1251633986928105, pattenwithMethodNames=protected boolean net.jforum.util.BoundedLinkedHashMap.removeEldestEntry(java.util.Map$Entry)cost=2065.8] 
+ 
+PatternMeta [pattern=508, support=294.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.1846938775510205, pattenwithMethodNames=public static freemarker.template.Configuration net.jforum.JForumExecutionContext.getTemplateConfig()cost=1741.5000000000002] 
+ 
+PatternMeta [pattern=182, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.9205211726384365, pattenwithMethodNames=public void net.jforum.JForumExecutionContext.setConnection(java.sql.Connection)cost=1695.6] 
+ 
+PatternMeta [pattern=507, support=305.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.0908196721311476, pattenwithMethodNames=public static boolean net.jforum.JForumExecutionContext.isCustomContent()cost=1663.5] 
+ 
+PatternMeta [pattern=398, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.0836601307189542, pattenwithMethodNames=public void net.jforum.entities.Group.setName(java.lang.String)cost=1657.9999999999998] 
+ 
+PatternMeta [pattern=456, support=289.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.1346020761245674, pattenwithMethodNames=public int net.jforum.UrlPattern.getSize()cost=1639.5] 
+ 
+PatternMeta [pattern=318, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=1.3, pattenwithMethodNames=public boolean net.jforum.DBConnection.isDatabaseUp()cost=1591.2] 
+ 
+PatternMeta [pattern=412, support=167.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=12.0, executionTime=0.7868263473053893, pattenwithMethodNames=public net.jforum.security.RoleValueCollection net.jforum.security.Role.getValues()cost=1576.8] 
+ 
+PatternMeta [pattern=437, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=1.0287581699346406, pattenwithMethodNames=public java.lang.String net.jforum.util.stats.StatsEvent.getTag()cost=1574.0000000000002] 
+ 
+PatternMeta [pattern=364, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.838562091503268, pattenwithMethodNames=public void net.jforum.entities.User.setPrivateMessagesEnabled(boolean)cost=1539.6000000000001] 
+ 
+PatternMeta [pattern=363, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.8104575163398693, pattenwithMethodNames=public void net.jforum.entities.User.setRankId(int)cost=1488.0] 
+ 
+PatternMeta [pattern=463, support=305.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=0.6760655737704918, pattenwithMethodNames=public int net.jforum.entities.Banlist.getUserId()cost=1443.4] 
+ 
+PatternMeta [pattern=483, support=165.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=14.0, executionTime=0.6248484848484849, pattenwithMethodNames=public java.lang.String net.jforum.security.RoleValue.getValue()cost=1443.4] 
+ 
+PatternMeta [pattern=337, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=1.1294117647058823, pattenwithMethodNames=public static boolean net.jforum.util.I18n.languageExists(java.lang.String)cost=1382.4] 
+ 
+PatternMeta [pattern=387, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.7444444444444445, pattenwithMethodNames=public int net.jforum.entities.User.getId()cost=1366.8] 
+ 
+PatternMeta [pattern=431, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=1.1062091503267975, pattenwithMethodNames=public static net.jforum.util.I18n net.jforum.util.I18n.getInstance()cost=1354.0] 
+ 
+PatternMeta [pattern=432, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=0.8496732026143791, pattenwithMethodNames=public net.jforum.dao.BannerDAO net.jforum.dao.generic.GenericDataAccessDriver.newBannerDAO()cost=1300.0] 
+ 
+PatternMeta [pattern=325, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.6973856209150326, pattenwithMethodNames=public static net.jforum.context.ForumContext net.jforum.JForumExecutionContext.getForumContext()cost=1280.3999999999999] 
+ 
+PatternMeta [pattern=204, support=168.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=8.0, executionTime=0.9470238095238095, pattenwithMethodNames=public int net.jforum.entities.Category.getId()cost=1272.8] 
+ 
+PatternMeta [pattern=514, support=274.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=0.8788321167883212, pattenwithMethodNames=public boolean net.jforum.context.JForumContext.isEncodingDisabled()cost=1204.0] 
+ 
+PatternMeta [pattern=510, support=293.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=1.0122866894197953, pattenwithMethodNames=public static java.lang.String net.jforum.JForumExecutionContext.getContentType()cost=1186.4] 
+ 
+PatternMeta [pattern=391, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.6202614379084967, pattenwithMethodNames=public void net.jforum.entities.User.setDeleted(int)cost=1138.8] 
+ 
+PatternMeta [pattern=330, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=0.6983660130718954, pattenwithMethodNames=public java.lang.String net.jforum.context.web.WebSessionContext.getId()cost=1068.5] 
+ 
+PatternMeta [pattern=218, support=159.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=0.9276729559748428, pattenwithMethodNames=public int net.jforum.entities.Forum.getId()cost=1032.5] 
+ 
+PatternMeta [pattern=354, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=1.1186274509803922, pattenwithMethodNames=public int net.jforum.entities.UserSession.getUserId()cost=1026.9] 
+ 
+PatternMeta [pattern=365, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.5591503267973856, pattenwithMethodNames=public void net.jforum.entities.User.setNotifyOnMessagesEnabled(boolean)cost=1026.6] 
+ 
+PatternMeta [pattern=183, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=2.0, executionTime=1.660586319218241, pattenwithMethodNames=public static void net.jforum.JForumExecutionContext.set(net.jforum.JForumExecutionContext)cost=1019.6] 
+ 
+PatternMeta [pattern=399, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=0.6591503267973857, pattenwithMethodNames=public void net.jforum.entities.Group.setId(int)cost=1008.5000000000001] 
+ 
+PatternMeta [pattern=400, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=0.6323529411764706, pattenwithMethodNames=public java.util.List net.jforum.entities.User.getGroupsList()cost=967.5] 
+ 
+PatternMeta [pattern=232, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.5136807817589577, pattenwithMethodNames=public void net.jforum.entities.User.setId(int)cost=946.2] 
+ 
+PatternMeta [pattern=261, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=1.0042483660130719, pattenwithMethodNames=public void net.jforum.entities.Banlist.setUserId(int)cost=921.9] 
+ 
+PatternMeta [pattern=326, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.49379084967320264, pattenwithMethodNames=public net.jforum.context.RequestContext net.jforum.context.JForumContext.getRequest()cost=906.6] 
+ 
+PatternMeta [pattern=323, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=0.9620915032679739, pattenwithMethodNames=public static freemarker.template.SimpleHash net.jforum.JForumExecutionContext.getTemplateContext()cost=883.2] 
+ 
+PatternMeta [pattern=184, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=0.6628664495114007, pattenwithMethodNames=public static net.jforum.dao.DataAccessDriver net.jforum.dao.DataAccessDriver.getInstance()cost=814.0000000000001] 
+ 
+PatternMeta [pattern=231, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.4377551020408163, pattenwithMethodNames=public void net.jforum.entities.User.setUsername(java.lang.String)cost=806.3448979591836] 
+ 
+PatternMeta [pattern=367, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.43888888888888894, pattenwithMethodNames=public void net.jforum.entities.User.setViewEmailEnabled(boolean)cost=805.8000000000001] 
+ 
+PatternMeta [pattern=229, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=0.6358306188925081, pattenwithMethodNames=public net.jforum.dao.UserDAO net.jforum.dao.generic.GenericDataAccessDriver.newUserDAO()cost=780.8] 
+ 
+PatternMeta [pattern=386, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.42091503267973857, pattenwithMethodNames=public void net.jforum.entities.User.setActive(int)cost=772.8] 
+ 
+PatternMeta [pattern=366, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.4049019607843137, pattenwithMethodNames=public void net.jforum.entities.User.setPassword(java.lang.String)cost=743.3999999999999] 
+ 
+PatternMeta [pattern=377, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.38562091503267976, pattenwithMethodNames=public void net.jforum.entities.User.setLastVisit(java.util.Date)cost=708.0] 
+ 
+PatternMeta [pattern=370, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.37026143790849675, pattenwithMethodNames=public void net.jforum.entities.User.setHtmlEnabled(boolean)cost=679.8000000000001] 
+ 
+PatternMeta [pattern=376, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.3591503267973856, pattenwithMethodNames=public void net.jforum.entities.User.setBiography(java.lang.String)cost=659.4] 
+ 
+PatternMeta [pattern=471, support=305.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=0.5350819672131149, pattenwithMethodNames=public java.lang.String net.jforum.entities.UserSession.getLang()cost=652.8000000000001] 
+ 
+PatternMeta [pattern=368, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.35065359477124186, pattenwithMethodNames=public void net.jforum.entities.User.setAvatarEnabled(boolean)cost=643.8000000000001] 
+ 
+PatternMeta [pattern=374, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.3494983277591973, pattenwithMethodNames=public void net.jforum.entities.User.setTwitter(java.lang.String)cost=641.6789297658863] 
+ 
+PatternMeta [pattern=369, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.34836601307189546, pattenwithMethodNames=public void net.jforum.entities.User.setBbCodeEnabled(boolean)cost=639.6] 
+ 
+PatternMeta [pattern=390, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.3411764705882353, pattenwithMethodNames=public void net.jforum.entities.User.setNotifyPrivateMessagesEnabled(boolean)cost=626.4] 
+ 
+PatternMeta [pattern=379, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.3395424836601307, pattenwithMethodNames=public void net.jforum.entities.User.setTotalPosts(int)cost=623.4] 
+ 
+PatternMeta [pattern=372, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.33543046357615897, pattenwithMethodNames=public void net.jforum.entities.User.setEmail(java.lang.String)cost=615.8503311258279] 
+ 
+PatternMeta [pattern=467, support=305.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.33613138686131383, pattenwithMethodNames=public java.lang.String net.jforum.entities.Banlist.getIp()cost=615.1204379562043] 
+ 
+PatternMeta [pattern=384, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.3277777777777778, pattenwithMethodNames=public void net.jforum.entities.User.setAttachSignatureEnabled(boolean)cost=601.8] 
+ 
+PatternMeta [pattern=295, support=350.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=2.0, executionTime=0.8517142857142856, pattenwithMethodNames=public static net.jforum.util.legacy.clickstream.config.ConfigLoader net.jforum.util.legacy.clickstream.config.ConfigLoader.getInstance()cost=596.1999999999999] 
+ 
+PatternMeta [pattern=381, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.3127450980392157, pattenwithMethodNames=public void net.jforum.entities.User.setSignature(java.lang.String)cost=574.2] 
+ 
+PatternMeta [pattern=465, support=305.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=0.2622073578595318, pattenwithMethodNames=public java.lang.String net.jforum.entities.Banlist.getEmail()cost=559.8127090301005] 
+ 
+PatternMeta [pattern=373, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.3019736842105263, pattenwithMethodNames=public void net.jforum.entities.User.setFrom(java.lang.String)cost=554.4236842105263] 
+ 
+PatternMeta [pattern=462, support=305.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=0.440655737704918, pattenwithMethodNames=public java.lang.String net.jforum.entities.User.getEmail()cost=537.5999999999999] 
+ 
+PatternMeta [pattern=322, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=0.580718954248366, pattenwithMethodNames=public void net.jforum.JForumExecutionContext.setForumContext(net.jforum.context.ForumContext)cost=533.0999999999999] 
+ 
+PatternMeta [pattern=168, support=307.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=0.5664495114006515, pattenwithMethodNames=public static net.jforum.DBConnection net.jforum.DBConnection.getImplementation()cost=521.7] 
+ 
+PatternMeta [pattern=371, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.2733333333333333, pattenwithMethodNames=public void net.jforum.entities.User.setSmiliesEnabled(boolean)cost=501.84] 
+ 
+PatternMeta [pattern=380, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.26960784313725494, pattenwithMethodNames=public void net.jforum.entities.User.setRegistrationDate(java.util.Date)cost=495.00000000000006] 
+ 
+PatternMeta [pattern=378, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.2588235294117647, pattenwithMethodNames=public void net.jforum.entities.User.setOccupation(java.lang.String)cost=475.19999999999993] 
+ 
+PatternMeta [pattern=385, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.256401384083045, pattenwithMethodNames=public void net.jforum.entities.User.setSkype(java.lang.String)cost=470.75294117647064] 
+ 
+PatternMeta [pattern=389, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.25555555555555554, pattenwithMethodNames=public void net.jforum.entities.User.setKarma(net.jforum.entities.KarmaStatus)cost=469.2] 
+ 
+PatternMeta [pattern=223, support=109.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=8.0, executionTime=0.5348623853211009, pattenwithMethodNames=public int net.jforum.entities.Forum.getCategoryId()cost=466.4] 
+ 
+PatternMeta [pattern=393, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.24655737704918032, pattenwithMethodNames=public void net.jforum.entities.User.setNotifyText(boolean)cost=452.67934426229505] 
+ 
+PatternMeta [pattern=442, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=0.288562091503268, pattenwithMethodNames=public java.lang.Object net.jforum.util.stats.StatsEvent.getData()cost=441.50000000000006] 
+ 
+PatternMeta [pattern=392, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.24, pattenwithMethodNames=public void net.jforum.entities.User.setNotifyAlways(boolean)cost=440.64] 
+ 
+PatternMeta [pattern=587, support=152.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=0.7236842105263158, pattenwithMethodNames=public java.lang.String net.jforum.entities.User.getUsername()cost=440.0] 
+ 
+PatternMeta [pattern=481, support=141.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=7.0, executionTime=0.4340425531914894, pattenwithMethodNames=public java.util.Date net.jforum.entities.UserSession.getLastVisit()cost=428.40000000000003] 
+ 
+PatternMeta [pattern=375, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.2326797385620915, pattenwithMethodNames=public void net.jforum.entities.User.setInterests(java.lang.String)cost=427.2] 
+ 
+PatternMeta [pattern=396, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=0.27540983606557373, pattenwithMethodNames=public void net.jforum.entities.User.setPrivateMessagesCount(int)cost=421.3770491803278] 
+ 
+PatternMeta [pattern=383, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.21643835616438356, pattenwithMethodNames=public void net.jforum.entities.User.setLang(java.lang.String)cost=397.3808219178082] 
+ 
+PatternMeta [pattern=382, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.212, pattenwithMethodNames=public void net.jforum.entities.User.setWebSite(java.lang.String)cost=389.23199999999997] 
+ 
+PatternMeta [pattern=225, support=152.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=0.478, pattenwithMethodNames=public java.lang.String net.jforum.entities.Forum.getName()cost=363.28] 
+ 
+PatternMeta [pattern=394, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=6.0, executionTime=0.17326388888888888, pattenwithMethodNames=public void net.jforum.entities.User.setActivationKey(java.lang.String)cost=318.1125] 
+ 
+PatternMeta [pattern=262, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=0.34444444444444444, pattenwithMethodNames=public void net.jforum.entities.Banlist.setEmail(java.lang.String)cost=316.2] 
+ 
+PatternMeta [pattern=206, support=122.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=5.0, executionTime=0.47704918032786886, pattenwithMethodNames=public java.lang.String net.jforum.entities.Category.getName()cost=291.0] 
+ 
+PatternMeta [pattern=588, support=108.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=4.0, executionTime=0.44537037037037036, pattenwithMethodNames=public java.lang.String net.jforum.entities.UserSession.getUsername()cost=192.4] 
+ 
+PatternMeta [pattern=263, support=306.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=3.0, executionTime=0.20164473684210527, pattenwithMethodNames=public void net.jforum.entities.Banlist.setIp(java.lang.String)cost=185.10986842105262] 
+ 
+PatternMeta [pattern=452, support=350.0, confidence=1.0, distance=1.0, patternLength=1, averageDepth=0.0, executionTime=43525.18914285714, pattenwithMethodNames=public void net.jforum.util.legacy.clickstream.ClickstreamFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain)cost=0.0] 
+ 
+

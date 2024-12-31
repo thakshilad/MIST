@@ -1,0 +1,1141 @@
+ Method : public static java.util.List net.jforum.view.install.ParseDBDumpFile.parse(java.lang.String)ID : 291
+ Method : public static int net.jforum.SessionFacade.anonymousSize()ID : 541
+ Method : public net.jforum.ControllerUtils.<init>()ID : 412
+ Method : public static net.jforum.context.ResponseContext net.jforum.JForumExecutionContext.getResponse()ID : 792
+ Method : public net.jforum.dao.MailIntegrationDAO net.jforum.dao.generic.GenericDataAccessDriver.newMailIntegrationDAO()ID : 1081
+ Method : public static java.util.List net.jforum.repository.TopicRepository.getRecentTopics(int, int)ID : 883
+ Method : private void net.jforum.view.forum.BookmarkAction.addTopic()ID : 1003
+ Method : public static void net.jforum.util.SafeHtml.updateConfiguration()ID : 638
+ Method : public int net.jforum.search.SearchArgs.startFrom()ID : 697
+ Method : public net.jforum.dao.generic.GenericMailIntegrationDAO.<init>()ID : 133
+ Method : public void net.jforum.csrf.CsrfLogger.log(org.owasp.csrfguard.log.LogLevel, java.lang.String)ID : 180
+ Method : private static void net.jforum.dao.generic.GenericUserDAO.setLoginAuthenticator()ID : 116
+ Method : public net.jforum.entities.Category.<init>()ID : 324
+ Method : public void net.jforum.entities.Forum.setName(java.lang.String)ID : 342
+ Method : public boolean net.jforum.entities.User.isViewEmailEnabled()ID : 834
+ Method : private java.util.List net.jforum.view.forum.HottestTopicsAction.topics()ID : 657
+ Method : public static void net.jforum.util.preferences.SystemGlobals.initGlobals(java.lang.String, java.lang.String)ID : 20
+ Method : public net.jforum.search.PorterStandardAnalyzer.<init>()ID : 393
+ Method : private java.sql.PreparedStatement net.jforum.dao.generic.GenericSpamDAO.preparedStatementFromSqlKey(java.lang.String)ID : 1138
+ Method : public net.jforum.view.forum.common.BannerCommon.<init>()ID : 498
+ Method : private void net.jforum.view.forum.UserAction.insert(boolean)ID : 778
+ Method : public static void net.jforum.repository.ModulesRepository.init(java.lang.String)ID : 79
+ Method : public net.jforum.entities.Topic.<init>()ID : 574
+ Method : private boolean net.jforum.view.forum.PostAction.isForumReadonly(int, boolean)ID : 1032
+ Method : public int net.jforum.util.CategoryOrderComparator.compare(net.jforum.entities.Category, net.jforum.entities.Category)ID : 337
+ Method : private net.jforum.entities.Smilie net.jforum.dao.generic.GenericSmilieDAO.getSmilie(java.sql.ResultSet)ID : 378
+ Method : public void net.jforum.context.web.WebResponseContext.addCookie(javax.servlet.http.Cookie)ID : 857
+ Method : public java.lang.String net.jforum.search.SearchArgs.rawKeywords()ID : 694
+ Method : public java.lang.String net.jforum.csrf.CsrfHttpServletRequestWrapper.getHeader(java.lang.String)ID : 273
+ Method : public static void net.jforum.util.DbUtils.close(java.sql.Statement)ID : 287
+ Method : private static boolean net.jforum.util.SafeHtml.isHrefValid(java.lang.String)ID : 972
+ Method : public void net.jforum.util.Captcha.writeCaptchaImage()ID : 793
+ Method : public static void net.jforum.util.stats.Stats.init()ID : 24
+ Method : public void net.jforum.util.GroupNode.setName(java.lang.String)ID : 1071
+ Method : public static boolean net.jforum.util.stats.Stats.active()ID : 509
+ Method : public void net.jforum.entities.Topic.setHasAttach(boolean)ID : 592
+ Method : public long net.jforum.entities.LastPostInfo.getPostTimeMillis()ID : 611
+ Method : public net.jforum.DBConnection.<init>()ID : 172
+ Method : public net.jforum.dao.generic.GenericBookmarkDAO.<init>()ID : 125
+ Method : public void net.jforum.util.bbcode.BBCode.setRegex(java.lang.String)ID : 159
+ Method : public java.util.Collection net.jforum.cache.DefaultCacheEngine.getValues(java.lang.String)ID : 544
+ Method : public static void net.jforum.summary.SummaryScheduler.startJob()ID : 150
+ Method : net.jforum.util.stats.Stats$Data.<init>(net.jforum.util.stats.Stats$Data)ID : 513
+ Method : public void net.jforum.entities.Topic.setMovedId(int)ID : 588
+ Method : public boolean net.jforum.dao.generic.GenericForumDAO.isUserSubscribed(int, int)ID : 743
+ Method : protected net.jforum.entities.Category net.jforum.dao.generic.GenericCategoryDAO.getCategory(java.sql.ResultSet)ID : 329
+ Method : public void net.jforum.entities.User.setPassword(java.lang.String)ID : 432
+ Method : public net.jforum.dao.MySQLVersionWorkarounder.<init>()ID : 310
+ Method : public net.jforum.entities.KarmaStatus.<init>()ID : 942
+ Method : private boolean net.jforum.view.forum.UserAction.canEdit()ID : 758
+ Method : public static void net.jforum.util.DbUtils.close(java.sql.ResultSet, java.sql.Statement)ID : 331
+ Method : public boolean net.jforum.security.RoleValueCollection.add(java.lang.Object)ID : 481
+ Method : public java.util.List net.jforum.dao.generic.GenericTopicDAO.selectRecentTopics(int)ID : 881
+ Method : private static java.util.Map net.jforum.repository.BanlistRepository.banlist()ID : 505
+ Method : public boolean net.jforum.entities.Post.isBbCodeEnabled()ID : 953
+ Method : public void net.jforum.util.FileMonitor$MyFileAlterationListenerAdaptor.onFileChange(java.io.File)ID : 288
+ Method : public java.lang.String net.jforum.entities.User.getSignature()ID : 833
+ Method : public net.jforum.dao.GroupDAO net.jforum.dao.generic.GenericDataAccessDriver.newGroupDAO()ID : 385
+ Method : public net.jforum.util.CategoryOrderComparator.<init>()ID : 333
+ Method : public void net.jforum.entities.UserSession.registerBasicInfo()ID : 416
+ Method : public java.util.List net.jforum.dao.generic.GenericPrivateMessageDAO.selectFromInbox(int, int, int)ID : 890
+ Method : public static net.jforum.util.FileMonitor net.jforum.util.FileMonitor.getInstance()ID : 88
+ Method : public net.jforum.exceptions.ExceptionWriter.<init>()ID : 766
+ Method : public int net.jforum.UrlPattern.getSize()ID : 408
+ Method : public static void net.jforum.ConfigLoader.loadUrlPatterns()ID : 83
+ Method : public java.lang.String net.jforum.context.web.WebRequestContext.getModule()ID : 186
+ Method : public int net.jforum.entities.Forum.getId()ID : 348
+ Method : public static void net.jforum.ConfigLoader.listenForChanges()ID : 149
+ Method : public void net.jforum.cache.DefaultCacheEngine.init()ID : 39
+ Method : public void net.jforum.entities.Group.setId(int)ID : 465
+ Method : private int[] net.jforum.dao.generic.security.GenericGroupSecurityDAO.getSortedGroupIds(java.util.List)ID : 471
+ Method : public net.jforum.util.stats.Stats.<init>()ID : 23
+ Method : public net.jforum.util.preferences.QueriesFileListener.<init>()ID : 145
+ Method : public void net.jforum.entities.Topic.setLastPostTime(java.util.Date)ID : 594
+ Method : public double net.jforum.entities.ForumStats.getTopicsPerDay()ID : 1060
+ Method : private net.jforum.search.SearchArgs net.jforum.view.forum.SearchAction.buildSearchArgs()ID : 692
+ Method : public void net.jforum.entities.User.setSmiliesEnabled(boolean)ID : 437
+ Method : public static net.jforum.util.I18n net.jforum.util.I18n.getInstance()ID : 204
+ Method : public void net.jforum.entities.User.setEmail(java.lang.String)ID : 438
+ Method : public boolean net.jforum.search.SearchArgs.isMatchAll()ID : 707
+ Method : public java.util.List net.jforum.dao.generic.GenericRankingDAO.selectAll()ID : 370
+ Method : public void net.jforum.search.ContentSearchOperation.prepareForDisplay()ID : 723
+ Method : public static java.lang.String net.jforum.util.preferences.SystemGlobals.getSql(java.lang.String)ID : 322
+ Method : public void net.jforum.search.SearchArgs.setSearchDate(java.lang.String)ID : 687
+ Method : public boolean net.jforum.entities.Post.isHtmlEnabled()ID : 952
+ Method : public void net.jforum.entities.Topic.setPostedBy(net.jforum.entities.User)ID : 589
+ Method : public org.apache.lucene.analysis.Analyzer net.jforum.search.LuceneSettings.analyzer()ID : 394
+ Method : private net.jforum.util.stats.Stats$Data.<init>()ID : 512
+ Method : public void net.jforum.view.admin.AttachmentsAction.extensions()ID : 1132
+ Method : public java.sql.Connection net.jforum.HikariPooledConnection.getConnection()ID : 308
+ Method : public net.jforum.view.forum.ForumAction.<init>()ID : 520
+ Method : public static void net.jforum.repository.ForumRepository.setLastRegisteredUser(net.jforum.entities.User)ID : 822
+ Method : public net.jforum.dao.generic.GenericSmilieDAO.<init>()ID : 120
+ Method : public freemarker.template.Template net.jforum.Command.process(net.jforum.context.RequestContext, net.jforum.context.ResponseContext, freemarker.template.SimpleHash)ID : 240
+ Method : private void net.jforum.search.LuceneSearch.filterByDateRange(net.jforum.search.SearchArgs, java.lang.StringBuilder)ID : 711
+ Method : private static void net.jforum.util.preferences.SystemGlobals.loadProps(java.util.Properties, java.io.File)ID : 13
+ Method : static void net.jforum.util.stats.Stats$Record.access$0(net.jforum.util.stats.Stats$Record, java.lang.String)ID : 1094
+ Method : private java.lang.String net.jforum.context.web.WebRequestContext.extractRequestUri(java.lang.String, java.lang.String)ID : 181
+ Method : public void net.jforum.search.SearchArgs.setGroupByForum(boolean)ID : 686
+ Method : public static org.jdom2.Element net.jforum.security.StopForumSpam.getXmlRootElement(java.lang.String)ID : 800
+ Method : public java.lang.String net.jforum.util.stats.Stats$Record.getTag()ID : 1105
+ Method : public net.jforum.util.bbcode.BBCodeHandler.<init>()ID : 154
+ Method : public void net.jforum.entities.User.setId(int)ID : 362
+ Method : private void net.jforum.util.TreeGroup.checkExtraNodes(net.jforum.util.GroupNode)ID : 1075
+ Method : void net.jforum.util.log.LoggerHelper.provideJForumLogConfig(java.lang.String, java.lang.String)ID : 9
+ Method : public void net.jforum.view.admin.ForumAction.insert()ID : 1077
+ Method : public net.jforum.view.install.InstallAction.<init>()ID : 208
+ Method : private static void net.jforum.repository.RankingRepository.setEngine(net.jforum.cache.CacheEngine)ID : 44
+ Method : public boolean net.jforum.entities.UserSession.isAutoLogin()ID : 848
+ Method : static void net.jforum.util.stats.Stats$Record.access$1(net.jforum.util.stats.Stats$Record, long)ID : 1096
+ Method : public net.jforum.security.RoleValueCollection.<init>()ID : 475
+ Method : public java.lang.String net.jforum.entities.UserSession.getIp()ID : 849
+ Method : public net.jforum.dao.ForumDAO net.jforum.dao.generic.GenericDataAccessDriver.newForumDAO()ID : 318
+ Method : public void net.jforum.util.FileMonitor.addFileChangeListener(net.jforum.util.FileChangeListener, java.lang.String, long)ID : 92
+ Method : public net.jforum.view.admin.RegEmailAction.<init>()ID : 1133
+ Method : public net.jforum.view.admin.SpamBlockAction.<init>()ID : 1135
+ Method : public void net.jforum.util.bbcode.BBCode.setClassName(java.lang.String)ID : 168
+ Method : public java.lang.String net.jforum.util.bbcode.BBCode.getTagName()ID : 163
+ Method : public java.lang.String net.jforum.entities.ModeratorInfo.getName()ID : 754
+ Method : public java.util.Map net.jforum.dao.generic.GenericTopicDAO.topicPosters(int)ID : 990
+ Method : public java.util.Collection net.jforum.util.bbcode.BBCodeHandler.getBbList()ID : 959
+ Method : public void net.jforum.view.forum.ForumAction.watchForum()ID : 755
+ Method : private void net.jforum.view.install.InstallAction.removeUserConfig()ID : 277
+ Method : public static void net.jforum.SessionFacade.remove(java.lang.String)ID : 306
+ Method : public net.jforum.csrf.CsrfListener.<init>()ID : 2
+ Method : public static java.util.List net.jforum.repository.PostRepository.selectAllByTopicByLimit(int, int, int)ID : 976
+ Method : public net.jforum.view.forum.common.AttachmentCommon.<init>(net.jforum.context.RequestContext, int)ID : 988
+ Method : public boolean net.jforum.entities.User.isBbCodeEnabled()ID : 841
+ Method : public void net.jforum.view.admin.AdminAction.main()ID : 1058
+ Method : public java.util.List net.jforum.dao.generic.GenericSmilieDAO.selectAll()ID : 379
+ Method : public void net.jforum.view.admin.ForumAction.list()ID : 1066
+ Method : public void net.jforum.view.forum.UserAction.validateLogin()ID : 775
+ Method : public net.jforum.dao.generic.GenericTopicDAO.<init>()ID : 114
+ Method : public java.lang.String net.jforum.util.bbcode.BBCode.getClassName()ID : 965
+ Method : public void net.jforum.search.LuceneSettings.useFSDirectory(java.lang.String)ID : 396
+ Method : public void net.jforum.dao.generic.GenericUserDAO.updateLastVisit(int, java.util.Date)ID : 548
+ Method : public void net.jforum.entities.Forum.setOrder(int)ID : 344
+ Method : private static void net.jforum.SessionFacade.setEngine(net.jforum.cache.CacheEngine)ID : 59
+ Method : public void net.jforum.view.admin.AttachmentsAction.quotaLimit()ID : 1128
+ Method : private boolean net.jforum.view.install.InstallAction.updateAdminPassword(java.sql.Connection)ID : 296
+ Method : public void net.jforum.HikariPooledConnection.init()ID : 176
+ Method : private net.jforum.Command net.jforum.JForum.retrieveCommand(java.lang.String)ID : 521
+ Method : public net.jforum.dao.SmilieDAO net.jforum.dao.generic.GenericDataAccessDriver.newSmilieDAO()ID : 372
+ Method : public net.jforum.dao.generic.GenericModerationLogDAO.<init>()ID : 136
+ Method : public void net.jforum.util.bbcode.BBCode.setTagName(java.lang.String)ID : 157
+ Method : public void net.jforum.entities.Smilie.setCode(java.lang.String)ID : 375
+ Method : public void net.jforum.entities.UserSession.setIp(java.lang.String)ID : 418
+ Method : private int net.jforum.view.forum.UserAction.preparePagination(int)ID : 1017
+ Method : public net.jforum.entities.Forum net.jforum.entities.Category.getForum(int)ID : 559
+ Method : public int net.jforum.entities.ForumStats.getTopics()ID : 1049
+ Method : public java.lang.String net.jforum.context.web.WebRequestContext.getRemoteAddr()ID : 417
+ Method : public int net.jforum.entities.ModeratorInfo.getId()ID : 753
+ Method : public net.jforum.entities.Banlist.<init>()ID : 500
+ Method : public void net.jforum.entities.Topic.setPaginate(boolean)ID : 653
+ Method : public net.jforum.dao.BannerDAO net.jforum.dao.generic.GenericDataAccessDriver.newBannerDAO()ID : 497
+ Method : public net.jforum.entities.User net.jforum.dao.generic.GenericUserDAO.validateLogin(java.lang.String, java.lang.String)ID : 773
+ Method : public net.jforum.view.forum.CaptchaAction.<init>()ID : 781
+ Method : public boolean net.jforum.entities.User.isOnline()ID : 999
+ Method : public static void net.jforum.SessionFacade.setAttribute(java.lang.String, java.lang.Object)ID : 522
+ Method : public java.util.Date net.jforum.entities.User.getLastVisit()ID : 546
+ Method : public int net.jforum.entities.Topic.getMovedId()ID : 660
+ Method : public java.lang.String net.jforum.util.preferences.VariableExpander.expandVariables(java.lang.String)ID : 17
+ Method : public java.lang.String net.jforum.util.stats.Stats$ForbidDetailDisplay.toString()ID : 1110
+ Method : public java.util.Date net.jforum.entities.UserSession.getStartTime()ID : 846
+ Method : public int net.jforum.entities.Topic.getStatus()ID : 662
+ Method : public static void net.jforum.JForumExecutionContext.enableRollback()ID : 765
+ Method : public void net.jforum.entities.User.setWebSite(java.lang.String)ID : 448
+ Method : public static java.util.List net.jforum.repository.ForumRepository.getAllCategories()ID : 674
+ Method : public void net.jforum.entities.Group.setName(java.lang.String)ID : 464
+ Method : public net.jforum.repository.RankingRepository.<init>()ID : 43
+ Method : public void net.jforum.sso.DefaultLoginAuthenticator.setUserModel(net.jforum.dao.UserDAO)ID : 117
+ Method : public net.jforum.dao.BookmarkDAO net.jforum.dao.generic.GenericDataAccessDriver.newBookmarkDAO()ID : 761
+ Method : protected net.jforum.entities.Post net.jforum.dao.generic.GenericPostDAO.makePost(java.sql.ResultSet)ID : 947
+ Method : public void net.jforum.repository.BBCodeRepository.setCacheEngine(net.jforum.cache.CacheEngine)ID : 42
+ Method : public static void net.jforum.SessionFacade.removeAttribute(java.lang.String)ID : 420
+ Method : public int net.jforum.entities.Topic.getType()ID : 584
+ Method : private static void net.jforum.repository.BanlistRepository.setEngine(net.jforum.cache.CacheEngine)ID : 74
+ Method : public net.jforum.exceptions.DatabaseException.<init>(java.lang.String, java.lang.Throwable)ID : 177
+ Method : public void net.jforum.util.legacy.clickstream.ClickstreamFilter.init(javax.servlet.FilterConfig)ID : 31
+ Method : public static void net.jforum.SessionFacade.makeUnlogged()ID : 421
+ Method : public org.apache.lucene.store.Directory net.jforum.search.LuceneSettings.directory()ID : 397
+ Method : public void net.jforum.entities.Topic.setStatus(int)ID : 578
+ Method : public void net.jforum.view.forum.PostAction.watch()ID : 1008
+ Method : public void net.jforum.entities.ForumStats.setUsers(int)ID : 1045
+ Method : private void net.jforum.context.web.WebRequestContext.parseFriendlyURL(java.lang.String, java.lang.String)ID : 189
+ Method : public net.jforum.entities.User net.jforum.entities.Topic.getPostedBy()ID : 596
+ Method : private net.jforum.util.legacy.clickstream.config.ConfigLoader$ConfigHandler.<init>(net.jforum.util.legacy.clickstream.config.ConfigLoader)ID : 260
+ Method : public net.jforum.search.ContentSearchOperation.<init>()ID : 696
+ Method : public static java.util.Properties net.jforum.ConfigLoader.loadModulesMapping(java.lang.String)ID : 78
+ Method : public void net.jforum.util.bbcode.BBCodeHandler.addBb(net.jforum.util.bbcode.BBCode)ID : 164
+ Method : public static synchronized void net.jforum.repository.ForumRepository.start(net.jforum.dao.ForumDAO, net.jforum.dao.CategoryDAO, net.jforum.dao.ConfigDAO)ID : 367
+ Method : private java.lang.String net.jforum.view.forum.UserAction.agreementContents()ID : 777
+ Method : public int net.jforum.entities.QuotaLimit.getSize()ID : 1035
+ Method : public net.jforum.context.web.WebSessionContext.<init>(javax.servlet.http.HttpSession)ID : 220
+ Method : public void net.jforum.entities.User.setAttachSignatureEnabled(boolean)ID : 450
+ Method : private net.jforum.util.stats.Stats$ForbidDetailDisplay.<init>(java.lang.String, int, java.lang.String)ID : 1108
+ Method : private net.jforum.util.preferences.SystemGlobals.<init>()ID : 12
+ Method : public void net.jforum.util.legacy.clickstream.ClickstreamFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain)ID : 272
+ Method : private void net.jforum.view.install.InstallAction.setupAutoCommit(java.sql.Connection)ID : 290
+ Method : public int net.jforum.entities.Topic.getTotalViews()ID : 666
+ Method : private void net.jforum.view.forum.PrivateMessageAction.putTypes()ID : 891
+ Method : public java.util.Date net.jforum.dao.generic.GenericUserSessionDAO.fetchLastVisitTime(net.jforum.entities.UserSession, java.sql.Connection)ID : 866
+ Method : public void net.jforum.view.forum.JSAction.list()ID : 1030
+ Method : public void net.jforum.entities.Category.setId(int)ID : 325
+ Method : public void net.jforum.view.forum.UserAction.list()ID : 1020
+ Method : public boolean net.jforum.entities.Topic.hasAttach()ID : 745
+ Method : public void net.jforum.repository.SecurityRepository.setCacheEngine(net.jforum.cache.CacheEngine)ID : 72
+ Method : public void net.jforum.entities.LastPostInfo.setHasInfo(boolean)ID : 570
+ Method : public static java.util.List net.jforum.repository.SmiliesRepository.getSmilies()ID : 956
+ Method : public void net.jforum.repository.BanlistRepository.setCacheEngine(net.jforum.cache.CacheEngine)ID : 75
+ Method : public void net.jforum.SimpleConnection.init()ID : 284
+ Method : public void net.jforum.view.forum.UserAction.profile()ID : 757
+ Method : public net.jforum.view.forum.RecentTopicsAction.<init>()ID : 874
+ Method : public boolean net.jforum.entities.UserSession.isBot()ID : 1062
+ Method : public void net.jforum.view.admin.SpamBlockAction.list()ID : 1140
+ Method : public static java.lang.String net.jforum.JForumExecutionContext.getContentType()ID : 550
+ Method : public void net.jforum.entities.User.setHtmlEnabled(boolean)ID : 436
+ Method : public java.util.List net.jforum.dao.generic.GenericPostDAO.selectAllByTopic(int)ID : 949
+ Method : public void net.jforum.repository.PostRepository.setCacheEngine(net.jforum.cache.CacheEngine)ID : 63
+ Method : public int net.jforum.entities.LastPostInfo.getUserId()ID : 613
+ Method : public static net.jforum.util.legacy.clickstream.config.ConfigLoader net.jforum.util.legacy.clickstream.config.ConfigLoader.getInstance()ID : 258
+ Method : public void net.jforum.entities.Topic.setLastPostDate(java.util.Date)ID : 595
+ Method : public static boolean net.jforum.security.StopForumSpam.checkEmail(java.lang.String)ID : 803
+ Method : static boolean net.jforum.util.log.LoggerHelper.loggerFrameworkFullyConfigured()ID : 5
+ Method : protected net.jforum.dao.DataAccessDriver.<init>()ID : 140
+ Method : public net.jforum.view.admin.UserAction.<init>()ID : 1084
+ Method : public net.jforum.dao.generic.security.GenericGroupSecurityDAO.<init>()ID : 121
+ Method : public static synchronized void net.jforum.repository.SecurityRepository.remove(int)ID : 854
+ Method : protected void net.jforum.dao.generic.GenericUserDAO.fillUserFromResultSet(net.jforum.entities.User, java.sql.ResultSet)ID : 461
+ Method : public void net.jforum.dao.generic.GenericUserDAO.addToGroup(int, int[])ID : 815
+ Method : public void net.jforum.view.admin.BoardStatsAction.list()ID : 1104
+ Method : public java.util.List net.jforum.util.TreeGroup.getNodes()ID : 1076
+ Method : public void net.jforum.view.install.InstallAction.checkInformation()ID : 271
+ Method : public net.jforum.util.bbcode.BBCode.<init>()ID : 156
+ Method : public void net.jforum.csrf.CsrfLogger.log(java.lang.String)ID : 274
+ Method : private static boolean net.jforum.SessionFacade.lambda$0(java.lang.String, java.lang.String)ID : 856
+ Method : public void net.jforum.entities.Post.setUserIp(java.lang.String)ID : 927
+ Method : public static void net.jforum.repository.RegEmailRepository.load()ID : 388
+ Method : public static net.jforum.search.SearchResult net.jforum.search.SearchFacade.search(net.jforum.search.SearchArgs)ID : 720
+ Method : public void net.jforum.util.legacy.clickstream.config.ClickstreamConfig.addBotAgent(java.lang.String)ID : 265
+ Method : public static void net.jforum.repository.SmiliesRepository.loadSmilies()ID : 380
+ Method : public static java.util.Map net.jforum.SessionFacade.getTopicsReadTimeByForum()ID : 650
+ Method : public int net.jforum.search.SearchResult.getTotalHits()ID : 727
+ Method : public static java.lang.String net.jforum.view.forum.common.ViewCommon.contextToLogin()ID : 635
+ Method : public double net.jforum.util.stats.Stats$Record.getCps()ID : 1107
+ Method : public java.sql.Connection net.jforum.SimpleConnection.getConnection()ID : 282
+ Method : public void net.jforum.DBConnection.releaseConnection(java.sql.Connection)ID : 283
+ Method : public void net.jforum.search.SearchArgs.setUsername(java.lang.String)ID : 691
+ Method : private java.lang.String net.jforum.csrf.CsrfFilter.getJForumMethodName(javax.servlet.http.HttpServletRequest)ID : 191
+ Method : public net.jforum.view.forum.SearchAction.<init>()ID : 673
+ Method : public java.util.Date net.jforum.entities.UserSession.sessionLastUpdate()ID : 1063
+ Method : public void net.jforum.util.FileMonitor.removeFileChangeListener(java.lang.String)ID : 90
+ Method : private void net.jforum.view.install.InstallAction.configureJDBCConnection()ID : 280
+ Method : public int net.jforum.dao.generic.GenericForumDAO.getTotalMessages()ID : 535
+ Method : public static net.jforum.UrlPattern net.jforum.UrlPatternCollection.findPattern(java.lang.String)ID : 256
+ Method : public static freemarker.template.SimpleHash net.jforum.JForumExecutionContext.getTemplateContext()ID : 203
+ Method : public boolean net.jforum.search.SearchArgs.isOrderDirectionDescending()ID : 712
+ Method : public net.jforum.dao.generic.GenericPostDAO.<init>()ID : 111
+ Method : void net.jforum.util.stats.Stats$Data.record(java.lang.Object)ID : 517
+ Method : public static transient void net.jforum.util.preferences.SystemGlobals.loadAdditionalDefaults(java.lang.String[])ID : 103
+ Method : public void net.jforum.ControllerUtils.refreshSession()ID : 425
+ Method : public boolean net.jforum.entities.Topic.isRead()ID : 661
+ Method : public java.util.List net.jforum.dao.generic.GenericUserDAO.pendingActivations()ID : 1085
+ Method : public int net.jforum.entities.Post.getForumId()ID : 979
+ Method : public void net.jforum.entities.ForumStats.setPosts(int)ID : 1044
+ Method : private java.lang.String net.jforum.view.admin.AdminAction.readVersionFromSocket()ID : 1055
+ Method : public net.jforum.security.PermissionControl.<init>()ID : 468
+ Method : public java.lang.String net.jforum.entities.User.getUsername()ID : 620
+ Method : private net.jforum.util.FileMonitor.<init>()ID : 87
+ Method : public static boolean net.jforum.view.forum.common.TopicsCommon.isTopicAccessible(int, boolean)ID : 648
+ Method : public int net.jforum.dao.generic.GenericModerationLogDAO.totalRecords()ID : 1024
+ Method : private static void net.jforum.util.preferences.SystemGlobals.debugValues(java.util.Properties, java.lang.String)ID : 16
+ Method : public java.lang.String net.jforum.entities.User.getOccupation()ID : 830
+ Method : public static void net.jforum.repository.TopicRepository.addAll(int, java.util.List)ID : 738
+ Method : public static boolean net.jforum.view.forum.common.PostCommon.canEditPost(net.jforum.entities.Post)ID : 980
+ Method : protected boolean net.jforum.dao.generic.AutoKeys.supportAutoGeneratedKeys()ID : 806
+ Method : public boolean net.jforum.security.RoleValueCollection.contains(java.lang.Object)ID : 528
+ Method : public void net.jforum.view.admin.AttachmentsAction.configurations()ID : 1125
+ Method : public void net.jforum.dao.generic.GenericUserDAO.writeUserActive(int)ID : 821
+ Method : public static boolean net.jforum.repository.ForumRepository.isCategoryAccessible(int)ID : 557
+ Method : public net.jforum.view.admin.ForumAction.<init>()ID : 1065
+ Method : public int net.jforum.search.SearchArgs.getForumId()ID : 699
+ Method : protected int net.jforum.dao.generic.GenericUserDAO.getTotalUsersCommon(java.sql.PreparedStatement)ID : 364
+ Method : public void net.jforum.view.forum.UserAction.login()ID : 632
+ Method : public static int net.jforum.SessionFacade.size()ID : 543
+ Method : private boolean net.jforum.view.forum.UserAction.agreementAccepted()ID : 776
+ Method : public void net.jforum.entities.Post.setCanEdit(boolean)ID : 981
+ Method : public void net.jforum.entities.User.setBbCodeEnabled(boolean)ID : 435
+ Method : public static void net.jforum.view.forum.common.TopicsCommon.topicListingBase()ID : 658
+ Method : public java.util.List net.jforum.dao.generic.GenericTopicDAO.selectAllByForum(int)ID : 737
+ Method : public net.jforum.view.forum.TopDownloadsAction.<init>()ID : 669
+ Method : public static net.jforum.util.stats.Stats$Data net.jforum.util.stats.Stats.getStatsFor(java.lang.String)ID : 514
+ Method : public void net.jforum.util.bbcode.BBCode.setReplace(java.lang.String)ID : 161
+ Method : public freemarker.template.Template net.jforum.view.admin.AdminCommand.process(net.jforum.context.RequestContext, net.jforum.context.ResponseContext, freemarker.template.SimpleHash)ID : 1067
+ Method : public static net.jforum.entities.User net.jforum.repository.ForumRepository.lastRegisteredUser()ID : 539
+ Method : public void net.jforum.view.forum.SearchAction.search()ID : 730
+ Method : public int net.jforum.entities.Forum.getOrder()ID : 354
+ Method : public net.jforum.view.admin.RankingAction.<init>()ID : 1090
+ Method : private net.jforum.search.SearchArgs$MatchType.<init>(java.lang.String, int)ID : 677
+ Method : public void net.jforum.entities.LastPostInfo.setTopicId(int)ID : 567
+ Method : public net.jforum.JForumBaseServlet.<init>()ID : 34
+ Method : public java.util.List net.jforum.dao.generic.GenericForumDAO.getModeratorList(int)ID : 750
+ Method : public java.lang.String net.jforum.view.admin.BoardStatsAction$Item.getValue()ID : 1114
+ Method : public void net.jforum.util.legacy.clickstream.config.ClickstreamConfig.addBotHost(java.lang.String)ID : 264
+ Method : private java.sql.PreparedStatement net.jforum.dao.generic.GenericRegEmailDAO.preparedStatementFromSqlKey(java.lang.String)ID : 386
+ Method : public static int net.jforum.util.preferences.SystemGlobals.getIntValue(java.lang.String)ID : 54
+ Method : private void net.jforum.view.forum.SearchAction.setDateRange(net.jforum.search.SearchArgs, java.lang.String)ID : 689
+ Method : public java.lang.String net.jforum.entities.Post.getText()ID : 950
+ Method : public void net.jforum.util.stats.Stats.onEvent(net.jforum.util.stats.StatsEvent)ID : 518
+ Method : public static void net.jforum.util.DbUtils.close(java.sql.ResultSet)ID : 330
+ Method : public static void net.jforum.ConfigLoader.startSummaryJob()ID : 151
+ Method : public int net.jforum.entities.Post.getTopicId()ID : 977
+ Method : public void net.jforum.entities.Post.setSignatureEnabled(boolean)ID : 931
+ Method : public java.util.List net.jforum.dao.generic.GenericAttachmentDAO.selectExtensionGroups()ID : 1129
+ Method : public net.jforum.dao.PrivateMessageDAO net.jforum.dao.generic.GenericDataAccessDriver.newPrivateMessageDAO()ID : 888
+ Method : public static java.util.List net.jforum.view.install.ParseDBStructFile.parse(java.lang.String)ID : 286
+ Method : public int net.jforum.util.GroupNode.getId()ID : 1074
+ Method : public freemarker.template.Template net.jforum.view.install.InstallAction.process(net.jforum.context.RequestContext, net.jforum.context.ResponseContext, freemarker.template.SimpleHash)ID : 241
+ Method : public java.lang.String net.jforum.entities.Smilie.getUrl()ID : 955
+ Method : public java.util.List net.jforum.dao.generic.GenericCategoryDAO.selectAll()ID : 332
+ Method : protected boolean net.jforum.ControllerUtils.checkAutoLogin(net.jforum.entities.UserSession)ID : 424
+ Method : public net.jforum.dao.generic.GenericSpamDAO.<init>()ID : 138
+ Method : public net.jforum.dao.KarmaDAO net.jforum.dao.generic.GenericDataAccessDriver.newKarmaDAO()ID : 940
+ Method : public void net.jforum.util.bbcode.BBCodeHandler.endElement(java.lang.String, java.lang.String, java.lang.String)ID : 160
+ Method : public net.jforum.context.web.WebRequestContext.<init>(javax.servlet.http.HttpServletRequest)ID : 190
+ Method : public java.util.List net.jforum.dao.generic.GenericBanlistDAO.selectAll()ID : 382
+ Method : private void net.jforum.search.LuceneSearch.filterByUser(net.jforum.search.SearchArgs, java.lang.StringBuilder)ID : 702
+ Method : public void net.jforum.entities.User.setInterests(java.lang.String)ID : 441
+ Method : public net.jforum.dao.generic.GenericKarmaDAO.<init>()ID : 124
+ Method : public static boolean net.jforum.util.stats.Stats$ForbidDetailDisplay.isForbidden(java.lang.String)ID : 1111
+ Method : public void net.jforum.view.install.InstallAction.finished()ID : 307
+ Method : public int net.jforum.dao.generic.GenericTopicDAO.countAllTopics()ID : 879
+ Method : public void net.jforum.entities.Post.setId(int)ID : 922
+ Method : public static java.lang.String net.jforum.util.SafeHtml.makeSafe(java.lang.String)ID : 639
+ Method : private static void net.jforum.repository.ForumRepository.setEngine(net.jforum.cache.CacheEngine)ID : 50
+ Method : public java.lang.String net.jforum.entities.LastPostInfo.getPostDate()ID : 612
+ Method : public static boolean net.jforum.repository.SecurityRepository.canAccess(int, java.lang.String)ID : 622
+ Method : public void net.jforum.view.forum.UserAction.logout()ID : 860
+ Method : public net.jforum.util.TreeGroup.<init>()ID : 1068
+ Method : public static net.jforum.entities.UserSession net.jforum.SessionFacade.getUserSession(java.lang.String)ID : 243
+ Method : public boolean net.jforum.security.RoleValue.equals(java.lang.Object)ID : 527
+ Method : public java.lang.String net.jforum.entities.User.getInterests()ID : 831
+ Method : public int net.jforum.entities.Forum.getLastPostId()ID : 868
+ Method : static void net.jforum.util.stats.Stats$Record.access$2(net.jforum.util.stats.Stats$Record, double)ID : 1098
+ Method : net.jforum.util.legacy.clickstream.config.ConfigLoader$ConfigHandler.<init>(net.jforum.util.legacy.clickstream.config.ConfigLoader, net.jforum.util.legacy.clickstream.config.ConfigLoader$ConfigHandler)ID : 261
+ Method : public void net.jforum.view.admin.ForumAction.edit()ID : 1083
+ Method : public static java.lang.String net.jforum.util.I18n.getMessage(java.lang.String)ID : 248
+ Method : public static freemarker.template.Configuration net.jforum.JForumExecutionContext.getTemplateConfig()ID : 239
+ Method : public static void net.jforum.repository.BBCodeRepository.setBBCollection(net.jforum.util.bbcode.BBCodeHandler)ID : 170
+ Method : public net.jforum.util.legacy.clickstream.config.ClickstreamConfig net.jforum.util.legacy.clickstream.config.ConfigLoader.getConfig()ID : 266
+ Method : private boolean net.jforum.view.install.InstallAction.canWriteToWebInf()ID : 270
+ Method : public java.util.List net.jforum.dao.generic.GenericAttachmentDAO.selectQuotaLimit()ID : 1126
+ Method : public void net.jforum.util.preferences.VariableExpander.clearCache()ID : 14
+ Method : public net.jforum.entities.UserSession net.jforum.dao.generic.GenericUserSessionDAO.selectById(net.jforum.entities.UserSession, java.sql.Connection)ID : 851
+ Method : public void net.jforum.entities.Post.setUserId(int)ID : 925
+ Method : public net.jforum.dao.generic.GenericBanlistDAO.<init>()ID : 135
+ Method : public static boolean net.jforum.repository.ForumRepository.isCategoryAccessible(net.jforum.security.PermissionControl, int)ID : 530
+ Method : public net.jforum.dao.generic.GenericUserDAO.<init>()ID : 118
+ Method : private static void net.jforum.repository.SecurityRepository.setEngine(net.jforum.cache.CacheEngine)ID : 71
+ Method : public net.jforum.entities.User.<init>()ID : 360
+ Method : public net.jforum.util.stats.StatsEvent.<init>(java.lang.String, java.lang.Object)ID : 508
+ Method : public net.jforum.search.SearchResult.<init>(java.util.List, int)ID : 716
+ Method : private net.jforum.util.I18n.<init>()ID : 84
+ Method : public static net.jforum.security.PermissionControl net.jforum.repository.SecurityRepository.load(int, boolean)ID : 490
+ Method : protected int net.jforum.dao.generic.GenericForumDAO.countForumPosts(int)ID : 349
+ Method : public java.util.List net.jforum.dao.generic.GenericTopicDAO.fillTopicsData(java.sql.PreparedStatement)ID : 598
+ Method : public static java.lang.String net.jforum.repository.ModulesRepository.getModuleClass(java.lang.String)ID : 205
+ Method : public net.jforum.dao.CategoryDAO net.jforum.dao.generic.GenericDataAccessDriver.newCategoryDAO()ID : 319
+ Method : public net.jforum.entities.QuotaLimit net.jforum.dao.generic.GenericAttachmentDAO.selectQuotaLimitByGroup(int)ID : 1034
+ Method : public net.jforum.util.bbcode.BBCodeHandler net.jforum.util.bbcode.BBCodeHandler.parse()ID : 169
+ Method : public void net.jforum.entities.User.setRankId(int)ID : 429
+ Method : public void net.jforum.view.forum.ForumAction.show()ID : 744
+ Method : public java.lang.Object net.jforum.cache.DefaultCacheEngine.get(java.lang.String)ID : 975
+ Method : public void net.jforum.SessionFacade.setCacheEngine(net.jforum.cache.CacheEngine)ID : 60
+ Method : public net.jforum.entities.LastPostInfo net.jforum.entities.Forum.getLastPostInfo()ID : 561
+ Method : public static boolean net.jforum.repository.ForumRepository.isForumAccessible(int, int)ID : 876
+ Method : public net.jforum.view.forum.PostAction.<init>()ID : 732
+ Method : public int net.jforum.entities.LastPostInfo.getTopicId()ID : 573
+ Method : private void net.jforum.view.admin.AdminAction.matchVersion(java.lang.String)ID : 1056
+ Method : public void net.jforum.view.admin.ModerationAction.list()ID : 1089
+ Method : public void net.jforum.csrf.CsrfFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain)ID : 148
+ Method : public void net.jforum.entities.Group.setDescription(java.lang.String)ID : 1117
+ Method : protected void net.jforum.dao.generic.AutoKeys.setAutoGeneratedKeysQuery(java.lang.String)ID : 812
+ Method : public void net.jforum.JForumBaseServlet.init(javax.servlet.ServletConfig)ID : 101
+ Method : public void net.jforum.entities.Topic.setRead(boolean)ID : 655
+ Method : public static void net.jforum.SessionFacade.makeLogged()ID : 819
+ Method : public void net.jforum.search.SearchArgs.setKeywords(java.lang.String)ID : 679
+ Method : public void net.jforum.entities.Post.setHtmlEnabled(boolean)ID : 929
+ Method : public void net.jforum.util.GroupNode.setId(int)ID : 1072
+ Method : public net.jforum.dao.generic.GenericRegEmailDAO.<init>()ID : 139
+ Method : private java.lang.String net.jforum.search.SearchArgs.formatNullOrTrim(java.lang.String)ID : 693
+ Method : public static boolean net.jforum.JForumExecutionContext.isCustomContent()ID : 238
+ Method : public void net.jforum.entities.Topic.setId(int)ID : 576
+ Method : public boolean net.jforum.context.JForumContext.isEncodingDisabled()ID : 249
+ Method : public void net.jforum.entities.Banlist.setEmail(java.lang.String)ID : 503
+ Method : public static net.jforum.security.PermissionControl net.jforum.repository.SecurityRepository.load(net.jforum.entities.User, boolean)ID : 489
+ Method : public java.lang.String net.jforum.entities.User.getPassword()ID : 809
+ Method : public java.lang.String net.jforum.context.web.WebRequestContext.getContextPath()ID : 199
+ Method : public void net.jforum.view.install.InstallAction.welcome()ID : 236
+ Method : public static java.lang.String net.jforum.util.I18n.getMessage(java.lang.String, java.lang.String, java.lang.Object[])ID : 618
+ Method : public void net.jforum.entities.User.setPrivateMessagesCount(int)ID : 462
+ Method : public net.jforum.csrf.CsrfFilter.<init>()ID : 32
+ Method : public void net.jforum.entities.User.setUsername(java.lang.String)ID : 361
+ Method : public static java.util.List net.jforum.view.forum.common.ForumCommon.getAllCategoriesAndForums(boolean)ID : 534
+ Method : public net.jforum.entities.UserSession.<init>()ID : 214
+ Method : public boolean net.jforum.security.PermissionControl.canAccess(java.lang.String, java.lang.String)ID : 529
+ Method : public void net.jforum.search.SearchArgs.setSearchIn(java.lang.String)ID : 680
+ Method : public void net.jforum.entities.Post.setEditCount(int)ID : 932
+ Method : public void net.jforum.context.web.WebResponseContext.sendRedirect(java.lang.String)ID : 300
+ Method : public void net.jforum.entities.Category.setName(java.lang.String)ID : 326
+ Method : public void net.jforum.api.integration.mail.pop.POPListener.execute(org.quartz.JobExecutionContext)ID : 896
+ Method : public void net.jforum.entities.Post.setTopicId(int)ID : 923
+ Method : public int net.jforum.entities.Post.getEditCount()ID : 1001
+ Method : public java.util.List net.jforum.search.SearchResult.getRecords()ID : 721
+ Method : public void net.jforum.context.web.WebRequestContext.addParameter(java.lang.String, java.lang.Object)ID : 195
+ Method : public static boolean net.jforum.view.forum.common.TopicsCommon.isTopicAccessible(int)ID : 649
+ Method : public net.jforum.view.forum.BookmarkAction.<init>()ID : 760
+ Method : net.jforum.util.preferences.SystemGlobals$1.<init>()ID : 302
+ Method : public void net.jforum.context.web.WebResponseContext.setContentType(java.lang.String)ID : 242
+ Method : public int net.jforum.dao.generic.GenericPrivateMessageDAO.getTotalInbox(int)ID : 889
+ Method : public boolean net.jforum.entities.User.isSmiliesEnabled()ID : 842
+ Method : public net.jforum.dao.mysql.MysqlDataAccessDriver.<init>()ID : 142
+ Method : public java.lang.String net.jforum.entities.LastPostInfo.getUsername()ID : 614
+ Method : public static boolean net.jforum.util.I18n.contains(java.lang.String)ID : 86
+ Method : public void net.jforum.view.admin.AdminAction.login()ID : 1038
+ Method : public net.jforum.entities.User net.jforum.dao.generic.GenericUserDAO.getLastUserInfo()ID : 363
+ Method : public static java.lang.Integer net.jforum.repository.ForumRepository.totalUsers()ID : 538
+ Method : public java.lang.String net.jforum.entities.Topic.getFirstPostTime()ID : 665
+ Method : public void net.jforum.view.forum.UserAction.registrationComplete()ID : 824
+ Method : public void net.jforum.entities.Forum.setUnread(boolean)ID : 871
+ Method : public net.jforum.search.LuceneManager.<init>()ID : 391
+ Method : private int net.jforum.dao.generic.GenericForumDAO.daysUntilToday(java.util.Date, java.util.Date)ID : 1048
+ Method : net.jforum.util.I18n$1.<init>(java.lang.String)ID : 89
+ Method : public static net.jforum.entities.UserSession net.jforum.SessionFacade.getUserSession()ID : 244
+ Method : public void net.jforum.entities.Topic.setFirstPostId(int)ID : 581
+ Method : public int net.jforum.util.stats.Stats$Record.compareTo(java.lang.Object)ID : 1099
+ Method : public java.lang.String net.jforum.search.ContentSearchOperation.viewTemplate()ID : 726
+ Method : static java.util.Map net.jforum.util.stats.Stats$Data.access$0(net.jforum.util.stats.Stats$Data)ID : 1097
+ Method : public boolean net.jforum.entities.UserSession.isAdmin()ID : 623
+ Method : private boolean net.jforum.view.install.InstallAction.canWriteToLuceneIndex()ID : 275
+ Method : public void net.jforum.entities.Smilie.setDiskName(java.lang.String)ID : 377
+ Method : public net.jforum.dao.PostDAO net.jforum.dao.generic.GenericDataAccessDriver.newPostDAO()ID : 733
+ Method : public java.lang.String net.jforum.csrf.CsrfHttpServletRequestWrapper.getRequestURI()ID : 193
+ Method : public static net.jforum.security.PermissionControl net.jforum.repository.SecurityRepository.get(int)ID : 492
+ Method : public boolean net.jforum.search.SearchArgs.isMatchRaw()ID : 703
+ Method : public void net.jforum.entities.User.setBiography(java.lang.String)ID : 442
+ Method : public java.util.List net.jforum.dao.generic.GenericBookmarkDAO.selectByUser(int)ID : 762
+ Method : public int net.jforum.entities.Post.getId()ID : 941
+ Method : public net.jforum.entities.KarmaStatus.<init>(int, double)ID : 454
+ Method : public java.util.List net.jforum.dao.generic.GenericBannerDAO.selectActiveBannerByPlacement(int)ID : 552
+ Method : public boolean net.jforum.entities.User.isHtmlEnabled()ID : 840
+ Method : public static java.lang.String net.jforum.view.forum.common.ViewCommon.formatDate(java.util.Date)ID : 547
+ Method : public net.jforum.util.log.LoggerHelper.<init>()ID : 6
+ Method : private net.jforum.util.MobileStatus.<init>(java.lang.String, int)ID : 182
+ Method : public net.jforum.search.LuceneSearch.<init>(net.jforum.search.LuceneSettings, net.jforum.search.LuceneContentCollector)ID : 403
+ Method : private static void net.jforum.util.SafeHtml.splitAndTrim(java.lang.String, java.util.Set)ID : 637
+ Method : private net.jforum.util.legacy.clickstream.config.ConfigLoader.<init>()ID : 257
+ Method : public static boolean net.jforum.repository.SecurityRepository.canAccess(java.lang.String)ID : 496
+ Method : public net.jforum.entities.QuotaLimit net.jforum.view.forum.common.AttachmentCommon.getQuotaLimit(int)ID : 1036
+ Method : public java.lang.String net.jforum.context.web.WebRequestContext.getAction()ID : 187
+ Method : private java.lang.String net.jforum.exceptions.ExceptionWriter.extractCurrentUrl(net.jforum.context.RequestContext)ID : 767
+ Method : public void net.jforum.entities.Forum.setTotalPosts(int)ID : 350
+ Method : protected void net.jforum.dao.generic.GenericUserDAO.initNewUser(net.jforum.entities.User, java.sql.PreparedStatement)ID : 811
+ Method : public static java.util.List net.jforum.SessionFacade.getAllSessions()ID : 1042
+ Method : public net.jforum.entities.Forum net.jforum.dao.generic.GenericForumDAO.selectById(int)ID : 1080
+ Method : private static void net.jforum.repository.TopicRepository.setEngine(net.jforum.cache.CacheEngine)ID : 56
+ Method : private void net.jforum.view.install.InstallAction.configureSystemGlobals()ID : 304
+ Method : public static void net.jforum.repository.Tpl.load(java.lang.String)ID : 98
+ Method : public void net.jforum.entities.UserSession.setLastVisit(java.util.Date)ID : 413
+ Method : public static boolean net.jforum.repository.ForumRepository.isForumAccessible(int, int, int)ID : 875
+ Method : public void net.jforum.entities.Group.setParentId(int)ID : 1118
+ Method : public void net.jforum.view.forum.ModerationAction.showActivityLog()ID : 1025
+ Method : public void net.jforum.entities.User.setViewEmailEnabled(boolean)ID : 433
+ Method : public static void net.jforum.repository.RolesRepository.addGroupRoles(int[], net.jforum.security.RoleCollection)ID : 486
+ Method : public net.jforum.dao.generic.GenericApiDAO.<init>()ID : 134
+ Method : public static net.jforum.DBConnection net.jforum.DBConnection.getImplementation()ID : 175
+ Method : public static void net.jforum.repository.TopicRepository.updateTopic(net.jforum.entities.Topic)ID : 992
+ Method : public static java.lang.String net.jforum.util.Hash.md5(java.lang.String)ID : 294
+ Method : private void net.jforum.view.forum.UserAction.buildSucessfulLoginRedirect()ID : 862
+ Method : public void net.jforum.dao.generic.GenericForumDAO.subscribeUser(int, int)ID : 899
+ Method : protected net.jforum.entities.Forum net.jforum.dao.generic.GenericForumDAO.fillForum(java.sql.ResultSet)ID : 351
+ Method : public net.jforum.entities.Bookmark net.jforum.dao.generic.GenericBookmarkDAO.selectForUpdate(int, int, int)ID : 1002
+ Method : public void net.jforum.entities.UserSession.dataToUser(net.jforum.entities.User)ID : 865
+ Method : public void net.jforum.ForumSessionListener.sessionCreated(javax.servlet.http.HttpSessionEvent)ID : 147
+ Method : public boolean net.jforum.entities.User.notifyText()ID : 837
+ Method : public int[] net.jforum.search.SearchArgs.getUserIds()ID : 701
+ Method : public boolean net.jforum.entities.User.isDeleted()ID : 861
+ Method : public boolean net.jforum.entities.User.notifyAlways()ID : 836
+ Method : public void net.jforum.entities.Topic.setTitle(java.lang.String)ID : 575
+ Method : public void net.jforum.JForum.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)ID : 627
+ Method : public static java.sql.Connection net.jforum.JForumExecutionContext.getConnection(boolean)ID : 253
+ Method : public void net.jforum.entities.Topic.setModerated(boolean)ID : 586
+ Method : private void net.jforum.dao.MySQLVersionWorkarounder.fixEncoding()ID : 313
+ Method : public void net.jforum.entities.User.setSkype(java.lang.String)ID : 451
+ Method : public net.jforum.HikariPooledConnection.<init>()ID : 173
+ Method : public void net.jforum.view.forum.PostAction.list()ID : 906
+ Method : protected int net.jforum.dao.generic.AutoKeys.executeAutoKeysQuery(java.sql.PreparedStatement, java.sql.Connection)ID : 813
+ Method : public java.lang.String net.jforum.entities.Topic.getTitle()ID : 663
+ Method : public void net.jforum.view.install.InstallAction.doInstall()ID : 298
+ Method : public boolean net.jforum.search.SearchArgs.shouldLimitSearchToSubject()ID : 708
+ Method : public void net.jforum.repository.RankingRepository.setCacheEngine(net.jforum.cache.CacheEngine)ID : 45
+ Method : public static java.lang.String net.jforum.dao.generic.security.SecurityCommon.groupIdAsString(int[])ID : 472
+ Method : public java.util.List net.jforum.dao.generic.GenericAttachmentDAO.selectExtensions()ID : 1131
+ Method : public java.lang.String net.jforum.security.RoleValue.getValue()ID : 526
+ Method : public int net.jforum.entities.Forum.getTotalPosts()ID : 610
+ Method : public java.util.List net.jforum.entities.User.getGroupsList()ID : 466
+ Method : public net.jforum.entities.Ranking.<init>()ID : 914
+ Method : public net.jforum.entities.Smilie.<init>()ID : 373
+ Method : public void net.jforum.dao.generic.GenericTopicDAO.subscribeUser(int, int)ID : 1006
+ Method : public net.jforum.util.stats.Stats$Record.<init>()ID : 1093
+ Method : public static boolean net.jforum.repository.ForumRepository.isCategoryAccessible(int, int)ID : 556
+ Method : public java.util.List net.jforum.dao.generic.GenericGroupDAO.selectAll()ID : 1121
+ Method : public net.jforum.security.Role net.jforum.security.RoleCollection.get(java.lang.String)ID : 525
+ Method : public static void net.jforum.JForumExecutionContext.enableCustomContent(boolean)ID : 788
+ Method : public net.jforum.entities.Post.<init>()ID : 921
+ Method : public net.jforum.dao.GroupSecurityDAO net.jforum.dao.generic.GenericDataAccessDriver.newGroupSecurityDAO()ID : 469
+ Method : public void net.jforum.view.admin.ConfigAction.list()ID : 1122
+ Method : public static java.lang.String net.jforum.util.SafeHtml.ensureAllAttributesAreSafe(java.lang.String)ID : 973
+ Method : protected java.util.List net.jforum.dao.generic.GenericUserDAO.processSelectAll(java.sql.ResultSet)ID : 1018
+ Method : public void net.jforum.repository.TopicRepository.setCacheEngine(net.jforum.cache.CacheEngine)ID : 57
+ Method : public static java.util.Set net.jforum.SessionFacade.findSessionIdsOfUser(int)ID : 998
+ Method : private void net.jforum.csrf.CsrfListener.addCsrfExcludeProperties(java.lang.String, java.util.Properties)ID : 27
+ Method : public net.jforum.entities.Forum.<init>()ID : 339
+ Method : public void net.jforum.entities.ForumStats.setUsersPerDay(double)ID : 1053
+ Method : public static boolean net.jforum.view.forum.UserAction.hasBasicAuthentication(net.jforum.context.RequestContext)ID : 770
+ Method : public void net.jforum.context.web.WebSessionContext.setAttribute(java.lang.String, java.lang.Object)ID : 230
+ Method : public net.jforum.repository.SecurityRepository.<init>()ID : 70
+ Method : public boolean net.jforum.entities.UserSession.isModerator(int)ID : 740
+ Method : public net.jforum.view.admin.AttachmentsAction.<init>()ID : 1124
+ Method : public java.lang.String net.jforum.context.JForumContext.encodeURL(java.lang.String)ID : 252
+ Method : public void net.jforum.entities.Category.setModerated(boolean)ID : 328
+ Method : public void net.jforum.entities.Post.setSmiliesEnabled(boolean)ID : 930
+ Method : public net.jforum.entities.Forum net.jforum.entities.Category.getForum(int, int)ID : 558
+ Method : public java.lang.String net.jforum.entities.User.getTwitter()ID : 826
+ Method : public void net.jforum.entities.Category.addForum(net.jforum.entities.Forum)ID : 357
+ Method : public void net.jforum.context.web.WebResponseContext.setHeader(java.lang.String, java.lang.String)ID : 551
+ Method : public net.jforum.ContextListener.<init>()ID : 1
+ Method : public static void net.jforum.JForumExecutionContext.setRedirect(java.lang.String)ID : 297
+ Method : public void net.jforum.entities.User.setPrivateMessagesEnabled(boolean)ID : 430
+ Method : public static void net.jforum.util.log.LoggerHelper.checkLoggerInitialization(java.lang.String, java.lang.String)ID : 10
+ Method : public net.jforum.util.preferences.VariableExpander.<init>(net.jforum.util.preferences.VariableStore, java.lang.String, java.lang.String)ID : 11
+ Method : public int net.jforum.dao.generic.GenericTopicDAO.countUserTopics(int)ID : 910
+ Method : public void net.jforum.util.bbcode.BBCode.setLockedForSmilies(java.lang.String)ID : 166
+ Method : public void net.jforum.view.forum.PostAction.reply()ID : 1013
+ Method : public java.lang.String net.jforum.entities.User.getActivationKey()ID : 810
+ Method : public net.jforum.entities.Topic net.jforum.dao.generic.GenericTopicDAO.selectRaw(int)ID : 1011
+ Method : public static net.jforum.util.Captcha net.jforum.util.Captcha.getInstance()ID : 786
+ Method : public static java.util.List net.jforum.repository.TopicRepository.getTopics(int)ID : 735
+ Method : public final java.util.List net.jforum.search.SearchOperation.filterResults(java.util.List)ID : 725
+ Method : public void net.jforum.JForum.init(javax.servlet.ServletConfig)ID : 179
+ Method : public java.lang.String net.jforum.entities.UserSession.getLang()ID : 245
+ Method : public void net.jforum.entities.User.setNotifyOnMessagesEnabled(boolean)ID : 431
+ Method : public java.lang.String net.jforum.entities.UserSession.getSessionId()ID : 223
+ Method : public static int net.jforum.view.forum.common.ViewCommon.getStartPage()ID : 683
+ Method : public int net.jforum.entities.Topic.getTotalReplies()ID : 652
+ Method : public static boolean net.jforum.JForumExecutionContext.shouldRollback()ID : 389
+ Method : public boolean net.jforum.entities.User.isNotifyPrivateMessagesEnabled()ID : 838
+ Method : public net.jforum.context.ResponseContext net.jforum.context.JForumContext.getResponse()ID : 791
+ Method : public int net.jforum.entities.LastPostInfo.getTopicReplies()ID : 615
+ Method : public void net.jforum.context.web.WebRequestContext.addOrReplaceParameter(java.lang.String, java.lang.Object)ID : 188
+ Method : public int net.jforum.entities.Category.getOrder()ID : 335
+ Method : public void net.jforum.search.LuceneManager.init()ID : 405
+ Method : public net.jforum.entities.ModeratorInfo.<init>()ID : 747
+ Method : public void net.jforum.entities.Forum.setModerated(boolean)ID : 347
+ Method : public net.jforum.dao.TreeGroupDAO net.jforum.dao.generic.GenericDataAccessDriver.newTreeGroupDAO()ID : 1069
+ Method : public void net.jforum.util.bbcode.BBCodeHandler.startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes)ID : 155
+ Method : public java.lang.String net.jforum.context.web.WebResponseContext.encodeURL(java.lang.String)ID : 250
+ Method : public net.jforum.context.JForumContext.<init>(java.lang.String, java.lang.String, net.jforum.context.RequestContext, net.jforum.context.ResponseContext)ID : 411
+ Method : public net.jforum.security.RoleValue.<init>(java.lang.String)ID : 479
+ Method : public java.lang.String net.jforum.entities.Topic.getLastPostTime()ID : 667
+ Method : public static java.util.List net.jforum.view.forum.common.PostCommon.topicPosts(net.jforum.dao.PostDAO, boolean, int, int, int, int)ID : 982
+ Method : net.jforum.view.admin.BoardStatsAction$Item.<init>(java.lang.String, java.lang.String)ID : 1101
+ Method : public void net.jforum.entities.UserSession.setSessionTime(long)ID : 897
+ Method : public int net.jforum.entities.Topic.getForumId()ID : 647
+ Method : public static void net.jforum.ConfigLoader.startPop3Integration()ID : 153
+ Method : public static boolean net.jforum.DBConnection.createInstance()ID : 174
+ Method : protected java.sql.PreparedStatement net.jforum.dao.generic.AutoKeys.getStatementForAutoKeys(java.lang.String, java.sql.Connection)ID : 807
+ Method : private static void net.jforum.repository.BBCodeRepository.setEngine(net.jforum.cache.CacheEngine)ID : 41
+ Method : public void net.jforum.entities.Post.hasAttachments(boolean)ID : 938
+ Method : public static boolean net.jforum.ForumStartup.startDatabase()ID : 178
+ Method : private static void net.jforum.repository.Tpl.setEngine(net.jforum.cache.CacheEngine)ID : 65
+ Method : private void net.jforum.repository.ForumRepository.loadForums(net.jforum.dao.ForumDAO)ID : 358
+ Method : protected void net.jforum.dao.DBVersionWorkarounder.ensureDaoClassIsCorrect(java.lang.String)ID : 311
+ Method : public java.util.Collection net.jforum.entities.Category.getForums()ID : 555
+ Method : private void net.jforum.dao.MySQLVersionWorkarounder.handleMySql41xPlus()ID : 314
+ Method : public static void net.jforum.repository.RankingRepository.loadRanks()ID : 371
+ Method : public static void net.jforum.util.preferences.SystemGlobals.setObjectValue(java.lang.String, java.lang.Object)ID : 107
+ Method : public java.lang.String net.jforum.util.stats.StatsEvent.getTag()ID : 510
+ Method : public static void net.jforum.ConfigLoader.startSystemglobals(java.lang.String)ID : 21
+ Method : public java.lang.String net.jforum.entities.User.getAvatar()ID : 844
+ Method : public java.util.List net.jforum.dao.generic.GenericTopicDAO.selectAllByForumByLimit(int, int, int)ID : 736
+ Method : public static java.lang.Object net.jforum.util.preferences.SystemGlobals.getObjectValue(java.lang.String)ID : 115
+ Method : public net.jforum.dao.generic.GenericRankingDAO.<init>()ID : 113
+ Method : public int net.jforum.entities.Forum.getCategoryId()ID : 353
+ Method : public void net.jforum.search.SearchArgs.setMatchType(java.lang.String)ID : 685
+ Method : public void net.jforum.view.forum.PostAction.insert()ID : 909
+ Method : public static java.lang.String net.jforum.util.I18n.getUserLanguage()ID : 246
+ Method : public int net.jforum.entities.User.getPrivateMessagesCount()ID : 863
+ Method : public void net.jforum.view.forum.UserAction.insertSave()ID : 804
+ Method : public static boolean net.jforum.util.I18n.languageExists(java.lang.String)ID : 212
+ Method : public void net.jforum.entities.LastPostInfo.setPostTimeMillis(long)ID : 568
+ Method : public void net.jforum.view.forum.BookmarkAction.list()ID : 763
+ Method : public void net.jforum.entities.Topic.setVoteId(int)ID : 587
+ Method : public int net.jforum.entities.UserSession.getPrivateMessages()ID : 825
+ Method : public void net.jforum.cache.DefaultCacheEngine.add(java.lang.String, java.lang.String, java.lang.Object)ID : 97
+ Method : public void net.jforum.entities.LastPostInfo.setPostId(int)ID : 566
+ Method : public void net.jforum.repository.ForumRepository.setCacheEngine(net.jforum.cache.CacheEngine)ID : 51
+ Method : public static java.util.List net.jforum.SessionFacade.getLoggedSessions()ID : 545
+ Method : private void net.jforum.view.install.InstallAction.addToSessionAndContext(java.lang.String, java.lang.String)ID : 231
+ Method : public java.lang.String net.jforum.entities.User.getLang()ID : 843
+ Method : public net.jforum.view.admin.AdminAction.<init>()ID : 1037
+ Method : public static java.lang.String net.jforum.util.preferences.SystemGlobals.getValue(java.lang.String)ID : 36
+ Method : private void net.jforum.repository.ForumRepository.loadUsersInfo()ID : 366
+ Method : static void net.jforum.util.I18n.load(java.lang.String, java.lang.String)ID : 95
+ Method : public java.util.List net.jforum.dao.generic.GenericForumDAO.selectAll()ID : 352
+ Method : public net.jforum.entities.Topic.<init>(int)ID : 903
+ Method : public static net.jforum.context.ForumContext net.jforum.JForumExecutionContext.getForumContext()ID : 217
+ Method : public net.jforum.InstallServlet.<init>()ID : 194
+ Method : private void net.jforum.view.forum.SearchAction.search(net.jforum.search.SearchOperation, net.jforum.search.SearchArgs)ID : 729
+ Method : private void net.jforum.view.forum.PostAction.watch(net.jforum.dao.TopicDAO, int, int)ID : 1007
+ Method : public java.util.List net.jforum.dao.generic.GenericModerationDAO.categoryPendingModeration()ID : 1088
+ Method : protected net.jforum.entities.Topic net.jforum.dao.generic.GenericTopicDAO.getBaseTopicData(java.sql.ResultSet)ID : 590
+ Method : public java.lang.String net.jforum.entities.LastPostInfo.getTitle()ID : 617
+ Method : private void net.jforum.repository.ForumRepository.loadCategories(net.jforum.dao.CategoryDAO)ID : 338
+ Method : public void net.jforum.entities.LastPostInfo.setUserId(int)ID : 564
+ Method : public static net.jforum.util.bbcode.BBCodeHandler net.jforum.repository.BBCodeRepository.getBBCollection()ID : 957
+ Method : public java.util.List net.jforum.dao.generic.GenericPostDAO.selectAllByTopicByLimit(int, int, int)ID : 948
+ Method : protected javax.servlet.http.Cookie net.jforum.ControllerUtils.getCookieTemplate(java.lang.String)ID : 423
+ Method : public java.lang.String net.jforum.util.preferences.SystemGlobals.getVariableValue(java.lang.String)ID : 18
+ Method : public void net.jforum.ControllerUtils.prepareTemplateContext(freemarker.template.SimpleHash, net.jforum.context.ForumContext)ID : 499
+ Method : public int net.jforum.entities.UserSession.getUserId()ID : 226
+ Method : public static net.jforum.util.MobileStatus net.jforum.util.MobileStatus.getMobileRequest(javax.servlet.http.HttpServletRequest, java.lang.String)ID : 184
+ Method : public void net.jforum.entities.Topic.setTotalReplies(int)ID : 580
+ Method : public java.lang.String net.jforum.entities.User.getEmail()ID : 502
+ Method : public net.jforum.dao.generic.GenericCategoryDAO.<init>()ID : 129
+ Method : public static void net.jforum.JForumExecutionContext.finish()ID : 254
+ Method : public net.jforum.dao.ConfigDAO net.jforum.dao.generic.GenericDataAccessDriver.newConfigDAO()ID : 320
+ Method : public java.lang.String net.jforum.entities.Forum.getName()ID : 355
+ Method : public net.jforum.dao.DBVersionWorkarounder.<init>()ID : 309
+ Method : private void net.jforum.view.admin.AdminAction.checkBoardVersion()ID : 1057
+ Method : public void net.jforum.entities.User.setRegistrationDate(java.util.Date)ID : 446
+ Method : public net.jforum.dao.generic.GenericDataAccessDriver.<init>()ID : 141
+ Method : public net.jforum.dao.AttachmentDAO net.jforum.dao.generic.GenericDataAccessDriver.newAttachmentDAO()ID : 399
+ Method : public void net.jforum.view.forum.BookmarkAction.insert()ID : 1004
+ Method : public void net.jforum.view.forum.HottestTopicsAction.list()ID : 659
+ Method : public net.jforum.repository.SmiliesRepository.<init>()ID : 46
+ Method : private static void net.jforum.SessionFacade.changeUserCount(java.lang.String, boolean)ID : 227
+ Method : public static void net.jforum.SessionFacade.add(net.jforum.entities.UserSession)ID : 229
+ Method : static long net.jforum.util.stats.Stats$Data.access$2(net.jforum.util.stats.Stats$Data)ID : 1095
+ Method : private java.util.List net.jforum.view.forum.TopDownloadsAction.topDownloads()ID : 671
+ Method : java.io.File net.jforum.util.log.LoggerHelper.checkDestFile(java.lang.String)ID : 8
+ Method : public java.lang.String net.jforum.entities.Smilie.getCode()ID : 958
+ Method : public static void net.jforum.SessionFacade.add(net.jforum.entities.UserSession, java.lang.String)ID : 228
+ Method : public net.jforum.context.web.WebResponseContext.<init>(javax.servlet.http.HttpServletResponse)ID : 196
+ Method : public static java.lang.String net.jforum.util.I18n.getMessage(java.lang.String, java.lang.String)ID : 247
+ Method : public void net.jforum.util.bbcode.BBCodeHandler.characters(char[], int, int)ID : 158
+ Method : public net.jforum.dao.UserDAO net.jforum.dao.generic.GenericDataAccessDriver.newUserDAO()ID : 359
+ Method : public net.jforum.context.JForumContext.<init>(java.lang.String, java.lang.String, net.jforum.context.RequestContext, net.jforum.context.ResponseContext, boolean)ID : 200
+ Method : private java.lang.String[] net.jforum.search.LuceneSearch.analyzeKeywords(java.lang.String)ID : 706
+ Method : public void net.jforum.entities.Smilie.setId(int)ID : 374
+ Method : public net.jforum.search.SearchResult net.jforum.search.LuceneManager.search(net.jforum.search.SearchArgs)ID : 719
+ Method : public net.jforum.dao.generic.GenericTreeGroupDAO.<init>()ID : 119
+ Method : public void net.jforum.security.Role.setName(java.lang.String)ID : 477
+ Method : public void net.jforum.ContextListener.contextInitialized(javax.servlet.ServletContextEvent)ID : 25
+ Method : public java.lang.String net.jforum.entities.User.getRegistrationDay()ID : 996
+ Method : public net.jforum.exceptions.ForumException.<init>(java.lang.String, java.lang.Throwable)ID : 1014
+ Method : public java.util.List net.jforum.util.legacy.clickstream.config.ClickstreamConfig.getBotAgents()ID : 267
+ Method : public void net.jforum.csrf.CsrfFilter.init(javax.servlet.FilterConfig)ID : 33
+ Method : public boolean net.jforum.util.bbcode.BBCode.isRegexpReplace()ID : 962
+ Method : public java.util.List net.jforum.dao.generic.GenericPostDAO.selectByUserByLimit(int, int, int)ID : 886
+ Method : public void net.jforum.dao.generic.GenericUserSessionDAO.update(net.jforum.entities.UserSession, java.sql.Connection)ID : 853
+ Method : public net.jforum.entities.User net.jforum.dao.generic.GenericUserDAO.selectById(int)ID : 467
+ Method : public static java.lang.String net.jforum.repository.Tpl.name(java.lang.String)ID : 210
+ Method : public boolean net.jforum.dao.generic.GenericTopicDAO.isUserSubscribed(int, int)ID : 984
+ Method : public void net.jforum.entities.Forum.setTotalTopics(int)ID : 345
+ Method : private static void net.jforum.util.preferences.SystemGlobals.loadDefaults()ID : 15
+ Method : public static java.util.List net.jforum.util.stats.Stats.getRecords()ID : 1100
+ Method : public net.jforum.view.forum.HottestTopicsAction.<init>()ID : 644
+ Method : public static void net.jforum.ConfigLoader.startSearchIndexer()ID : 407
+ Method : public java.lang.String net.jforum.entities.User.getFrom()ID : 829
+ Method : public java.util.List net.jforum.dao.generic.GenericUserDAO.selectAll(int, int)ID : 1019
+ Method : public void net.jforum.entities.UserSession.setUsername(java.lang.String)ID : 415
+ Method : public static boolean net.jforum.repository.ForumRepository.isForumAccessible(int)ID : 877
+ Method : public void net.jforum.entities.Banlist.setUserId(int)ID : 501
+ Method : public int net.jforum.entities.User.getId()ID : 453
+ Method : public net.jforum.search.SearchResult net.jforum.search.ContentSearchOperation.performSearch(net.jforum.search.SearchArgs)ID : 722
+ Method : public void net.jforum.entities.User.setNotifyText(boolean)ID : 459
+ Method : public java.lang.String net.jforum.entities.Ranking.getTitle()ID : 915
+ Method : public void net.jforum.security.PermissionControl.setRoles(net.jforum.security.RoleCollection)ID : 488
+ Method : public net.jforum.entities.QuotaLimit.<init>()ID : 1033
+ Method : public static java.util.Iterator net.jforum.util.preferences.SystemGlobals.fetchConfigKeyIterator()ID : 1116
+ Method : public void net.jforum.entities.User.setActive(int)ID : 452
+ Method : public void net.jforum.entities.Topic.setFirstPostTime(java.util.Date)ID : 593
+ Method : public boolean net.jforum.entities.Post.hasAttachments()ID : 1000
+ Method : public void net.jforum.search.SearchArgs.setUserId(java.lang.String)ID : 690
+ Method : public net.jforum.dao.generic.GenericGroupDAO.<init>()ID : 109
+ Method : public java.util.List net.jforum.dao.generic.GenericAttachmentDAO.selectTopDownloads(int)ID : 670
+ Method : public net.jforum.entities.MailIntegration net.jforum.dao.generic.GenericMailIntegrationDAO.find(int)ID : 1082
+ Method : public static net.jforum.entities.LastPostInfo net.jforum.repository.ForumRepository.getLastPostInfo(net.jforum.entities.Forum)ID : 604
+ Method : public void net.jforum.JForumExecutionContext.setForumContext(net.jforum.context.ForumContext)ID : 201
+ Method : public static net.jforum.dao.DataAccessDriver net.jforum.dao.DataAccessDriver.getInstance()ID : 317
+ Method : private boolean net.jforum.view.install.InstallAction.importTablesData(java.sql.Connection)ID : 292
+ Method : public boolean net.jforum.entities.User.isAttachSignatureEnabled()ID : 839
+ Method : public void net.jforum.view.admin.AdminAction.menu()ID : 1041
+ Method : public static java.lang.String net.jforum.util.I18n.getMessage(java.lang.String, java.lang.Object[])ID : 619
+ Method : public net.jforum.entities.User net.jforum.entities.Topic.getLastPostBy()ID : 597
+ Method : public net.jforum.entities.User net.jforum.sso.DefaultLoginAuthenticator.validateLogin(java.lang.String, java.lang.String, java.util.Map)ID : 772
+ Method : protected java.sql.PreparedStatement net.jforum.dao.generic.AutoKeys.getStatementForAutoKeys(java.lang.String)ID : 808
+ Method : public java.util.Map net.jforum.dao.generic.GenericKarmaDAO.getUserVotes(int, int)ID : 987
+ Method : public net.jforum.dao.UserSessionDAO net.jforum.dao.generic.GenericDataAccessDriver.newUserSessionDAO()ID : 629
+ Method : public void net.jforum.search.LuceneIndexer.watchNewDocuDocumentAdded(net.jforum.search.NewDocumentAdded)ID : 404
+ Method : public void net.jforum.view.forum.PostAction.review()ID : 1016
+ Method : public static void net.jforum.api.integration.mail.pop.POPJobStarter.startJob()ID : 152
+ Method : public boolean net.jforum.security.PermissionControl.canAccess(java.lang.String)ID : 493
+ Method : public static void net.jforum.dao.DataAccessDriver.init(net.jforum.dao.DataAccessDriver)ID : 143
+ Method : public static net.jforum.entities.Category net.jforum.repository.ForumRepository.getCategory(int)ID : 742
+ Method : public void net.jforum.view.forum.RecentTopicsAction.list()ID : 885
+ Method : public void net.jforum.entities.User.setTwitter(java.lang.String)ID : 440
+ Method : public net.jforum.context.RequestContext net.jforum.context.JForumContext.getRequest()ID : 218
+ Method : public void net.jforum.repository.Tpl.setCacheEngine(net.jforum.cache.CacheEngine)ID : 66
+ Method : public void net.jforum.entities.Post.setKarma(net.jforum.entities.KarmaStatus)ID : 946
+ Method : public java.util.List net.jforum.search.ContentSearchOperation.getResults()ID : 724
+ Method : public void net.jforum.view.forum.PrivateMessageAction.sendTo()ID : 943
+ Method : private net.jforum.entities.User net.jforum.view.forum.UserAction.validateLogin(java.lang.String, java.lang.String)ID : 774
+ Method : public net.jforum.util.Captcha.<init>()ID : 785
+ Method : public void net.jforum.entities.KarmaStatus.setKarmaPoints(double)ID : 944
+ Method : public void net.jforum.entities.User.setNotifyAlways(boolean)ID : 458
+ Method : public boolean net.jforum.entities.Topic.isVote()ID : 746
+ Method : public static transient void net.jforum.util.preferences.SystemGlobals.loadQueries(java.lang.String[])ID : 105
+ Method : public void net.jforum.entities.User.setTotalPosts(int)ID : 445
+ Method : public net.jforum.search.LuceneContentCollector.<init>(net.jforum.search.LuceneSettings)ID : 401
+ Method : public int net.jforum.view.admin.BoardStatsAction$Item.compareTo(java.lang.Object)ID : 1103
+ Method : public void net.jforum.entities.UserSession.setPrivateMessages(int)ID : 864
+ Method : public void net.jforum.entities.ForumStats.setTopicsPerDay(double)ID : 1052
+ Method : public net.jforum.entities.ForumStats net.jforum.dao.generic.GenericForumDAO.getBoardStatus()ID : 1054
+ Method : public boolean net.jforum.entities.Post.isCanEdit()ID : 993
+ Method : public java.lang.String net.jforum.entities.Post.getSubject()ID : 951
+ Method : public void net.jforum.view.forum.TopDownloadsAction.list()ID : 672
+ Method : public void net.jforum.entities.UserSession.createNewCaptcha()ID : 787
+ Method : public net.jforum.dao.generic.GenericAttachmentDAO.<init>()ID : 126
+ Method : public net.jforum.dao.PollDAO net.jforum.dao.generic.GenericDataAccessDriver.newPollDAO()ID : 902
+ Method : private void net.jforum.view.install.InstallAction.fixModulesMapping()ID : 301
+ Method : public void net.jforum.search.SearchArgs.startFetchingAtRecord(int)ID : 684
+ Method : public boolean net.jforum.entities.Forum.isModerated()ID : 608
+ Method : private java.io.Writer net.jforum.JForum.processCommand(java.io.Writer, net.jforum.context.RequestContext, net.jforum.context.ResponseContext, java.lang.String, freemarker.template.SimpleHash, java.lang.String)ID : 625
+ Method : public javax.servlet.ServletOutputStream net.jforum.context.web.WebResponseContext.getOutputStream()ID : 206
+ Method : public void net.jforum.entities.User.setAvatar(java.lang.String)ID : 428
+ Method : private static java.lang.String net.jforum.repository.RankingRepository.getRankTitleByPosts(int)ID : 916
+ Method : private void net.jforum.util.Captcha.initializeChars()ID : 783
+ Method : private void net.jforum.view.forum.PostAction.topicNotFound()ID : 905
+ Method : public static java.lang.String net.jforum.JForumExecutionContext.getRedirectTo()ID : 237
+ Method : public static java.lang.String net.jforum.view.forum.common.PostCommon.prepareTextForDisplayExceptCodeTag(java.lang.String, boolean, boolean)ID : 970
+ Method : public static java.util.List net.jforum.view.forum.common.TopicsCommon.prepareTopics(java.util.List)ID : 656
+ Method : public int net.jforum.dao.generic.GenericPostDAO.countPreviousPosts(int)ID : 1009
+ Method : public net.jforum.view.admin.ModerationAction.<init>()ID : 1087
+ Method : public int net.jforum.entities.Category.getId()ID : 334
+ Method : public void net.jforum.ForumSessionListener.sessionDestroyed(javax.servlet.http.HttpSessionEvent)ID : 873
+ Method : public void net.jforum.entities.Post.setPostUsername(java.lang.String)ID : 937
+ Method : static net.jforum.util.legacy.clickstream.config.ClickstreamConfig net.jforum.util.legacy.clickstream.config.ConfigLoader.access$0(net.jforum.util.legacy.clickstream.config.ConfigLoader)ID : 263
+ Method : public void net.jforum.entities.User.setAvatarEnabled(boolean)ID : 434
+ Method : public java.lang.String net.jforum.util.bbcode.BBCode.getLockedForSmilies()ID : 960
+ Method : public void net.jforum.view.admin.AttachmentsAction.extensionGroups()ID : 1130
+ Method : public void net.jforum.entities.Smilie.setUrl(java.lang.String)ID : 376
+ Method : public static int net.jforum.SessionFacade.registeredSize()ID : 542
+ Method : public static void net.jforum.util.preferences.SystemGlobals.setValue(java.lang.String, java.lang.String)ID : 22
+ Method : protected org.apache.lucene.analysis.Analyzer$TokenStreamComponents net.jforum.search.PorterStandardAnalyzer.createComponents(java.lang.String)ID : 705
+ Method : protected java.lang.String net.jforum.dao.generic.GenericPostDAO.getPostTextFromResultSet(java.sql.ResultSet)ID : 935
+ Method : public void net.jforum.entities.User.setOccupation(java.lang.String)ID : 444
+ Method : public java.util.Date net.jforum.search.SearchArgs.getFromDate()ID : 710
+ Method : public net.jforum.ForumSessionListener.<init>()ID : 3
+ Method : public net.jforum.security.RoleCollection net.jforum.dao.generic.security.GenericGroupSecurityDAO.loadRolesByUserGroups(net.jforum.entities.User)ID : 487
+ Method : public net.jforum.entities.Category.<init>(net.jforum.entities.Category)ID : 870
+ Method : protected boolean net.jforum.util.BoundedLinkedHashMap.removeEldestEntry(java.util.Map$Entry)ID : 516
+ Method : public java.lang.String net.jforum.entities.UserSession.getUsername()ID : 621
+ Method : public java.util.List net.jforum.dao.generic.GenericSpamDAO.selectAll()ID : 1139
+ Method : public void net.jforum.context.web.WebSessionContext.removeAttribute(java.lang.String)ID : 419
+ Method : public static boolean net.jforum.SessionFacade.isLogged()ID : 427
+ Method : public net.jforum.security.RoleValueCollection net.jforum.security.Role.getValues()ID : 478
+ Method : public void net.jforum.csrf.CsrfListener.contextInitialized(javax.servlet.ServletContextEvent)ID : 29
+ Method : public static int net.jforum.repository.ForumRepository.getTotalMessages(boolean)ID : 536
+ Method : private static void net.jforum.util.I18n.loadLocales()ID : 85
+ Method : public boolean net.jforum.search.SearchArgs.isGroupByForum()ID : 714
+ Method : public java.util.Date net.jforum.entities.UserSession.getLastVisit()ID : 524
+ Method : public static void net.jforum.repository.ForumRepository.incrementTotalUsers()ID : 823
+ Method : public java.lang.String net.jforum.entities.Category.getName()ID : 336
+ Method : public void net.jforum.dao.generic.GenericTopicDAO.updateReadStatus(int, int, boolean)ID : 985
+ Method : public net.jforum.entities.LastPostInfo net.jforum.dao.generic.GenericForumDAO.getLastPostInfo(int)ID : 602
+ Method : public static void net.jforum.JForumExecutionContext.setContentType(java.lang.String)ID : 789
+ Method : public static java.lang.String net.jforum.repository.RankingRepository.getRankTitle(int, int)ID : 917
+ Method : public freemarker.template.Template net.jforum.view.admin.AdminAction.process(net.jforum.context.RequestContext, net.jforum.context.ResponseContext, freemarker.template.SimpleHash)ID : 1039
+ Method : public java.lang.String net.jforum.security.Role.getName()ID : 482
+ Method : public void net.jforum.view.forum.PostAction.preList()ID : 1010
+ Method : public void net.jforum.entities.UserSession.setSessionId(java.lang.String)ID : 224
+ Method : private void net.jforum.UrlPattern.processPattern()ID : 80
+ Method : public int net.jforum.context.web.WebRequestContext.getIntParameter(java.lang.String)ID : 675
+ Method : private void net.jforum.search.LuceneSearch.filterByForum(net.jforum.search.SearchArgs, java.lang.StringBuilder)ID : 700
+ Method : public static void net.jforum.ConfigLoader.loadDaoImplementation()ID : 144
+ Method : public net.jforum.repository.RolesRepository.<init>()ID : 67
+ Method : private void net.jforum.view.forum.PostAction.replyOnly()ID : 908
+ Method : public java.lang.String net.jforum.util.bbcode.BBCode.getReplace()ID : 964
+ Method : public java.lang.String[] net.jforum.search.SearchArgs.getKeywords()ID : 698
+ Method : public boolean net.jforum.DBConnection.isDatabaseUp()ID : 409
+ Method : public static net.jforum.context.RequestContext net.jforum.JForumExecutionContext.getRequest()ID : 219
+ Method : public void net.jforum.view.forum.ForumAction.list()ID : 549
+ Method : public java.util.Collection net.jforum.util.bbcode.BBCodeHandler.getAlwaysProcessList()ID : 968
+ Method : public net.jforum.dao.generic.GenericModerationDAO.<init>()ID : 127
+ Method : public void net.jforum.dao.MySQLVersionWorkarounder.handleWorkarounds(java.sql.Connection)ID : 315
+ Method : public net.jforum.security.RoleCollection.<init>()ID : 474
+ Method : public java.lang.Object net.jforum.context.web.WebSessionContext.getAttribute(java.lang.String)ID : 233
+ Method : public java.lang.Object net.jforum.cache.DefaultCacheEngine.get(java.lang.String, java.lang.String)ID : 209
+ Method : public net.jforum.repository.BanlistRepository.<init>()ID : 73
+ Method : public void net.jforum.entities.User.setFrom(java.lang.String)ID : 439
+ Method : protected void net.jforum.util.Captcha.buildInitialFactories()ID : 784
+ Method : public static void net.jforum.SessionFacade.storeSessionData(java.lang.String)ID : 855
+ Method : public void net.jforum.entities.User.setDeleted(int)ID : 457
+ Method : public net.jforum.entities.KarmaStatus net.jforum.entities.Post.getKarma()ID : 995
+ Method : public net.jforum.api.integration.mail.pop.POPConnector.<init>()ID : 894
+ Method : public java.util.List net.jforum.dao.generic.GenericUserDAO.findByName(java.lang.String, boolean)ID : 641
+ Method : private void net.jforum.view.install.InstallAction.checkLanguage()ID : 232
+ Method : public static void net.jforum.util.preferences.SystemGlobals.saveInstallation(boolean)ID : 303
+ Method : public static java.lang.String net.jforum.view.forum.common.PostCommon.parseDefaultRequiredBBCode(java.lang.String)ID : 969
+ Method : public boolean net.jforum.entities.LastPostInfo.hasInfo()ID : 642
+ Method : public boolean net.jforum.entities.Topic.isModerated()ID : 983
+ Method : protected java.util.Properties net.jforum.dao.DBVersionWorkarounder.loadSqlQueries()ID : 312
+ Method : public static java.util.List net.jforum.view.forum.common.ForumCommon.getAllCategoriesAndForums(net.jforum.entities.UserSession, int, java.util.Map, boolean)ID : 533
+ Method : public void net.jforum.security.RoleCollection.add(net.jforum.security.Role)ID : 483
+ Method : public net.jforum.api.integration.mail.pop.POPListener.<init>()ID : 895
+ Method : public void net.jforum.entities.LastPostInfo.setPostDate(java.util.Date)ID : 565
+ Method : public void net.jforum.entities.Topic.setTime(java.util.Date)ID : 577
+ Method : public static void net.jforum.ControllerUtils.addCookie(java.lang.String, java.lang.String)ID : 858
+ Method : public net.jforum.entities.LastPostInfo.<init>()ID : 562
+ Method : public net.jforum.util.bbcode.JavaDocLink.<init>()ID : 967
+ Method : public net.jforum.dao.generic.GenericConfigDAO.<init>()ID : 130
+ Method : public void net.jforum.view.forum.PrivateMessageAction.findUser()ID : 640
+ Method : public net.jforum.view.forum.PrivateMessageAction.<init>()ID : 633
+ Method : private static java.lang.String net.jforum.util.Hash.crypt(java.lang.String, java.lang.String)ID : 293
+ Method : public static void net.jforum.view.forum.common.ForumCommon.checkUnreadPosts(net.jforum.entities.Forum, java.util.Map, long)ID : 872
+ Method : java.io.File net.jforum.util.log.LoggerHelper.checkTemplate(java.lang.String)ID : 7
+ Method : public void net.jforum.entities.User.setKarma(net.jforum.entities.KarmaStatus)ID : 455
+ Method : public net.jforum.security.Role.<init>()ID : 476
+ Method : private net.jforum.entities.LastPostInfo net.jforum.dao.generic.GenericForumDAO.getLastPostInfo(int, boolean)ID : 601
+ Method : public net.jforum.search.SearchResult net.jforum.search.LuceneSearch.search(net.jforum.search.SearchArgs)ID : 718
+ Method : public net.jforum.util.preferences.SystemGlobalsListener.<init>()ID : 146
+ Method : public static java.util.Map net.jforum.SessionFacade.getTopicsReadTime()ID : 523
+ Method : public java.util.List net.jforum.dao.generic.GenericUserDAO.findAllUsersByEmail(java.lang.String, int, int)ID : 796
+ Method : public void net.jforum.view.forum.ModerationHelper.denied(java.lang.String)ID : 901
+ Method : public static net.jforum.entities.Post net.jforum.view.forum.common.PostCommon.preparePostForDisplay(net.jforum.entities.Post)ID : 974
+ Method : private static void net.jforum.repository.SmiliesRepository.setEngine(net.jforum.cache.CacheEngine)ID : 47
+ Method : public void net.jforum.InstallServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)ID : 255
+ Method : private boolean net.jforum.view.forum.PostAction.isReplyOnly(int)ID : 907
+ Method : private void net.jforum.search.LuceneSearch.openSearch()ID : 402
+ Method : public static java.lang.String net.jforum.util.preferences.SystemGlobals.getApplicationPath()ID : 77
+ Method : public void net.jforum.util.bbcode.BBCode.enableAlwaysProcess()ID : 167
+ Method : public net.jforum.cache.DefaultCacheEngine.<init>()ID : 38
+ Method : public boolean net.jforum.entities.Topic.equals(java.lang.Object)ID : 913
+ Method : public int net.jforum.entities.User.getRankId()ID : 911
+ Method : private boolean net.jforum.view.install.InstallAction.checkForWritableDir()ID : 276
+ Method : public net.jforum.dao.generic.AutoKeys.<init>()ID : 110
+ Method : public void net.jforum.entities.ForumStats.setPostsPerDay(double)ID : 1051
+ Method : public void net.jforum.util.bbcode.BBCode.enableRemoveQuotes()ID : 165
+ Method : public net.jforum.util.BoundedLinkedHashMap.<init>(int)ID : 511
+ Method : public static java.sql.Connection net.jforum.JForumExecutionContext.getConnection()ID : 321
+ Method : public net.jforum.util.ForumOrderComparator.<init>()ID : 323
+ Method : private void net.jforum.JForum.checkDatabaseStatus()ID : 410
+ Method : protected void net.jforum.Command.setTemplateName(java.lang.String)ID : 211
+ Method : public void net.jforum.entities.LastPostInfo.setTitle(java.lang.String)ID : 571
+ Method : public net.jforum.dao.RegEmailDAO net.jforum.dao.generic.GenericDataAccessDriver.newRegEmailDAO()ID : 384
+ Method : public void net.jforum.entities.Topic.setForumId(int)ID : 585
+ Method : private static java.lang.String net.jforum.view.forum.common.PostCommon.processSmilies(java.lang.StringBuilder)ID : 961
+ Method : net.jforum.util.FileMonitor$MyFileAlterationListenerAdaptor.<init>(java.lang.String, net.jforum.util.FileChangeListener)ID : 91
+ Method : public static java.util.List net.jforum.repository.ForumRepository.getModeratorList(int)ID : 751
+ Method : public net.jforum.dao.TopicDAO net.jforum.dao.generic.GenericDataAccessDriver.newTopicDAO()ID : 572
+ Method : public net.jforum.search.LuceneSettings.<init>(java.lang.Class)ID : 392
+ Method : public net.jforum.repository.BBCodeRepository.<init>()ID : 40
+ Method : public static boolean net.jforum.security.StopForumSpam.checkIp(java.lang.String)ID : 802
+ Method : private void net.jforum.JForum.handleException(java.io.Writer, net.jforum.context.ResponseContext, java.lang.String, java.lang.Exception, net.jforum.context.RequestContext)ID : 769
+ Method : public net.jforum.entities.Topic net.jforum.dao.generic.GenericTopicDAO.selectById(int)ID : 599
+ Method : public void net.jforum.util.stats.StatsEvent.record()ID : 519
+ Method : public static void net.jforum.view.forum.common.ViewCommon.prepareUserSignature(net.jforum.entities.User)ID : 991
+ Method : public net.jforum.JForum.<init>()ID : 35
+ Method : public net.jforum.dao.generic.GenericSummaryDAO.<init>()ID : 132
+ Method : public int net.jforum.security.RoleValue.hashCode()ID : 480
+ Method : public net.jforum.util.bbcode.PlainURLLink.<init>()ID : 966
+ Method : public net.jforum.dao.SpamDAO net.jforum.dao.generic.GenericDataAccessDriver.newSpamDAO()ID : 1136
+ Method : public net.jforum.dao.generic.GenericPrivateMessageDAO.<init>()ID : 122
+ Method : public void net.jforum.entities.UserSession.setUserId(int)ID : 414
+ Method : public static void net.jforum.JForumExecutionContext.setTemplateConfig(freemarker.template.Configuration)ID : 100
+ Method : public static net.jforum.entities.Category net.jforum.repository.ForumRepository.getCategory(int, int)ID : 741
+ Method : public net.jforum.csrf.CsrfLogger.<init>()ID : 28
+ Method : public void net.jforum.view.admin.RankingAction.list()ID : 1091
+ Method : public void net.jforum.entities.UserSession.setLang(java.lang.String)ID : 215
+ Method : private void net.jforum.util.preferences.SystemGlobals.loadAdditionalDefault(java.io.File)ID : 102
+ Method : public net.jforum.dao.generic.GenericLuceneDAO.<init>()ID : 137
+ Method : public boolean net.jforum.entities.UserSession.isModerator()ID : 624
+ Method : public boolean net.jforum.entities.User.isNotifyOnMessagesEnabled()ID : 835
+ Method : private static boolean net.jforum.security.StopForumSpam.getResult(java.lang.String)ID : 801
+ Method : public boolean net.jforum.entities.Category.isModerated()ID : 867
+ Method : public net.jforum.repository.PostRepository.<init>()ID : 61
+ Method : public void net.jforum.search.SearchArgs.setOrderDir(java.lang.String)ID : 682
+ Method : public net.jforum.SessionFacade.<init>()ID : 58
+ Method : public net.jforum.view.admin.AdminCommand.<init>()ID : 1064
+ Method : public void net.jforum.entities.Post.setEditTime(java.util.Date)ID : 933
+ Method : public static java.lang.String net.jforum.view.forum.common.ViewCommon.formatDatePatternOnly(java.util.Date)ID : 540
+ Method : public boolean net.jforum.search.SearchArgs.isMatchExact()ID : 704
+ Method : public net.jforum.entities.KarmaStatus net.jforum.entities.User.getKarma()ID : 918
+ Method : public double net.jforum.entities.ForumStats.getPostsPerDay()ID : 1059
+ Method : public static boolean net.jforum.repository.TopicRepository.isLoaded(int)ID : 898
+ Method : private static void net.jforum.util.I18n.watchForChanges(java.lang.String)ID : 93
+ Method : public boolean net.jforum.entities.Post.isSmiliesEnabled()ID : 954
+ Method : public static java.util.List net.jforum.repository.ForumRepository.getAllCategories(int)ID : 532
+ Method : protected net.jforum.security.RoleCollection net.jforum.dao.generic.security.GenericGroupSecurityDAO.loadRoles(int[])ID : 485
+ Method : private net.jforum.search.SearchResult net.jforum.search.LuceneSearch.performSearch(net.jforum.search.SearchArgs, net.jforum.search.LuceneContentCollector)ID : 717
+ Method : public void net.jforum.entities.Post.setForumId(int)ID : 924
+ Method : public void net.jforum.entities.User.setNotifyPrivateMessagesEnabled(boolean)ID : 456
+ Method : public static boolean net.jforum.repository.BanlistRepository.shouldBan(net.jforum.entities.Banlist)ID : 506
+ Method : public void net.jforum.entities.Forum.setDescription(java.lang.String)ID : 343
+ Method : public final int net.jforum.util.ForumOrderComparator.compare(net.jforum.entities.Forum, net.jforum.entities.Forum)ID : 356
+ Method : public java.lang.String net.jforum.entities.User.getBiography()ID : 832
+ Method : public void net.jforum.entities.User.setActivationKey(java.lang.String)ID : 460
+ Method : public static boolean net.jforum.util.mail.MailChecker.checkEmail(java.lang.String)ID : 805
+ Method : public java.lang.String[] net.jforum.UrlPattern.getVars()ID : 731
+ Method : public java.lang.Object net.jforum.util.stats.StatsEvent.getData()ID : 515
+ Method : public net.jforum.dao.RankingDAO net.jforum.dao.generic.GenericDataAccessDriver.newRankingDAO()ID : 369
+ Method : public net.jforum.view.forum.UserAction.<init>()ID : 630
+ Method : public java.util.Date net.jforum.entities.Topic.getLastPostDate()ID : 651
+ Method : protected void net.jforum.JForumBaseServlet.loadConfigStuff()ID : 99
+ Method : public net.jforum.dao.generic.GenericPollDAO.<init>()ID : 112
+ Method : public void net.jforum.dao.generic.GenericTopicDAO.subscribeUsers(int, java.util.List)ID : 1005
+ Method : public int net.jforum.entities.Topic.getId()ID : 600
+ Method : public net.jforum.util.TopicTypeComparator.<init>(boolean)ID : 52
+ Method : public void net.jforum.entities.UserSession.setAutoLogin(boolean)ID : 818
+ Method : public static net.jforum.entities.Forum net.jforum.repository.ForumRepository.getForum(int)ID : 560
+ Method : public void net.jforum.entities.Post.setSubject(java.lang.String)ID : 934
+ Method : public static net.jforum.entities.LastPostInfo net.jforum.repository.ForumRepository.getLastPostInfo(int)ID : 605
+ Method : public java.util.SortedMap net.jforum.dao.generic.GenericRegEmailDAO.selectAll()ID : 387
+ Method : public net.jforum.dao.generic.GenericForumDAO.<init>()ID : 128
+ Method : public void net.jforum.dao.generic.GenericTopicDAO.incrementTotalViews(int)ID : 986
+ Method : private boolean net.jforum.view.install.InstallAction.createTables(java.sql.Connection)ID : 289
+ Method : public void net.jforum.view.forum.PostAction.listByUser()ID : 734
+ Method : public net.jforum.view.forum.JSAction.<init>()ID : 1029
+ Method : public void net.jforum.JForumExecutionContext.setConnection(java.sql.Connection)ID : 316
+ Method : public net.jforum.search.SearchArgs.<init>()ID : 678
+ Method : public static void net.jforum.util.I18n.load(java.lang.String)ID : 213
+ Method : public int net.jforum.dao.generic.GenericPostDAO.countUserPosts(int)ID : 887
+ Method : public java.util.List net.jforum.dao.generic.GenericTopicDAO.selectWatchesByUser(int)ID : 893
+ Method : public static int net.jforum.repository.RegEmailRepository.canRegister(java.lang.String)ID : 799
+ Method : public net.jforum.exceptions.ForumException.<init>(java.lang.Throwable)ID : 1015
+ Method : public int net.jforum.entities.User.getTotalPosts()ID : 912
+ Method : public void net.jforum.entities.UserSession.makeAnonymous()ID : 859
+ Method : public net.jforum.view.admin.ConfigAction.<init>()ID : 1115
+ Method : public java.util.List net.jforum.dao.generic.GenericModerationLogDAO.selectAll(int, int)ID : 1023
+ Method : public net.jforum.Command.<init>()ID : 207
+ Method : public void net.jforum.view.forum.PrivateMessageAction.send()ID : 636
+ Method : private void net.jforum.view.install.InstallAction.handleDatabasePort(java.util.Properties, java.lang.String)ID : 278
+ Method : public static int net.jforum.repository.ForumRepository.getTotalMessages()ID : 537
+ Method : public static void net.jforum.view.forum.common.ViewCommon.contextToPagination(int, int, int)ID : 728
+ Method : public int net.jforum.entities.ForumStats.getUsers()ID : 1050
+ Method : public void net.jforum.entities.Banlist.setIp(java.lang.String)ID : 504
+ Method : public net.jforum.repository.Tpl.<init>()ID : 64
+ Method : public static void net.jforum.UrlPatternCollection.addPattern(java.lang.String, java.lang.String)ID : 82
+ Method : public void net.jforum.util.legacy.clickstream.config.ConfigLoader$ConfigHandler.startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes)ID : 262
+ Method : public int net.jforum.dao.generic.GenericUserDAO.addNew(net.jforum.entities.User, int)ID : 816
+ Method : private void net.jforum.view.forum.UserAction.userNotFound()ID : 756
+ Method : public net.jforum.dao.ModerationDAO net.jforum.dao.generic.GenericDataAccessDriver.newModerationDAO()ID : 1026
+ Method : private org.apache.lucene.search.Sort net.jforum.search.LuceneSearch.getSorter(net.jforum.search.SearchArgs)ID : 715
+ Method : public static java.util.List net.jforum.view.forum.common.TopicsCommon.topicsByForum(int, int)ID : 739
+ Method : public static synchronized void net.jforum.util.I18n.load()ID : 96
+ Method : public static void net.jforum.ConfigLoader.startCacheEngine()ID : 76
+ Method : public net.jforum.util.legacy.clickstream.config.ClickstreamConfig.<init>()ID : 259
+ Method : protected net.jforum.entities.Group net.jforum.dao.generic.GenericGroupDAO.getGroup(java.sql.ResultSet)ID : 1119
+ Method : public java.lang.String net.jforum.context.JForumContext.encodeURL(java.lang.String, java.lang.String)ID : 251
+ Method : public void net.jforum.entities.User.setLang(java.lang.String)ID : 449
+ Method : public double net.jforum.entities.ForumStats.getUsersPerDay()ID : 1061
+ Method : public void net.jforum.entities.Post.setTime(java.util.Date)ID : 926
+ Method : public void net.jforum.entities.LastPostInfo.setTopicReplies(int)ID : 569
+ Method : public void net.jforum.entities.Forum.setLastPostInfo(net.jforum.entities.LastPostInfo)ID : 603
+ Method : public static java.util.List net.jforum.repository.TopicRepository.loadHottestTopics()ID : 646
+ Method : public static java.util.List net.jforum.repository.TopicRepository.loadMostRecentTopics()ID : 882
+ Method : private java.sql.Connection net.jforum.view.install.InstallAction.configureDatabase()ID : 285
+ Method : public java.lang.String net.jforum.entities.User.getRegistrationDate()ID : 920
+ Method : public static void net.jforum.search.SearchFacade.init()ID : 406
+ Method : public void net.jforum.search.SearchArgs.setOrderBy(java.lang.String)ID : 681
+ Method : public static net.jforum.security.PermissionControl net.jforum.repository.SecurityRepository.load(int)ID : 491
+ Method : public long net.jforum.entities.UserSession.getSessionTime()ID : 847
+ Method : public void net.jforum.entities.Post.setText(java.lang.String)ID : 936
+ Method : public net.jforum.exceptions.ForumException.<init>(java.lang.String)ID : 1012
+ Method : public java.util.List net.jforum.dao.generic.GenericTopicDAO.selectHottestTopics(int)ID : 645
+ Method : public int net.jforum.entities.LastPostInfo.getPostId()ID : 616
+ Method : public net.jforum.util.TopicTypeComparator.<init>()ID : 53
+ Method : public static net.jforum.entities.Topic net.jforum.repository.TopicRepository.getTopic(net.jforum.entities.Topic)ID : 904
+ Method : public static java.lang.String net.jforum.util.Hash.sha512(java.lang.String)ID : 295
+ Method : public static void net.jforum.ConfigLoader.createLoginAuthenticator()ID : 108
+ Method : public net.jforum.dao.ModerationLogDAO net.jforum.dao.generic.GenericDataAccessDriver.newModerationLogDAO()ID : 1022
+ Method : public static net.jforum.security.RoleCollection net.jforum.dao.generic.security.SecurityCommon.loadRoles(java.sql.ResultSet)ID : 484
+ Method : public java.lang.String net.jforum.util.GroupNode.getName()ID : 1078
+ Method : public void net.jforum.entities.ModeratorInfo.setName(java.lang.String)ID : 749
+ Method : public java.lang.String net.jforum.context.web.WebResponseContext.encodeRedirectURL(java.lang.String)ID : 299
+ Method : public net.jforum.entities.Forum.<init>(net.jforum.entities.Forum)ID : 869
+ Method : public void net.jforum.entities.User.setLastVisit(java.util.Date)ID : 443
+ Method : public void net.jforum.view.admin.RegEmailAction.list()ID : 1134
+ Method : private boolean net.jforum.view.forum.UserAction.parseBasicAuthentication()ID : 771
+ Method : public net.jforum.repository.TopicRepository.<init>()ID : 55
+ Method : public java.lang.String net.jforum.util.bbcode.BBCode.getRegex()ID : 963
+ Method : public java.lang.String net.jforum.search.SearchArgs.getOrderBy()ID : 713
+ Method : private void net.jforum.search.LuceneSearch.filterByKeywords(net.jforum.search.SearchArgs, java.lang.StringBuilder)ID : 709
+ Method : private net.jforum.dao.SpamDAO net.jforum.view.admin.SpamBlockAction.getSpamDao()ID : 1137
+ Method : public net.jforum.sso.DefaultLoginAuthenticator.<init>()ID : 106
+ Method : public void net.jforum.search.LuceneSettings.createIndexDirectory(java.lang.String)ID : 395
+ Method : public net.jforum.entities.UserSession.<init>(net.jforum.entities.UserSession)ID : 850
+ Method : public java.util.Map net.jforum.dao.generic.GenericAttachmentDAO.selectGroupsQuotaLimits()ID : 1127
+ Method : private void net.jforum.search.LuceneIndexer.createRAMWriter()ID : 398
+ Method : public freemarker.template.Template net.jforum.view.forum.BookmarkAction.process(net.jforum.context.RequestContext, net.jforum.context.ResponseContext, freemarker.template.SimpleHash)ID : 764
+ Method : public void net.jforum.entities.LastPostInfo.setUsername(java.lang.String)ID : 563
+ Method : public static transient void net.jforum.util.preferences.SystemGlobals.loadQueries(java.io.File[])ID : 104
+ Method : public void net.jforum.entities.Topic.setType(int)ID : 583
+ Method : public java.util.List net.jforum.entities.Forum.getModeratorList()ID : 752
+ Method : private java.io.InputStream net.jforum.csrf.CsrfListener.getResourceStream(java.lang.String, javax.servlet.ServletContext)ID : 26
+ Method : public net.jforum.entities.KarmaStatus net.jforum.dao.generic.GenericKarmaDAO.getPostKarma(int)ID : 945
+ Method : public int net.jforum.util.GroupNode.size()ID : 1079
+ Method : private static void net.jforum.util.I18n.load(java.lang.String, java.lang.String, boolean)ID : 94
+ Method : public boolean net.jforum.context.JForumContext.isBot()ID : 225
+ Method : protected void net.jforum.JForum.startApplication()ID : 171
+ Method : public net.jforum.JForumExecutionContext.<init>()ID : 197
+ Method : private void net.jforum.view.forum.UserAction.logNewRegisteredUserIn(int, net.jforum.entities.User)ID : 820
+ Method : public void net.jforum.view.forum.UserAction.acceptAgreement()ID : 780
+ Method : public static net.jforum.entities.Category net.jforum.repository.ForumRepository.getCategory(net.jforum.security.PermissionControl, int)ID : 531
+ Method : public boolean net.jforum.view.forum.common.BannerCommon.activeBannerExists(int)ID : 553
+ Method : public static boolean net.jforum.entities.User.needsCaptcha(int)ID : 989
+ Method : public java.lang.String net.jforum.entities.Post.getUserIp()ID : 997
+ Method : private java.lang.String net.jforum.view.install.InstallAction.notNullDefault(java.lang.String, java.lang.String)ID : 269
+ Method : public int net.jforum.entities.Group.getId()ID : 470
+ Method : public int net.jforum.entities.Topic.getLastPostId()ID : 668
+ Method : public java.util.List net.jforum.dao.generic.GenericForumDAO.selectWatchesByUser(int)ID : 892
+ Method : public net.jforum.util.GroupNode.<init>()ID : 1070
+ Method : public boolean net.jforum.context.web.WebRequestContext.isMobileRequest()ID : 235
+ Method : public void net.jforum.entities.Post.setBbCodeEnabled(boolean)ID : 928
+ Method : public java.lang.String net.jforum.view.admin.BoardStatsAction$Item.getName()ID : 1113
+ Method : public boolean net.jforum.util.bbcode.BBCode.alwaysProcess()ID : 162
+ Method : public net.jforum.UrlPattern.<init>(java.lang.String, java.lang.String)ID : 81
+ Method : public boolean net.jforum.view.admin.AdminAction.checkAdmin()ID : 1040
+ Method : public static net.jforum.util.stats.Stats$ForbidDetailDisplay[] net.jforum.util.stats.Stats$ForbidDetailDisplay.values()ID : 1109
+ Method : public int net.jforum.entities.ForumStats.getPosts()ID : 1047
+ Method : public static void net.jforum.repository.BanlistRepository.loadBanlist()ID : 383
+ Method : public static void net.jforum.ForumStartup.startForumRepository()ID : 368
+ Method : public net.jforum.repository.ForumRepository.<init>()ID : 49
+ Method : public void net.jforum.exceptions.ExceptionWriter.handleExceptionData(java.lang.Throwable, java.io.Writer, net.jforum.context.RequestContext)ID : 768
+ Method : public void net.jforum.entities.Forum.setId(int)ID : 340
+ Method : public void net.jforum.entities.ForumStats.setTopics(int)ID : 1046
+ Method : public void net.jforum.entities.UserSession.setStartTime(java.util.Date)ID : 216
+ Method : public void net.jforum.entities.Topic.setLastPostId(int)ID : 582
+ Method : public void net.jforum.view.forum.SearchAction.filters()ID : 676
+ Method : public long net.jforum.util.stats.Stats$Record.getCount()ID : 1106
+ Method : private static void net.jforum.SessionFacade.removeSpecificUserSession(int, java.lang.String)ID : 817
+ Method : public net.jforum.search.SearchOperation.<init>()ID : 695
+ Method : public static boolean net.jforum.util.preferences.SystemGlobals.getBoolValue(java.lang.String)ID : 37
+ Method : protected int net.jforum.dao.generic.AutoKeys.executeAutoKeysQuery(java.sql.PreparedStatement)ID : 814
+ Method : public void net.jforum.cache.DefaultCacheEngine.remove(java.lang.String, java.lang.String)ID : 305
+ Method : public boolean net.jforum.entities.Forum.isUnread()ID : 606
+ Method : public void net.jforum.entities.User.setSignature(java.lang.String)ID : 447
+ Method : private static void net.jforum.repository.RolesRepository.setEngine(net.jforum.cache.CacheEngine)ID : 68
+ Method : public void net.jforum.entities.Forum.setIdCategories(int)ID : 341
+ Method : public java.lang.String net.jforum.entities.User.getSkype()ID : 827
+ Method : public void net.jforum.entities.Topic.setTotalPages(java.lang.Double)ID : 654
+ Method : public boolean net.jforum.entities.User.isExternalAvatar()ID : 845
+ Method : protected java.util.List net.jforum.dao.generic.GenericGroupDAO.fillGroups(java.sql.ResultSet)ID : 1120
+ Method : private void net.jforum.view.install.InstallAction.updateSystemGlobals(java.util.Properties)ID : 279
+ Method : private void net.jforum.util.preferences.SystemGlobals.buildSystem(java.lang.String, java.lang.String)ID : 19
+ Method : private void net.jforum.dao.generic.GenericUserSessionDAO.add(net.jforum.entities.UserSession, java.sql.Connection, boolean)ID : 852
+ Method : public java.util.List net.jforum.dao.generic.GenericTopicDAO.selectRecentTopics(int, int)ID : 880
+ Method : public void net.jforum.entities.ModeratorInfo.setId(int)ID : 748
+ Method : public java.lang.String net.jforum.context.web.WebSessionContext.getId()ID : 222
+ Method : public void net.jforum.view.forum.UserAction.edit()ID : 759
+ Method : public net.jforum.view.forum.common.PostCommon.<init>()ID : 1028
+ Method : private static boolean net.jforum.search.SearchFacade.isSearchEnabled()ID : 390
+ Method : public void net.jforum.entities.Category.setOrder(int)ID : 327
+ Method : public static net.jforum.security.RoleCollection net.jforum.repository.RolesRepository.getGroupRoles(int[])ID : 473
+ Method : public net.jforum.entities.ForumStats.<init>()ID : 1043
+ Method : private boolean net.jforum.view.forum.UserAction.isValidReturnPath()ID : 631
+ Method : public boolean net.jforum.util.stats.Stats$Record.isDetailForbidden()ID : 1112
+ Method : public void net.jforum.entities.Topic.setLastPostBy(net.jforum.entities.User)ID : 591
+ Method : public net.jforum.view.admin.BoardStatsAction.<init>()ID : 1092
+ Method : public net.jforum.util.legacy.clickstream.ClickstreamFilter.<init>()ID : 30
+ Method : public net.jforum.entities.Group.<init>()ID : 463
+ Method : public static net.jforum.JForumExecutionContext net.jforum.JForumExecutionContext.get()ID : 198
+ Method : private java.lang.String net.jforum.view.install.InstallAction.getFromSession(java.lang.String)ID : 234
+ Method : public void net.jforum.search.SearchArgs.setDateRange(java.util.Date, java.util.Date)ID : 688
+ Method : public net.jforum.dao.generic.GenericBannerDAO.<init>()ID : 131
+ Method : private void net.jforum.JForum.handleFinally(java.io.Writer, net.jforum.context.JForumContext, net.jforum.context.ResponseContext)ID : 626
+ Method : public net.jforum.view.forum.ModerationHelper.<init>()ID : 900
+ Method : public static boolean net.jforum.repository.SecurityRepository.canAccess(java.lang.String, java.lang.String)ID : 495
+ Method : private boolean net.jforum.view.forum.PostAction.anonymousPost(int)ID : 1031
+ Method : public void net.jforum.entities.Forum.setLastPostId(int)ID : 346
+ Method : public net.jforum.search.LuceneIndexer.<init>(net.jforum.search.LuceneSettings)ID : 400
+ Method : public net.jforum.view.forum.ModerationAction.<init>()ID : 1021
+ Method : public int net.jforum.entities.Forum.getTotalTopics()ID : 609
+ Method : public int net.jforum.dao.generic.GenericUserDAO.getTotalUsers()ID : 365
+ Method : public java.lang.String net.jforum.entities.Group.getName()ID : 1123
+ Method : public static java.lang.String net.jforum.repository.ForumRepository.getListAllowedForums()ID : 878
+ Method : public static java.util.Date net.jforum.util.stats.Stats.getRestartTime()ID : 1102
+ Method : public static javax.servlet.http.Cookie net.jforum.ControllerUtils.getCookie(java.lang.String)ID : 422
+ Method : public boolean net.jforum.entities.UserSession.validateCaptchaResponse(java.lang.String)ID : 798
+ Method : public void net.jforum.entities.UserSession.updateSessionTime()ID : 628
+ Method : private static java.util.List net.jforum.util.log.LoggerHelper.getCurrentLoggers()ID : 4
+ Method : private java.util.List net.jforum.view.forum.RecentTopicsAction.topics(int, int)ID : 884
+ Method : public net.jforum.SimpleConnection.<init>()ID : 281
+ Method : public java.util.Collection net.jforum.entities.Category.getForums(int)ID : 554
+ Method : public void net.jforum.entities.UserSession.destroyCaptcha()ID : 782
+ Method : public void net.jforum.view.admin.UserAction.pendingActivations()ID : 1086
+ Method : private static boolean net.jforum.util.MobileStatus.isOnMobileDevice(javax.servlet.http.HttpServletRequest)ID : 183
+ Method : public static java.lang.String net.jforum.view.forum.common.ViewCommon.contextToLogin(java.lang.String)ID : 634
+ Method : public java.lang.String net.jforum.entities.Forum.getDescription()ID : 607
+ Method : public java.util.List net.jforum.dao.generic.GenericTreeGroupDAO.selectGroups(int)ID : 1073
+ Method : public boolean net.jforum.entities.Topic.isPaginate()ID : 664
+ Method : private static void net.jforum.view.forum.common.PostCommon.processText(net.jforum.entities.Post)ID : 971
+ Method : public int net.jforum.entities.Post.getUserId()ID : 978
+ Method : public java.awt.image.BufferedImage net.jforum.entities.UserSession.getCaptchaImage()ID : 790
+ Method : private static void net.jforum.repository.PostRepository.setEngine(net.jforum.cache.CacheEngine)ID : 62
+ Method : public static boolean net.jforum.repository.SecurityRepository.canAccess(int, java.lang.String, java.lang.String)ID : 494
+ Method : public void net.jforum.view.forum.CaptchaAction.generate()ID : 794
+ Method : public net.jforum.dao.generic.GenericUserSessionDAO.<init>()ID : 123
+ Method : public java.util.Map net.jforum.dao.generic.GenericModerationDAO.topicsByForum(int)ID : 1027
+ Method : public net.jforum.dao.BanlistDAO net.jforum.dao.generic.GenericDataAccessDriver.newBanlistDAO()ID : 381
+ Method : public void net.jforum.entities.Post.setModerate(boolean)ID : 939
+ Method : public java.lang.String net.jforum.entities.Post.getFormattedTime()ID : 994
+ Method : public net.jforum.context.SessionContext net.jforum.context.web.WebRequestContext.getSessionContext()ID : 221
+ Method : public void net.jforum.view.forum.PrivateMessageAction.inbox()ID : 643
+ Method : public java.lang.String net.jforum.entities.User.getWebSite()ID : 828
+ Method : public void net.jforum.repository.RolesRepository.setCacheEngine(net.jforum.cache.CacheEngine)ID : 69
+ Method : private boolean net.jforum.JForum.shouldBan(java.lang.String)ID : 507
+ Method : public void net.jforum.repository.SmiliesRepository.setCacheEngine(net.jforum.cache.CacheEngine)ID : 48
+ Method : public net.jforum.entities.User net.jforum.dao.generic.GenericUserDAO.findByEmail(java.lang.String)ID : 797
+ Method : public static java.lang.String net.jforum.util.legacy.clickstream.BotChecker.isBot(javax.servlet.http.HttpServletRequest)ID : 268
+ Method : public net.jforum.csrf.CsrfHttpServletRequestWrapper.<init>(javax.servlet.http.HttpServletRequest, java.lang.String)ID : 192
+ Method : public static void net.jforum.JForumExecutionContext.set(net.jforum.JForumExecutionContext)ID : 202
+ Method : public boolean net.jforum.dao.generic.GenericUserDAO.isUsernameRegistered(java.lang.String)ID : 795
+ Method : public double net.jforum.entities.KarmaStatus.getKarmaPoints()ID : 919
+ Method : public java.lang.String net.jforum.context.web.WebRequestContext.getParameter(java.lang.String)ID : 185
+ Method : public static java.lang.Object net.jforum.SessionFacade.getAttribute(java.lang.String)ID : 426
+ Method : public void net.jforum.entities.Topic.setTotalViews(int)ID : 579
+ Method : public void net.jforum.view.forum.UserAction.insert()ID : 779
+
