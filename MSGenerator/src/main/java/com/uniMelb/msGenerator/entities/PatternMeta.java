@@ -16,6 +16,10 @@ public class PatternMeta {
     private int patternLength = 0;
     private double averageDepth = 0;
     private double executionTime = 0;
+    private double normalizedSupport = 0;
+    private double normalizedPatternLength = 0;
+    private double normalizedAverageDepth = 0;
+    private double normalizedExecutionTime = 0;
 
     
     public String getPattern() {
@@ -80,12 +84,41 @@ public class PatternMeta {
     public void setExecutionTime(double executionTime) {
         this.executionTime = executionTime;
     }
+
+    public double getNormalizedSupport() {
+        return normalizedSupport;
+    }
+    public void setNormalizedSupport(double normalizedSupport) {
+        this.normalizedSupport = normalizedSupport;
+    }
+    public double getNormalizedPatternLength() {
+        return normalizedPatternLength;
+    }
+    public void setNormalizedPatternLength(double normalizedPatternLength) {
+        this.normalizedPatternLength = normalizedPatternLength;
+    }
+    public double getNormalizedAverageDepth() {
+        return normalizedAverageDepth;
+    }
+    public void setNormalizedAverageDepth(double normalizedAverageDepth) {
+        this.normalizedAverageDepth = normalizedAverageDepth;
+    }
+    public double getNormalizedExecutionTime() {
+        return normalizedExecutionTime;
+    }
+    public void setNormalizedExecutionTime(double normalizedExecutionTime) {
+        this.normalizedExecutionTime = normalizedExecutionTime;
+    }
     @Override
     public String toString() {
         return "PatternMeta [pattern=" + pattern + ", support=" + support + ", confidence=" + confidence + ", distance="
-                + distance +", patternLength=" + patternLength+ ", averageDepth=" + averageDepth
-                + ", executionTime=" + (executionTime/1000) + ", pattenwithMethodNames=" + pattenwithMethodNames + "cost=" + cost + "]";
+                + distance + ", cost=" + cost + ", pattenwithMethodNames=" + pattenwithMethodNames + ", totalEvents="
+                + totalEvents + ", patternLength=" + patternLength + ", averageDepth=" + averageDepth
+                + ", executionTime=" + executionTime + ", normalizedSupport=" + normalizedSupport
+                + ", normalizedPatternLength=" + normalizedPatternLength + ", normalizedAverageDepth="
+                + normalizedAverageDepth + ", normalizedExecutionTime=" + normalizedExecutionTime + "]";
     }
+
 
 }
 

@@ -2,6 +2,7 @@ package com.uniMelb.msGenerator.components;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -24,6 +25,10 @@ import org.springframework.stereotype.Component;
 import com.uniMelb.msGenerator.entities.Event;
 import com.uniMelb.msGenerator.entities.PatternMeta;
 import com.uniMelb.msGenerator.patternMinningAlgorithms.ExecuteJarWithParams;
+
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 @Component
 public class AppComponent {
@@ -71,6 +76,9 @@ public class AppComponent {
     @Value("${app.patternCostInfoFile}")
     private String patternCostInfoFileLocation;
 
+    @Value("${app.excelFileLocation}")
+    private String excelFileLocation;
+    
     // comma seperated string of names to avoid in pattern minning
     @Value("${app.stringsToAvoidFromPatternMatching}")
     private String stringsToAvoidFromPatternMatching;
@@ -91,6 +99,7 @@ public class AppComponent {
         System.out.println("Is Method To Id Mapping Required : "+isMethodToIdMappingRequired);
         System.out.println("Method To Id Mapping File Location : "+methodToIdMappingFileLocation);
         System.out.println("Pattern Cost Info File Location : "+ patternCostInfoFileLocation);
+        System.out.println("Pattern Cost Info File Location : "+ excelFileLocation);
         System.out.println("Discarding Class List : "+ stringsToAvoidFromPatternMatching);
         System.out.println("=========== System Parameters Ends =============");
 
@@ -164,7 +173,8 @@ public class AppComponent {
                             "<int key=\"depth\" value=\"1\"/>"+"\n"+
                     "</global>"+"\n";
             System.out.println("@@@@@@@@@ Data list size "+ dataList.size());
-            for(int i=0;i<dataList.size();i++){
+            // for(int i=0;i<dataList.size();i++){
+                for(int i=dataList.size()-1; i>=0; i--){
                 // System.out.println("event loop : "+i);
                 String eventString = dataList.get(i);
                 String[] tokenizedArray = eventString.split(";");
@@ -211,8 +221,56 @@ public class AppComponent {
                 // durationList.add(event.getMethodDuration());
                 // methodAverageTimeMap.put(event.shortMethodName(), durationList);
                 if (eventToIDMapping.get(event.shortMethodName()) == null) {
-                    eventToIDMapping.put(event.shortMethodName(), methodID); // to convert string sequence to int sequence
-                    methodID++;
+                    if ( event.shortMethodName().contains("init") 
+                    || event.shortMethodName().contains("private")
+                    || event.shortMethodName().contains(".lambda") 
+                    || event.shortMethodName().contains("getBotAgents") 
+                    || event.shortMethodName().contains("WebRequestContext") 
+                    || event.shortMethodName().contains("CsrfFilter")
+                    || event.shortMethodName().contains("CsrfHttpServletRequestWrapper") 
+                    || event.shortMethodName().contains("net.jforum.JForum.")
+                    || event.shortMethodName().contains("net.jforum.DBConnection")
+                    || event.shortMethodName().contains("net.jforum.entities.") 
+                    || event.shortMethodName().contains("net.jforum.util.I18n.") 
+                    || event.shortMethodName().contains("net.jforum.context.JForumContext") 
+                    || event.shortMethodName().contains("net.jforum.util.legacy.clickstream.")
+                    || event.shortMethodName().contains("net.jforum.util.DbUtils") 
+                    || event.shortMethodName().contains("net.jforum.JForumExecutionContext")
+                    || event.shortMethodName().contains("net.jforum.cache.") 
+                    || event.shortMethodName().contains("net.jforum.util.stats.")
+                    || event.shortMethodName().contains("net.jforum.repository.SecurityRepository")
+                    || event.shortMethodName().contains("net.jforum.repository.ModulesRepository")
+                    || event.shortMethodName().contains("net.jforum.SessionFacade.")
+                    || event.shortMethodName().contains("net.jforum.security.")
+                    || event.shortMethodName().contains("net.jforum.context.web.")
+                    || event.shortMethodName().contains("net.jforum.Command.") 
+                    || event.shortMethodName().contains("ControllerUtils")
+                    || event.shortMethodName().contains("net.jforum.repository.Tpl")
+                    || event.shortMethodName().contains("net.jforum.util.bbcode.")
+                    || event.shortMethodName().contains("net.jforum.util.Hash")
+                    || event.shortMethodName().contains("net.jforum.view.admin.LuceneStatsAction")
+                    || event.shortMethodName().contains("net.jforum.dao.generic.GenericDataAccessDriver")
+                    || event.shortMethodName().contains("RankingAction")
+                    || event.shortMethodName().contains("CacheAction")
+                    || event.shortMethodName().contains("Captcha")
+                    || event.shortMethodName().contains("DBVersionWorkarounder")
+                    || event.shortMethodName().contains("PostAction")
+                    || event.shortMethodName().contains("HikariPooledConnection")
+                    || event.shortMethodName().contains("BoundedLinkedHashMap")
+                    || event.shortMethodName().contains("DataAccessDriver")
+                    || event.shortMethodName().contains(".forum.ForumAction.list")
+                    || event.shortMethodName().contains(".UrlPattern.")
+                    // || event.shortMethodName().contains(".SystemGlobals.")
+                    // || event.shortMethodName().contains(".VariableExpander.")
+                    // || event.shortMethodName().contains(".isCategoryAccessible")
+                    // || event.shortMethodName().contains(".BannerCommon.")
+                    // || event.shortMethodName().contains("GenericBannerDAO")
+                    ) { //|| event.shortMethodName().contains(".set") 
+						// System.out.println("Removed init, setters, and lambda "+ event.shortMethodName());
+					} else {
+                        eventToIDMapping.put(event.shortMethodName(), methodID); // to convert string sequence to int sequence
+                        methodID++;
+                    }
                 }
 
             }
@@ -278,10 +336,51 @@ public class AppComponent {
         for (Map.Entry<String,List<Event>> entry : dataMap.entrySet())  {
 			List<Integer> uniqueMethodIntegerList = new ArrayList<Integer>(0); // integer mapped event list in correct order
 				for (Event event : entry.getValue()) { // removing init, setters, and lambda functions
-					if (event.shortMethodName().contains("init") || event.shortMethodName().contains(".lambda") || 
-                    event.shortMethodName().contains("getBotAgents") || event.shortMethodName().contains("WebRequestContext") || event.shortMethodName().contains("CsrfFilter")
-                    || event.shortMethodName().contains("CsrfHttpServletRequestWrapper") ||  event.shortMethodName().contains("net.jforum.JForum.") ||  event.shortMethodName().contains("net.jforum.Command.") || 
-                    event.shortMethodName().contains("ControllerUtils")) { //|| event.shortMethodName().contains(".set") 
+                    if ( event.shortMethodName().contains("init") 
+                    || event.shortMethodName().contains("private")
+                    || event.shortMethodName().contains(".lambda") 
+                    || event.shortMethodName().contains("getBotAgents") 
+                    || event.shortMethodName().contains("WebRequestContext") 
+                    || event.shortMethodName().contains("CsrfFilter")
+                    || event.shortMethodName().contains("CsrfHttpServletRequestWrapper") 
+                    || event.shortMethodName().contains("net.jforum.JForum.")
+                    || event.shortMethodName().contains("net.jforum.DBConnection")
+                    || event.shortMethodName().contains("net.jforum.entities.") 
+                    || event.shortMethodName().contains("net.jforum.util.I18n.") 
+                    || event.shortMethodName().contains("net.jforum.context.JForumContext") 
+                    || event.shortMethodName().contains("net.jforum.util.legacy.clickstream.")
+                    || event.shortMethodName().contains("net.jforum.util.DbUtils") 
+                    || event.shortMethodName().contains("net.jforum.JForumExecutionContext")
+                    || event.shortMethodName().contains("net.jforum.cache.") 
+                    || event.shortMethodName().contains("net.jforum.util.stats.")
+                    || event.shortMethodName().contains("net.jforum.repository.SecurityRepository")
+                    || event.shortMethodName().contains("net.jforum.repository.ModulesRepository")
+                    || event.shortMethodName().contains("net.jforum.SessionFacade.")
+                    || event.shortMethodName().contains("net.jforum.security.")
+                    || event.shortMethodName().contains("net.jforum.context.web.")
+                    || event.shortMethodName().contains("net.jforum.Command.") 
+                    || event.shortMethodName().contains("ControllerUtils")
+                    || event.shortMethodName().contains("net.jforum.repository.Tpl")
+                    || event.shortMethodName().contains("net.jforum.util.bbcode.")
+                    || event.shortMethodName().contains("net.jforum.util.Hash")
+                    || event.shortMethodName().contains("net.jforum.view.admin.LuceneStatsAction")
+                    || event.shortMethodName().contains("net.jforum.dao.generic.GenericDataAccessDriver")
+                    || event.shortMethodName().contains("RankingAction")
+                    || event.shortMethodName().contains("CacheAction")
+                    || event.shortMethodName().contains("Captcha")
+                    || event.shortMethodName().contains("DBVersionWorkarounder")
+                    || event.shortMethodName().contains("PostAction")
+                    || event.shortMethodName().contains("HikariPooledConnection")
+                    || event.shortMethodName().contains("BoundedLinkedHashMap")
+                    || event.shortMethodName().contains("DataAccessDriver")
+                    || event.shortMethodName().contains(".forum.ForumAction.list")
+                    || event.shortMethodName().contains(".UrlPattern.") // temp
+                    // || event.shortMethodName().contains(".SystemGlobals.")
+                    // || event.shortMethodName().contains(".VariableExpander.")
+                    // || event.shortMethodName().contains(".isCategoryAccessible")
+                    // || event.shortMethodName().contains(".BannerCommon.")
+                    // || event.shortMethodName().contains("GenericBannerDAO")
+                    ) { //|| event.shortMethodName().contains(".set") 
 						// System.out.println("Removed init, setters, and lambda "+ event.shortMethodName());
 					} else {
                         int eventId = eventToIDMapping.get(event.shortMethodName());
@@ -305,7 +404,8 @@ public class AppComponent {
                     }
                 // spaceSeparatedString.trim();
                 // sample format for GSP input 3 2 4 1 -1 -2 (-1 for end of event, -2 for end of trace)
-                inputStringToPatternMinning = inputStringToPatternMinning + spaceSeparatedString +"-1 -2"+ " \n";
+                inputStringToPatternMinning = inputStringToPatternMinning + spaceSeparatedString +"-1 -2"+ " \n"; // frequent PM algor
+                // inputStringToPatternMinning = inputStringToPatternMinning + spaceSeparatedString +" \n"; // apriori & pattern growth (FP)item set
                 numberedEventList.add(uniqueMethodIntegerList); // numbered event list contains the lists of interger events
             }
 		} 
@@ -330,7 +430,9 @@ public class AppComponent {
         ExecuteJarWithParams executeJarWithParams = new ExecuteJarWithParams();
                 // String[] parameters = {"run", "GSP", "C:/Development/MSGeneratorSupportWork/contextPrefixSpan.txt", "C:/Development/MSGeneratorSupportWork/output.txt", "5%"};
 
-        String[] parameters = {"run", "GSP", this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport};
+        String[] parameters = {"run", "PrefixSpan", this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport, "3", "0"};
+        // String[] parameters = {"run", "Apriori", this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport};
+        // String[] parameters = {"run", "FPGrowth_itemsets", this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport, "3", "1"};
         executeJarWithParams.executePatternMinning(this.patternMinninglibrary, parameters);
         System.out.println("Pattern Minning Completed : "+ this.patternMinningOutputFile);
     }
@@ -341,12 +443,16 @@ public class AppComponent {
             List<PatternMeta> patternMetaList = new ArrayList<>(0);
             try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
                 String line;
-                while ((line = br.readLine()) != null) { //format - 41953 43281 -1 #SUP: 87
-                    System.out.println(line);
-                    String[] splittedArray = line.split(" -1 ");
-                    String key = splittedArray[0]; // ex key 41953 43281
-                    double value = Double.parseDouble(splittedArray[1].split(" ")[1]);// ex value 87
-                    supportDataMap.put(key, value);
+                while ((line=br.readLine())!= null) { //format - 41953 43281 -1 #SUP: 87
+                    if ( line!= null && !("").equals(line)) {
+                        System.out.println(line);
+                        String[] splittedArray = line.split(" -1 "); // for GSP
+                        // String[] splittedArray = line.split("#"); // for apriori, FP
+                        String key = splittedArray[0].trim(); // ex key 41953 43281
+                        // System.out.println("Key  : "+ key + " Value: "+splittedArray[1].split(" ")[1]);
+                        double value = Double.parseDouble(splittedArray[1].split(" ")[1]);// ex value 87
+                        supportDataMap.put(key, value);
+                    }
                 }
                 
                 supportDataMap.forEach((key, value) -> {
@@ -361,24 +467,32 @@ public class AppComponent {
                         // have a higher support for pattern A,B to exist
                         String[] patternMethodsArray = key.split(" ");
                         patternMeta.setPatternLength(patternMethodsArray.length);
-                        System.out.println("Pattern methods array : "+ patternMethodsArray.toString());
+                        // System.out.println("Pattern methods array : "+ patternMethodsArray.toString());
                         if (patternMethodsArray.length == 2 ) {  // two method pattern A B
-                            double suppotOfFirstMethod = supportDataMap.get(patternMethodsArray[0]);
-                            if (suppotOfFirstMethod > 0) {
-                                double confidence = value/suppotOfFirstMethod;
-                                patternMeta.setConfidence(confidence);
+                            if (supportDataMap.get(patternMethodsArray[0]) != null) {
+                                double suppotOfFirstMethod = supportDataMap.get(patternMethodsArray[0]);
+                                if (suppotOfFirstMethod > 0) {
+                                    double confidence = value/suppotOfFirstMethod;
+                                    patternMeta.setConfidence(confidence);
+                                } else {
+                                    System.out.println("Error in pattern values. Cannot calculate Confidence"+ patternMethodsArray.toString());
+                                }
                             } else {
-                                System.out.println("Error in pattern values. Cannot calculate Confidence"+ patternMethodsArray.toString());
+                                System.out.println("Error in pattern values. Cannot calculate Confidence"+ key);
                             }
                         } else { // 3 or more method patterns A B C/ A B C D
                             String[] firstElementsExceptLast = Arrays.copyOfRange(patternMethodsArray, 0, (patternMethodsArray.length-1)); // 0 inclusive, patternMethodsArray.length-1 exclusive, hence no need of patternMethodsArray.length-2
                             String supportKey = String.join(" ", firstElementsExceptLast);
-                            double suppotOfFirstMethods = supportDataMap.get(supportKey);
-                            if (suppotOfFirstMethods > 0) {
-                                double confidence = value/suppotOfFirstMethods;
-                                patternMeta.setConfidence(confidence);
+                            if (supportDataMap.get(supportKey) != null) {
+                                double suppotOfFirstMethods = supportDataMap.get(supportKey);
+                                if (suppotOfFirstMethods > 0) {
+                                    double confidence = value/suppotOfFirstMethods;
+                                    patternMeta.setConfidence(confidence);
+                                } else {
+                                    System.out.println("Error in pattern values. Cannot calculate Confidence" + patternMethodsArray.toString());
+                                }
                             } else {
-                                System.out.println("Error in pattern values. Cannot calculate Confidence" + patternMethodsArray.toString());
+                                System.out.println("Error in pattern values. Cannot calculate Confidence" + key);
                             }
                         }
 
@@ -397,7 +511,7 @@ public class AppComponent {
                         // System.out.println("List with Integer Events "+ integerNumberListOfLocalPattern.toString());
                         double minDepth = 0;
                         int numberOfOccurances = 0;
-                        System.out.println("******************** total events: " + dataMap.size());
+                        // System.out.println("******************** total events: " + dataMap.size());
 
                         int accumilatedMinDepth = 0;
                         for (List<Event> eventList : dataMap.values()) { // numbered event list contains the total unique integer event list
@@ -442,7 +556,7 @@ public class AppComponent {
                         // numbered event list contains the total event list provided to the library.
                         // patternMeta.setCost((patternMeta.getSupport()/patternMeta.getTotalEvents()) + patternMeta.getConfidence() + (1/patternMeta.getDistance()));
                         patternMeta.setCost(patternMeta.getSupport() * patternMeta.getConfidence()* patternMeta.getPatternLength() * patternMeta.getAverageDepth()  * (patternMeta.getExecutionTime()/1000));
-                        System.out.println(patternMeta.toString());
+                        // System.out.println(patternMeta.toString());
                         patternMetaList.add(patternMeta);
                     } else { // one method pattern
                         //discarding one method patterns
@@ -489,11 +603,58 @@ public class AppComponent {
                             }
                             patternMeta.setExecutionTime(accumilatedExecutionTime/numberOfOccurances);
                             patternMeta.setCost(patternMeta.getSupport() * patternMeta.getPatternLength() * patternMeta.getAverageDepth()  * (patternMeta.getExecutionTime()/1000));
-                            System.out.println(patternMeta.toString());
+                            // System.out.println(patternMeta.toString());
                             patternMetaList.add(patternMeta);
                         }
                     }
                 });
+
+                double minSupport = 0;
+                double maxSupport = 0;
+                double minDepth = 0;
+                double maxDepth = 0;
+                double minExecTime = 0;
+                double maxExecTime = 0;
+                double minPatternLength = 0;
+                double maxPatternLength = 0;
+
+                for (PatternMeta patternMeta: patternMetaList) {
+                    if (patternMeta.getSupport() < minSupport) {
+                        minSupport = patternMeta.getSupport();
+                    }
+                    if (patternMeta.getSupport() > maxSupport) {
+                        maxSupport = patternMeta.getSupport();
+                    }
+                    if (patternMeta.getAverageDepth() < minDepth) {
+                        minDepth = patternMeta.getAverageDepth();
+                    }
+                    if (patternMeta.getAverageDepth() > maxDepth) {
+                        maxDepth = patternMeta.getAverageDepth();
+                    }
+                    if (patternMeta.getExecutionTime() < minExecTime) {
+                        minExecTime = patternMeta.getExecutionTime();
+                    }
+                    if (patternMeta.getExecutionTime() > maxExecTime) {
+                        maxExecTime = patternMeta.getExecutionTime();
+                    }
+                    if (patternMeta.getPatternLength() < minPatternLength) {
+                        minPatternLength = patternMeta.getPatternLength();
+                    }
+                    if (patternMeta.getPatternLength() > maxPatternLength) {
+                        maxPatternLength = patternMeta.getPatternLength();
+                    }
+                }
+
+                System.out.println("********* min Exec : "+minExecTime + " Max Exec : "+maxExecTime);
+
+                for (PatternMeta patternMeta : patternMetaList) {
+                    patternMeta.setNormalizedSupport((patternMeta.getSupport() - minSupport)/(maxSupport - minSupport));
+                    patternMeta.setNormalizedAverageDepth((patternMeta.getAverageDepth() - minDepth) / (maxDepth - minDepth));
+                    patternMeta.setNormalizedExecutionTime((patternMeta.getExecutionTime() - minExecTime) / (maxExecTime - minExecTime));
+                    patternMeta.setNormalizedPatternLength((patternMeta.getPatternLength() - minPatternLength) / (maxPatternLength - minPatternLength));
+                    patternMeta.setCost(patternMeta.getNormalizedSupport() * patternMeta.getConfidence()* patternMeta.getNormalizedPatternLength() * patternMeta.getNormalizedAverageDepth()  * patternMeta.getNormalizedExecutionTime());
+                }
+
 
                 if (patternMetaList.size() >0){
                     patternMetaList.sort(Comparator.comparingDouble(PatternMeta::getCost).reversed());
@@ -520,8 +681,179 @@ public class AppComponent {
                System.out.println("Error in patten cost calculation : "+ e.getMessage());
             }
 
+            this.generateExcel(patternMetaList);
+            // this.generateExeclFilesSinglePattern(patternMetaList);    
+            // this.generateExcelFileTwoPattern();
+            // this.generateExcelFileThreePattern();
+            // this.generateExcelFileFourPattern();
+            // this.generateExeclFilesFivePattern();
+
+
+
             System.out.println("========== PROGRAM ENDS ==================");
             System.exit(0);
+    }
+
+    private void generateExcel(List<PatternMeta> patternMetaList){
+        String[] arr = {"S", "C", "P", "D", "E"}; // s - support, c - confidence, p - pattern length, d - depth, e - execution time
+        List<List<String>> result = new ArrayList<>();
+        int n = arr.length;
+
+        // There are 2^n subsets (including the empty subset)
+        int totalSubsets = 1 << n; // This is 2^n
+
+        // Loop through from 0 to 2^n - 1
+        for (int i = 0; i < totalSubsets; i++) {
+            List<String> subset = new ArrayList<>();
+            for (int j = 0; j < n; j++) {
+                // If the j-th bit in i is set, include arr[j] in the subset
+                if ((i & (1 << j)) != 0) {
+                    subset.add(arr[j]);
+                }
+            }
+            result.add(subset);
+        }
+
+        try (XSSFWorkbook workbook = new XSSFWorkbook()) {
+            for (List<String> subset : result) {
+                if (!subset.isEmpty()){
+                    
+                    String tabNameTemp = subset.toString();
+                    String tabName = tabNameTemp.substring(1, tabNameTemp.length() - 1).replace(", ", ",");
+                    System.out.println("Generating excel for - " + tabName);
+                    
+                    for (PatternMeta patternMeta : patternMetaList) {
+                        double cost = 1;
+                        for (int i =0; i< subset.size(); i++) {
+                            if (subset.contains("S")) {
+                                cost = cost * patternMeta.getNormalizedSupport();
+                            }
+                            if (subset.contains("C")) {
+                                cost = cost * patternMeta.getConfidence();
+                            }
+                            if (subset.contains("P")) {
+                                cost = cost * patternMeta.getNormalizedPatternLength();
+                            }
+                            if (subset.contains("D")) {
+                                cost = cost * patternMeta.getNormalizedAverageDepth();
+                            }
+                            if (subset.contains("E")) {
+                                cost = cost * patternMeta.getNormalizedExecutionTime();
+                            }
+                        }
+                        patternMeta.setCost(cost);
+                    }
+                    if (patternMetaList.size() >0){
+                        patternMetaList.sort(Comparator.comparingDouble(PatternMeta::getCost).reversed());
+                    }
+
+                    XSSFSheet supportSheet = workbook.createSheet(tabName); // Create a new sheet
+                    XSSFRow supportTitleRow = supportSheet.createRow(0); // Create the first row
+                    supportTitleRow.createCell(0).setCellValue("Pattern"); // Add data to the first cell
+                    supportTitleRow.createCell(1).setCellValue("Cost"); // Add data to the second cell
+        
+                    int i = 0;
+                    for (PatternMeta patternMeta: patternMetaList) {
+                        i++;
+                        XSSFRow contentRow = supportSheet.createRow(i); // Crieate the first row
+                        contentRow.createCell(0).setCellValue(patternMeta.getPattenwithMethodNames()); // Add data to the first cell
+                        contentRow.createCell(1).setCellValue(patternMeta.getCost()); // Add data to the second cell
+                    }
+                }
+            }
+            try (FileOutputStream fos = new FileOutputStream(new File(excelFileLocation))) {
+                workbook.write(fos);
+                System.out.println("Excel file created and data written successfully.");
+            } catch (IOException e) {
+                System.out.println("Error creating or writing to the Excel file: " + e.getMessage());
+            }
+        } catch (Exception e) {
+            System.out.println("Error in excel book creation : "+ e.getLocalizedMessage());
+
+        }
+
+    }
+
+    private void generateExeclFilesSinglePattern(List<PatternMeta> patternMetaList) {
+
+        try (XSSFWorkbook workbook = new XSSFWorkbook()) {
+            XSSFSheet supportSheet = workbook.createSheet("Support"); // Create a new sheet
+            XSSFRow supportTitleRow = supportSheet.createRow(0); // Create the first row
+            supportTitleRow.createCell(0).setCellValue("Pattern"); // Add data to the first cell
+            supportTitleRow.createCell(1).setCellValue("Support"); // Add data to the second cell
+
+            patternMetaList.sort(Comparator.comparingDouble(PatternMeta::getNormalizedSupport).reversed());
+            int i = 0;
+            for (PatternMeta patternMeta: patternMetaList) {
+                i++;
+                XSSFRow contentRow = supportSheet.createRow(i); // Crieate the first row
+                contentRow.createCell(0).setCellValue(patternMeta.getPattenwithMethodNames()); // Add data to the first cell
+                contentRow.createCell(1).setCellValue(patternMeta.getNormalizedSupport()); // Add data to the second cell
+            }
+
+            XSSFSheet confidenceSheet = workbook.createSheet("Confidence"); // Create a new sheet
+            XSSFRow confidenceTitleRow = confidenceSheet.createRow(0); // Create the first row
+            confidenceTitleRow.createCell(0).setCellValue("Pattern"); // Add data to the first cell
+            confidenceTitleRow.createCell(1).setCellValue("Confidence"); // Add data to the second cell
+            patternMetaList.sort(Comparator.comparingDouble(PatternMeta::getConfidence).reversed());
+            i=0;
+            for (PatternMeta patternMeta: patternMetaList) {
+                i++;
+                XSSFRow contentRow = confidenceSheet.createRow(i); // Create the first row
+                contentRow.createCell(0).setCellValue(patternMeta.getPattenwithMethodNames()); // Add data to the first cell
+                contentRow.createCell(1).setCellValue(patternMeta.getConfidence()); // Add data to the second cell
+            }
+
+            XSSFSheet execTimeSheet = workbook.createSheet("Execution Time"); // Create a new sheet
+            XSSFRow execTimeTitleRow = execTimeSheet.createRow(0); // Create the first row
+            execTimeTitleRow.createCell(0).setCellValue("Pattern"); // Add data to the first cell
+            execTimeTitleRow.createCell(1).setCellValue("Execution Time"); // Add data to the second cell
+
+            patternMetaList.sort(Comparator.comparingDouble(PatternMeta::getNormalizedExecutionTime).reversed());
+            i=0;
+            for (PatternMeta patternMeta: patternMetaList) {
+                i++;
+                XSSFRow contentRow = execTimeSheet.createRow(i); // Create the first row
+                contentRow.createCell(0).setCellValue(patternMeta.getPattenwithMethodNames()); // Add data to the first cell
+                contentRow.createCell(1).setCellValue(patternMeta.getNormalizedExecutionTime()); // Add data to the second cell
+            }
+
+            XSSFSheet patLengthSheet = workbook.createSheet("Pattern Length"); // Create a new sheet
+            XSSFRow patLengthTitleRow = patLengthSheet.createRow(0); // Create the first row
+            patLengthTitleRow.createCell(0).setCellValue("Pattern"); // Add data to the first cell
+            patLengthTitleRow.createCell(1).setCellValue("Pattern Length"); // Add data to the second cell
+
+            patternMetaList.sort(Comparator.comparingDouble(PatternMeta::getNormalizedPatternLength).reversed());
+            i=0;
+            for (PatternMeta patternMeta: patternMetaList) {
+                i++;
+                XSSFRow contentRow = patLengthSheet.createRow(i); // Create the first row
+                contentRow.createCell(0).setCellValue(patternMeta.getPattenwithMethodNames()); // Add data to the first cell
+                contentRow.createCell(1).setCellValue(patternMeta.getNormalizedPatternLength()); // Add data to the second cell
+            }
+
+            XSSFSheet avgDepthSheet = workbook.createSheet("Average Depth"); // Create a new sheet
+            XSSFRow avgDepthTitleRow = avgDepthSheet.createRow(0); // Create the first row
+            avgDepthTitleRow.createCell(0).setCellValue("Pattern"); // Add data to the first cell
+            avgDepthTitleRow.createCell(1).setCellValue("Average Depth"); // Add data to the second cell
+
+            patternMetaList.sort(Comparator.comparingDouble(PatternMeta::getNormalizedAverageDepth).reversed());
+            i=0;
+            for (PatternMeta patternMeta: patternMetaList) {
+                i++;
+                XSSFRow contentRow = avgDepthSheet.createRow(i); // Create the first row
+                contentRow.createCell(0).setCellValue(patternMeta.getPattenwithMethodNames()); // Add data to the first cell
+                contentRow.createCell(1).setCellValue(patternMeta.getNormalizedAverageDepth()); // Add data to the second cell
+            }
+
+            // Write the workbook to the file
+            try (FileOutputStream fos = new FileOutputStream(new File(excelFileLocation+"pattern1Output"))) {
+                workbook.write(fos);
+                System.out.println("Excel file created and data written successfully.");
+            }
+        } catch (IOException e) {
+            System.out.println("Error creating or writing to the Excel file: " + e.getMessage());
+        }
     }
 
     private String getKeyByValue(Map<String, Integer> map, int valueToFind) {
