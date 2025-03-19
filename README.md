@@ -1,5 +1,5 @@
-# MSPro
-MSPro framework contains following component - MSGenerator, Jmeter test suit, Initial results
+# MIST
+MIST framework contains following component - MSGenerator, Jmeter test suit, Initial results
 
 1. MSGenerator - This is a Java Spring Boot based program that process the kieker input files and generates the frequent patterns and costs as the output. System requirements -  Java 17 or above.
 
