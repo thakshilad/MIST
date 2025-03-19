@@ -46,11 +46,14 @@ public class AppComponent {
     @Value("${app.patternMinningMinimumSupport}")
     private String minimumSupport;
 
-    @Value("${app.patternMinningMinimumConfidence}")
-    private double minimumConfidence;
+    @Value("${app.patternMinningAlgorithm}")
+    private String patternMiningAlgorithm;
+    
+    // @Value("${app.patternMinningMinimumConfidence}")
+    // private double minimumConfidence;
 
-    @Value("${app.patternMinningMinimumGap}")
-    private int minimumGap;
+    // @Value("${app.patternMinningMinimumGap}")
+    // private int minimumGap;
 
     @Value("${app.patternMinningLibrary}")
     private String patternMinninglibrary;
@@ -90,8 +93,9 @@ public class AppComponent {
         System.out.println("app.rootFolders : "+ rootFolders );
         System.out.println("app.kiekerLogFileLocation : "+kiekerLogFileLocation);
         System.out.println("app.patternMinningMinimumSupport : "+ minimumSupport );
-        System.out.println("app.patternMinningMinimumConfidence : "+ minimumConfidence );
-        System.out.println("app.patternMinningMinimumGap : "+ minimumGap );
+        System.out.println("app.patternMiningAlgorithm : "+ patternMiningAlgorithm );
+        // System.out.println("app.patternMinningMinimumConfidence : "+ minimumConfidence );
+        // System.out.println("app.patternMinningMinimumGap : "+ minimumGap );
         System.out.println("Pattern Minning Library : " + patternMinninglibrary);
         System.out.println("Pattern Minning Input File : "+patternMinningInputFile);
         System.out.println("Pattern Minning Output File : "+patternMinningOutputFile);
@@ -429,8 +433,8 @@ public class AppComponent {
         System.out.println("### Execute pattern mining");
         ExecuteJarWithParams executeJarWithParams = new ExecuteJarWithParams();
                 // String[] parameters = {"run", "GSP", "C:/Development/MSGeneratorSupportWork/contextPrefixSpan.txt", "C:/Development/MSGeneratorSupportWork/output.txt", "5%"};
-
-        String[] parameters = {"run", "PrefixSpan", this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport, "3", "0"};
+        
+        String[] parameters = {"run", patternMiningAlgorithm, this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport, "3", "0"};
         // String[] parameters = {"run", "Apriori", this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport};
         // String[] parameters = {"run", "FPGrowth_itemsets", this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport, "3", "1"};
         executeJarWithParams.executePatternMinning(this.patternMinninglibrary, parameters);
@@ -446,7 +450,7 @@ public class AppComponent {
                 while ((line=br.readLine())!= null) { //format - 41953 43281 -1 #SUP: 87
                     if ( line!= null && !("").equals(line)) {
                         System.out.println(line);
-                        String[] splittedArray = line.split(" -1 "); // for GSP
+                        String[] splittedArray = line.split(" -1 "); // for GSP, prefix span
                         // String[] splittedArray = line.split("#"); // for apriori, FP
                         String key = splittedArray[0].trim(); // ex key 41953 43281
                         // System.out.println("Key  : "+ key + " Value: "+splittedArray[1].split(" ")[1]);
