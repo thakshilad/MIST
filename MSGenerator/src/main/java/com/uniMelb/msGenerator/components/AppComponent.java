@@ -264,6 +264,9 @@ public class AppComponent {
                     || event.shortMethodName().contains("DataAccessDriver")
                     || event.shortMethodName().contains(".forum.ForumAction.list")
                     || event.shortMethodName().contains(".UrlPattern.")
+                    // JPETSTORE
+                    || event.shortMethodName().contains("AccountActionBean.isAuthenticated()") 
+                    || event.shortMethodName().contains("Account.getUsername()") 
                     // || event.shortMethodName().contains(".SystemGlobals.")
                     // || event.shortMethodName().contains(".VariableExpander.")
                     // || event.shortMethodName().contains(".isCategoryAccessible")
@@ -379,6 +382,9 @@ public class AppComponent {
                     || event.shortMethodName().contains("DataAccessDriver")
                     || event.shortMethodName().contains(".forum.ForumAction.list")
                     || event.shortMethodName().contains(".UrlPattern.") // temp
+                                        // JPETSTORE
+                    || event.shortMethodName().contains("AccountActionBean.isAuthenticated()") 
+                    || event.shortMethodName().contains("Account.getUsername()") 
                     // || event.shortMethodName().contains(".SystemGlobals.")
                     // || event.shortMethodName().contains(".VariableExpander.")
                     // || event.shortMethodName().contains(".isCategoryAccessible")
