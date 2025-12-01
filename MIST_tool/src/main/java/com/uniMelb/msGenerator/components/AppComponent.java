@@ -35,6 +35,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 @Component
 public class AppComponent {
 
+    // variables to store processing data
     public static Map<String, List<Event>> dataMap = new HashMap<>(0); // event data - trace ID and event entity List
 	public static Map<String, List<Integer>> methodAverageTimeMap = new HashMap<>(0); // store the average method execution time
     public static int dataListSize = 1;
@@ -42,6 +43,7 @@ public class AppComponent {
     public static List<List<Integer>> numberedEventList = new ArrayList<>(0); // this is to calculate the gap between two method number
     public static int methodID = 1;
 
+    // loading data from appication properties
     @Value("${app.rootFolders}")
     private String rootFolders;
 
@@ -93,7 +95,8 @@ public class AppComponent {
 
     private String[]  discardedList;
 
-    // add parameters to xes file output and xes file output required.
+    // Display the application properties in console while execution, and 
+    // trigger the flow of pattern minig
 
     public void initiateIdentification() {
         System.out.println("=========== System Parameters Starts =============");
@@ -116,6 +119,7 @@ public class AppComponent {
         discardedList = stringsToAvoidFromPatternMatching.split(",");
         System.out.println("=========== System Parameters Ends =============");
 
+        // start the workflow by reading the kieker log files
         readLogFile(kiekerLogFileLocation);
     }
 
@@ -138,10 +142,10 @@ public class AppComponent {
 					}
 				}
 			}
-			convertLogsToXesFormat(filteredLineList);
-            convertToNumberSequence();
-            executePatternMinning();
-            generateCostInfo();
+			convertLogsToXesFormat(filteredLineList); // generate the xes events from kieker log
+            convertToNumberSequence(); // convert unique events to number
+            executePatternMinning(); // perform pattern mining
+            generateCostInfo(); // calculate the costs and generate files
 		} catch (Exception e) {
 			System.out.println("Exception in read log file : "+e.getMessage() );
 		}
@@ -353,6 +357,7 @@ public class AppComponent {
         }
 	}
 
+    // method to convert events to number format for processing
     public void convertToNumberSequence() {
         System.out.println("### Converting number sequence");
         String inputStringToPatternMinning = "";
@@ -468,18 +473,22 @@ public class AppComponent {
         }
     }
 
+    // method to execute pattern mining using hte library
     public void executePatternMinning(){
         System.out.println("### Execute pattern mining");
         ExecuteJarWithParams executeJarWithParams = new ExecuteJarWithParams();
                 // String[] parameters = {"run", "GSP", "C:/Development/MSGeneratorSupportWork/contextPrefixSpan.txt", "C:/Development/MSGeneratorSupportWork/output.txt", "5%"};
         
         String[] parameters = {"run", patternMiningAlgorithm, this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport, "3", "0"};
+        
+        // samples of using different algorithms for minig
         // String[] parameters = {"run", "Apriori", this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport};
         // String[] parameters = {"run", "FPGrowth_itemsets", this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport, "3", "1"};
         executeJarWithParams.executePatternMinning(this.patternMinninglibrary, parameters);
         System.out.println("Pattern Minning Completed : "+ this.patternMinningOutputFile);
     }
 
+    // calculate the properties, calculate cost, and generate output files
     public void generateCostInfo() {
             String filePath = this.patternMinningOutputFile;
             Map<String, Double> supportDataMap = new HashMap<>(0);
@@ -737,6 +746,7 @@ public class AppComponent {
             System.exit(0);
     }
 
+    // method to generate final xes file with 31 tabs
     private void generateExcel(List<PatternMeta> patternMetaList){
         String[] arr = {"S", "C", "P", "D", "E"}; // s - support, c - confidence, p - pattern length, d - depth, e - execution time
         List<List<String>> result = new ArrayList<>();
