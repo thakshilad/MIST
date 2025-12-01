@@ -4,11 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
+// This class will execute the pattern mining libray
 public class ExecuteJarWithParams {
 
-
-    // public static void main(String[] args) {
     public void executePatternMinning(String libraryLocation, String[] libraryParameters) {
         // Specify the path to the JAR file
         String jarPath = libraryLocation;

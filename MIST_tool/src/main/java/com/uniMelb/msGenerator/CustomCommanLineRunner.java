@@ -5,6 +5,8 @@ import org.springframework.stereotype.Component;
 
 import com.uniMelb.msGenerator.components.AppComponent;
 
+// This class used to load the app component and start execution
+
 @Component
 public class CustomCommanLineRunner implements CommandLineRunner{
 

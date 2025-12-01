@@ -30,6 +30,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+// This is the main component of this solution, which contains all the program logic
+
 @Component
 public class AppComponent {
 
@@ -69,6 +71,9 @@ public class AppComponent {
 
     @Value("${app.isXESFileRequired}")
     private boolean isXESFileRequired;
+ 
+    @Value("${app.xesFileLocation}")
+    private String xesFileLocation;
 
     @Value("${app.isMethodToIdMappingRequired}")
     private boolean isMethodToIdMappingRequired;
@@ -102,6 +107,7 @@ public class AppComponent {
         System.out.println("Pattern Minning Input File : "+patternMinningInputFile);
         System.out.println("Pattern Minning Output File : "+patternMinningOutputFile);
         System.out.println("Is XES File Required : "+isXESFileRequired);
+        System.out.println("Is XES File Required : "+xesFileLocation);
         System.out.println("Is Method To Id Mapping Required : "+isMethodToIdMappingRequired);
         System.out.println("Method To Id Mapping File Location : "+methodToIdMappingFileLocation);
         System.out.println("Pattern Cost Info File Location : "+ patternCostInfoFileLocation);
@@ -145,7 +151,7 @@ public class AppComponent {
      // convert filtered kieker logs to xes format
     public void convertLogsToXesFormat(List<String> dataList) {
 
-        File file = new File("C:\\Development\\MSGeneratorSupportWork\\Output\\"+"output.xes");
+        File file = new File(xesFileLocation);
             // file.getParentFile().mkdir();
 
         try {

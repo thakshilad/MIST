@@ -15,30 +15,53 @@ MIST framework contains following component - MSGenerMIST_tool, Jmeter test suit
 		-patternOutput.xlsx - This is the main output file for evaluations, this contains the output of all the possible combinations of S,C,P,D,E properties which is (2 to the power 5 -1 = 31). 31 tabs available in the excel file with each tab represents the patterns and cost in decending order.
 
 # How to run the application
-To run the application, first configure the application properties file and execute the main funtion in command line or via IDE. Below are the properties you can configure:
+1) To run the application, first configure the application properties file and execute the main funtion in command line or via IDE. Below are the properties you can configure:
 
-		-Application running port and context path:
-			server.port=8888
-			server.servlet.contextPath=/MSGenerator
+-Application running port and context path:
+	server.port=8888
+	server.servlet.contextPath=/MSGenerator
+			- descritpion - These two properties are general spring boot properties to define application running port and accessing url
 		
-		-Kieker files location
-			-app.kiekerLogFileLocation=C:/Development/MSGeneratorInputOutput/Input
+-Kieker files location
+	-app.kiekerLogFileLocation=C:/Development/MSGeneratorInputOutput/Input
+			- description - Change this location to the folder where kiker input files located to the specific project. Kiker files inside this folder will read and use for event generationa and pattern mining.
 		
-		-Pattern mining library configurations 
-			app.patternMinningAlgorithm=GSP 
-			app.patternMinningMinimumSupport=50%
-			app.patternMinningMinimumConfidence=5
-			app.patternMinningMinimumGap=2
+-Pattern mining configurations 
+	app.patternMinningAlgorithm=GSP 
+	app.patternMinningMinimumSupport=50%
+			- description - these properties are related to pattern mining, where you define which algorithm to use, cutoff level for support.
 		
-		-System output file configs
-			app.isXESFileRequired=false
-			app.isMethodToIdMappingRequired=true
-			app.patternMinningLibrary=C:/Development/MSGeneratorSupportWork/spmf.jar
-			app.patternMinningInputFile=C:/Development/MSGeneratorInputOutput/Output/eventsFromLog.txt
-			app.patternMinningOutputFile=C:/Development/MSGeneratorInputOutput/Output/patternMinninglibraryOutput.txt
-			app.methodToIdMappingFile=C:/Development/MSGeneratorInputOutput/Output/methodToIdEventMapping.txt
-			app.patternCostInfoFile=C:/Development/MSGeneratorInputOutput/Output/patternCostInfo.txt
+-System output file configs
+	app.isXESFileRequired=false 
+	app.xesFileLocation=C:/Development/Output/roller/A2/eventsXES.xes
+			- description - boolen check whether xes file is required, if required the file location. 
 
-		-Classes of methods to skip from pattern mining
-			app.stringsToAvoidFromPatternMatching=.init,.lambda,.set,getBotAgents,WebRequestContext,CsrfFilter,CsrfHttpServletRequestWrapper,net.jforum.JForum.,net.jforum.Command.,ControllerUtils
+	app.isMethodToIdMappingRequired=true
+	app.methodToIdMappingFile=C:/Development/roller/A2/methodToIdEventMapping.txt
+			- description - You can configure whether you required XES mapping file and method to id mapping file.
 
+
+	- Pattern minig related configurations
+	app.patternMinningLibrary=C:/Development/jarfiles/spmf.jar
+	app.patternMinningInputFile=C:/Development/Output/eventsFromLog.txt
+	app.patternMinningOutputFile=C:/Development/Output/patternMinninglibraryOutput.txt
+			-description - Location of the pattern mining library jar file
+			-description - location of the pattern mining library input file. This file will be created by program itself, you need to specify the file location.
+			-description - location for pattern mining library output.
+
+	app.methodToIdMappingFile=C:/Development/Output/methodToIdEventMapping.txt
+			-description - Location for the method to id mapping file, this is the inernal representation of unique methods to optimise the processing.
+
+-Methods or patterns to skip from pattern mining
+	app.stringsToAvoidFromPatternMatching=.RequestMappingFilter.,.util.cache.,.pojos.,.ui.struts2.,.RollerSession
+			-description - this is a comma separated lists, events with these names will be avoided during pattern mining. Relavant skipped patterns for JForum and Apache Roller are included in the application.properties file
+	    
+-Final output files with cost information		
+	app.patternCostInfoFile=C:/Development/MSGeneratorInputOutput/Output/patternCostInfo.txt
+	     -This file the output file contains pattern cost as per SxCxPxDxE formula.
+
+	app.excelFileLocation=C:/Development/MSGeneratorInputOutput/Output/roller/A2/patternOutputA2.xlsx
+		-description - To analyse the effect of S,C,P,D,E attributes, this excel was created which contans a tab for each combination of these attributes and patterns with cost information in desending order.
+		
+
+2) After setting up the parameters, you can run the application via an IDE - ex: visual code or execute the jar file.

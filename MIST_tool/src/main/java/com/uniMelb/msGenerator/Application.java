@@ -1,5 +1,7 @@
 package com.uniMelb.msGenerator;
 
+// This is the main entry point of the system, it will load the system configurations 
+// and continue the application logic
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
