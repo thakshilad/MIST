@@ -1,4 +1,4 @@
-package com.uniMelb.msGenerator.patternMinningAlgorithms;
+package com.uni.msGenerator.patternMinningAlgorithms;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.uniMelb.msGenerator.entities;
+package com.uni.msGenerator.entities;
 
 /**
  * This class contains the pattern meta information. pattern key, support, 

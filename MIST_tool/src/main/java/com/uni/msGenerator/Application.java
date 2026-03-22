@@ -1,4 +1,4 @@
-package com.uniMelb.msGenerator;
+package com.uni.msGenerator;
 
 // This is the main entry point of the system, it will load the system configurations 
 // and continue the application logic

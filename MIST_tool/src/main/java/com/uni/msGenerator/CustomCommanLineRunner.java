@@ -1,9 +1,9 @@
-package com.uniMelb.msGenerator;
+package com.uni.msGenerator;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.uniMelb.msGenerator.components.AppComponent;
+import com.uni.msGenerator.components.AppComponent;
 
 // This class used to load the app component and start execution
 

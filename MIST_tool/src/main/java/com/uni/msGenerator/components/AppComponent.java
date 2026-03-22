@@ -1,4 +1,4 @@
-package com.uniMelb.msGenerator.components;
+package com.uni.msGenerator.components;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -22,9 +22,9 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import com.uniMelb.msGenerator.entities.Event;
-import com.uniMelb.msGenerator.entities.PatternMeta;
-import com.uniMelb.msGenerator.patternMinningAlgorithms.ExecuteJarWithParams;
+import com.uni.msGenerator.entities.Event;
+import com.uni.msGenerator.entities.PatternMeta;
+import com.uni.msGenerator.patternMinningAlgorithms.ExecuteJarWithParams;
 
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
