@@ -38,10 +38,10 @@ public class AppComponent {
     // variables to store processing data
     public static Map<String, List<Event>> dataMap = new HashMap<>(0); // event data - trace ID and event entity List
 	public static Map<String, List<Integer>> methodAverageTimeMap = new HashMap<>(0); // store the average method execution time
-    public static int dataListSize = 1;
+    public static int dataListSize = 1; // temporary variable to analyse the dataList size
     public static Map<String, Integer> eventToIDMapping = new HashMap<>(0); // to convert string sequence to int sequenc to optimise performance
     public static List<List<Integer>> numberedEventList = new ArrayList<>(0); // this is to calculate the gap between two method number
-    public static int methodID = 1;
+    public static int methodID = 1; // variable used to unique method id generation
 
     // loading data from appication properties
     @Value("${app.rootFolders}")
@@ -52,12 +52,6 @@ public class AppComponent {
 
     @Value("${app.patternMinningAlgorithm}")
     private String patternMiningAlgorithm;
-    
-    // @Value("${app.patternMinningMinimumConfidence}")
-    // private double minimumConfidence;
-
-    // @Value("${app.patternMinningMinimumGap}")
-    // private int minimumGap;
 
     @Value("${app.patternMinningLibrary}")
     private String patternMinninglibrary;
@@ -104,8 +98,6 @@ public class AppComponent {
         System.out.println("app.kiekerLogFileLocation : "+kiekerLogFileLocation);
         System.out.println("app.patternMinningMinimumSupport : "+ minimumSupport );
         System.out.println("app.patternMiningAlgorithm : "+ patternMiningAlgorithm );
-        // System.out.println("app.patternMinningMinimumConfidence : "+ minimumConfidence );
-        // System.out.println("app.patternMinningMinimumGap : "+ minimumGap );
         System.out.println("Pattern Minning Library : " + patternMinninglibrary);
         System.out.println("Pattern Minning Input File : "+patternMinningInputFile);
         System.out.println("Pattern Minning Output File : "+patternMinningOutputFile);
@@ -156,18 +148,15 @@ public class AppComponent {
     public void convertLogsToXesFormat(List<String> dataList) {
 
         File file = new File(xesFileLocation);
-            // file.getParentFile().mkdir();
-
         try {
             file.createNewFile();
         } catch (IOException e1) {
             e1.printStackTrace();
         }
 
-
+        // XES format definition for event
         try{
             PrintWriter writer = new PrintWriter(file.getAbsolutePath(), "UTF-8");
-            // Timestamp currentTimestamp = new Timestamp(System.currentTimeMillis());
             String xesText ="<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"+"\n"+
             "<log xes.version=\"2.0\" xes.features=\"nested-attributes\" openxes.version=\"1.0RC7\" xmlns=\"http://www.xes-standard.org/\">"+"\n"+
                     "<extension name=\"Lifecycle\" prefix=\"lifecycle\" uri=\"http://www.xes-standard.org/lifecycle.xesext\"/>"+"\n"+
@@ -189,10 +178,8 @@ public class AppComponent {
                             "<int key=\"callingOrder\" value=\"1\"/>"+"\n"+
                             "<int key=\"depth\" value=\"1\"/>"+"\n"+
                     "</global>"+"\n";
-            System.out.println("@@@@@@@@@ Data list size "+ dataList.size());
-            // for(int i=0;i<dataList.size();i++){
+            System.out.println("Data list size "+ dataList.size());
                 for(int i=dataList.size()-1; i>=0; i--){
-                // System.out.println("event loop : "+i);
                 String eventString = dataList.get(i);
                 String[] tokenizedArray = eventString.split(";");
                 String timeStamp = tokenizedArray[1];  // in nano seconds
@@ -212,31 +199,19 @@ public class AppComponent {
                 event.setTraceId(traceId);
                 event.setMethodSignature(methodSignature);
                 event.setInTime(inTime);
-                // event.setFormattedDate(""+inTime);
                 event.setFormattedDate(convertDate(inTime));
                 event.setOutTime(outTime);
                 event.setCallingOrder(callingOrder);
                 event.setDeptOfCallingStack(depthOfCallingStack);
                 List<Event> tempList = new ArrayList<>(0);
-                // List<Event> miningTempList = new ArrayList<>(0);
                 if(dataMap.get(event.getTraceId()) != null) {
                     tempList = dataMap.get(event.getTraceId());
-                    // miningTempList = miningDatMap.get(event.getTraceId());
-                    // System.out.println("%%%%%%%%%% Element available in temp list");
                 }
                 
                 tempList.add(event);
                 Collections.sort(tempList, (o1, o2) -> o1.getCallingOrder() - o2.getCallingOrder());
                 dataMap.put(event.getTraceId(), tempList);
 
-                // List<Integer> durationList;  //error in jforum log java.lang.NumberFormatException: For input string: "4807580800"
-                // if(methodAverageTimeMap.get(event.shortMethodName()) != null) {
-                //     durationList  = methodAverageTimeMap.get(event.shortMethodName());
-                // } else {
-                //     durationList = new ArrayList<>();
-                // }
-                // durationList.add(event.getMethodDuration());
-                // methodAverageTimeMap.put(event.shortMethodName(), durationList);
                 if (eventToIDMapping.get(event.shortMethodName()) == null) {
 
                     boolean found = Arrays.stream(discardedList)
@@ -246,72 +221,19 @@ public class AppComponent {
                         eventToIDMapping.put(event.shortMethodName(), methodID); // to convert string sequence to int sequence
                         methodID++;
                     }
-
-
-                    // if ( event.shortMethodName().contains("init") 
-                    // || event.shortMethodName().contains("private")
-                    // || event.shortMethodName().contains(".lambda") 
-                    // || event.shortMethodName().contains("getBotAgents") 
-                    // || event.shortMethodName().contains("WebRequestContext") 
-                    // || event.shortMethodName().contains("CsrfFilter")
-                    // || event.shortMethodName().contains("CsrfHttpServletRequestWrapper") 
-                    // || event.shortMethodName().contains("net.jforum.JForum.")
-                    // || event.shortMethodName().contains("net.jforum.DBConnection")
-                    // || event.shortMethodName().contains("net.jforum.entities.") 
-                    // || event.shortMethodName().contains("net.jforum.util.I18n.") 
-                    // || event.shortMethodName().contains("net.jforum.context.JForumContext") 
-                    // || event.shortMethodName().contains("net.jforum.util.legacy.clickstream.")
-                    // || event.shortMethodName().contains("net.jforum.util.DbUtils") 
-                    // || event.shortMethodName().contains("net.jforum.JForumExecutionContext")
-                    // || event.shortMethodName().contains("net.jforum.cache.") 
-                    // || event.shortMethodName().contains("net.jforum.util.stats.")
-                    // || event.shortMethodName().contains("net.jforum.repository.SecurityRepository")
-                    // || event.shortMethodName().contains("net.jforum.repository.ModulesRepository")
-                    // || event.shortMethodName().contains("net.jforum.SessionFacade.")
-                    // || event.shortMethodName().contains("net.jforum.security.")
-                    // || event.shortMethodName().contains("net.jforum.context.web.")
-                    // || event.shortMethodName().contains("net.jforum.Command.") 
-                    // || event.shortMethodName().contains("ControllerUtils")
-                    // || event.shortMethodName().contains("net.jforum.repository.Tpl")
-                    // || event.shortMethodName().contains("net.jforum.util.bbcode.")
-                    // || event.shortMethodName().contains("net.jforum.util.Hash")
-                    // || event.shortMethodName().contains("net.jforum.view.admin.LuceneStatsAction")
-                    // || event.shortMethodName().contains("net.jforum.dao.generic.GenericDataAccessDriver")
-                    // || event.shortMethodName().contains("RankingAction")
-                    // || event.shortMethodName().contains("CacheAction")
-                    // || event.shortMethodName().contains("Captcha")
-                    // || event.shortMethodName().contains("DBVersionWorkarounder")
-                    // || event.shortMethodName().contains("PostAction")
-                    // || event.shortMethodName().contains("HikariPooledConnection")
-                    // || event.shortMethodName().contains("BoundedLinkedHashMap")
-                    // || event.shortMethodName().contains("DataAccessDriver")
-                    // || event.shortMethodName().contains(".forum.ForumAction.list")
-                    // || event.shortMethodName().contains(".UrlPattern.")
-                    // // || event.shortMethodName().contains(".SystemGlobals.")
-                    // // || event.shortMethodName().contains(".VariableExpander.")
-                    // // || event.shortMethodName().contains(".isCategoryAccessible")
-                    // // || event.shortMethodName().contains(".BannerCommon.")
-                    // // || event.shortMethodName().contains("GenericBannerDAO")
-                    // ) { //|| event.shortMethodName().contains(".set") 
-					// 	// System.out.println("Removed init, setters, and lambda "+ event.shortMethodName());
-					// } else {
-                    //     eventToIDMapping.put(event.shortMethodName(), methodID); // to convert string sequence to int sequence
-                    //     methodID++;
-                    // }
                 }
 
             }
-            System.out.println("### XES Starting");
-            // uncomment below to get the xes files, takes time to produce the output, hence commenting
+            System.out.println("XES File generation Starting");
+            // Generate XES file output
             if (isXESFileRequired) {
                 int i = 1;
                 for (Entry entry : dataMap.entrySet()) {
-                    // System.out.println(entry.getKey() + "/" + entry.getValue());
                         xesText = xesText + "<trace>"+"\n"+
                                 "<string key=\"concept:name\" value=\"Trace"+i+"\"/>"+
                                 "<string key=\"traceID\" value=\""+entry.getKey()+"\"/>"+"\n";
                             i++;
-                            System.out.println("### : "+i);
+                            System.out.println("Running event : "+i);
                             ArrayList<Event> entryList = (ArrayList<Event>) entry.getValue();
                             for (Event e : entryList){
                                 xesText = xesText+"<event>"+"\n"+
@@ -331,14 +253,13 @@ public class AppComponent {
                 writer.close();
                 System.out.println("Writing data to XES file completed...");
             }   
-            System.out.println("### method to ID mapping");
+            System.out.println("Method to ID mapping generation started");
             if(isMethodToIdMappingRequired && eventToIDMapping.size()>0) {
                 File methodToIdMappingFile = new File(methodToIdMappingFileLocation);
                 try {
                     methodToIdMappingFile.createNewFile();
                     String fileContenet = "";
                     for (Entry entry : eventToIDMapping.entrySet()) {
-                        // System.out.println(entry.getKey() + "/" + entry.getValue());
                         fileContenet = fileContenet + " Method : "+entry.getKey().toString() +
                                     "ID : "+ entry.getValue().toString()+"\n";
                     }
@@ -380,68 +301,6 @@ public class AppComponent {
                         }
                     }
 
-                    
-                    
-                    
-                    // if ( event.shortMethodName().contains("init") 
-                    // || event.shortMethodName().contains("private")
-                    // || event.shortMethodName().contains(".lambda") 
-                    // || event.shortMethodName().contains("getBotAgents") 
-                    // || event.shortMethodName().contains("WebRequestContext") 
-                    // || event.shortMethodName().contains("CsrfFilter")
-                    // || event.shortMethodName().contains("CsrfHttpServletRequestWrapper") 
-                    // || event.shortMethodName().contains("net.jforum.JForum.")
-                    // || event.shortMethodName().contains("net.jforum.DBConnection")
-                    // || event.shortMethodName().contains("net.jforum.entities.") 
-                    // || event.shortMethodName().contains("net.jforum.util.I18n.") 
-                    // || event.shortMethodName().contains("net.jforum.context.JForumContext") 
-                    // || event.shortMethodName().contains("net.jforum.util.legacy.clickstream.")
-                    // || event.shortMethodName().contains("net.jforum.util.DbUtils") 
-                    // || event.shortMethodName().contains("net.jforum.JForumExecutionContext")
-                    // || event.shortMethodName().contains("net.jforum.cache.") 
-                    // || event.shortMethodName().contains("net.jforum.util.stats.")
-                    // || event.shortMethodName().contains("net.jforum.repository.SecurityRepository")
-                    // || event.shortMethodName().contains("net.jforum.repository.ModulesRepository")
-                    // || event.shortMethodName().contains("net.jforum.SessionFacade.")
-                    // || event.shortMethodName().contains("net.jforum.security.")
-                    // || event.shortMethodName().contains("net.jforum.context.web.")
-                    // || event.shortMethodName().contains("net.jforum.Command.") 
-                    // || event.shortMethodName().contains("ControllerUtils")
-                    // || event.shortMethodName().contains("net.jforum.repository.Tpl")
-                    // || event.shortMethodName().contains("net.jforum.util.bbcode.")
-                    // || event.shortMethodName().contains("net.jforum.util.Hash")
-                    // || event.shortMethodName().contains("net.jforum.view.admin.LuceneStatsAction")
-                    // || event.shortMethodName().contains("net.jforum.dao.generic.GenericDataAccessDriver")
-                    // || event.shortMethodName().contains("RankingAction")
-                    // || event.shortMethodName().contains("CacheAction")
-                    // || event.shortMethodName().contains("Captcha")
-                    // || event.shortMethodName().contains("DBVersionWorkarounder")
-                    // || event.shortMethodName().contains("PostAction")
-                    // || event.shortMethodName().contains("HikariPooledConnection")
-                    // || event.shortMethodName().contains("BoundedLinkedHashMap")
-                    // || event.shortMethodName().contains("DataAccessDriver")
-                    // || event.shortMethodName().contains(".forum.ForumAction.list")
-                    // || event.shortMethodName().contains(".UrlPattern.") // temp
-                    // // || event.shortMethodName().contains(".SystemGlobals.")
-                    // // || event.shortMethodName().contains(".VariableExpander.")
-                    // // || event.shortMethodName().contains(".isCategoryAccessible")
-                    // // || event.shortMethodName().contains(".BannerCommon.")
-                    // // || event.shortMethodName().contains("GenericBannerDAO")
-                    // ) { //|| event.shortMethodName().contains(".set") 
-					// 	// System.out.println("Removed init, setters, and lambda "+ event.shortMethodName());
-					// } else {
-                    //     int eventId = eventToIDMapping.get(event.shortMethodName());
-                    //     event.setIntegerId(eventId);
-                        
-                    //     if (eventId >=1 && !uniqueMethodIntegerList.contains(eventId)) {
-                    //         uniqueMethodIntegerList.add(eventId);
-                    //     } else {
-                    //         // same event occurred twice in the trace, hence avoiding the second
-                    //         // System.out.println("Method integer mapping - "+ event.shortMethodName() +" has mapping id "+ eventId + " already contains "+ uniqueMethodIntegerList.contains(eventId));
-                    //     }
-						
-					// }
-
 				}
 			if (uniqueMethodIntegerList.size() > 1) { // removing 1 methods from pattern minning library input
                 String spaceSeparatedString = "";
@@ -458,10 +317,7 @@ public class AppComponent {
             }
 		} 
         
-        // File file = new File("C:\\Development\\MSGeneratorInputOutput\\Output\\"+"eventPattern.txt");
         File file = new File(patternMinningInputFile);
-
-        // file.getParentFile().mkdir();
         try {
             file.createNewFile();
             PrintWriter writer = new PrintWriter(file.getAbsolutePath(), "UTF-8");
@@ -475,10 +331,9 @@ public class AppComponent {
 
     // method to execute pattern mining using hte library
     public void executePatternMinning(){
-        System.out.println("### Execute pattern mining");
+        System.out.println("Execute pattern mining");
         ExecuteJarWithParams executeJarWithParams = new ExecuteJarWithParams();
                 // String[] parameters = {"run", "GSP", "C:/Development/MSGeneratorSupportWork/contextPrefixSpan.txt", "C:/Development/MSGeneratorSupportWork/output.txt", "5%"};
-        
         String[] parameters = {"run", patternMiningAlgorithm, this.patternMinningInputFile, this.patternMinningOutputFile, this.minimumSupport, "3", "0"};
         
         // samples of using different algorithms for minig
@@ -612,7 +467,7 @@ public class AppComponent {
                         patternMetaList.add(patternMeta);
                     } else { // one method pattern
                         //discarding one method patterns
-                        // System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@ One method patterns - "+key);
+                        // System.out.println("One method patterns - "+key);
                         if (value > 100) {
                             PatternMeta patternMeta = new PatternMeta();
                             patternMeta.setPattern(key);
@@ -697,7 +552,7 @@ public class AppComponent {
                     }
                 }
 
-                System.out.println("********* min Exec : "+minExecTime + " Max Exec : "+maxExecTime);
+                System.out.println("Min Exec : "+minExecTime + " Max Exec : "+maxExecTime);
 
                 for (PatternMeta patternMeta : patternMetaList) {
                     patternMeta.setNormalizedSupport((patternMeta.getSupport() - minSupport)/(maxSupport - minSupport));
@@ -734,14 +589,6 @@ public class AppComponent {
             }
 
             this.generateExcel(patternMetaList);
-            // this.generateExeclFilesSinglePattern(patternMetaList);    
-            // this.generateExcelFileTwoPattern();
-            // this.generateExcelFileThreePattern();
-            // this.generateExcelFileFourPattern();
-            // this.generateExeclFilesFivePattern();
-
-
-
             System.out.println("========== PROGRAM ENDS ==================");
             System.exit(0);
     }
